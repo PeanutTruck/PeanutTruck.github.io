@@ -111,212 +111,101 @@ const characters = [
 
 { rank:'34', char: '生', pinyin: '', example: '生活 （Shēng huó）' },
 
+{ rank:'35', char: '能', pinyin: 'néng', example: '能量 (Néng liàng)' },
+{ rank:'36', char: '而', pinyin: 'ér', example: '他而来 (tā ér lái)' },
+{ rank:'37', char: '子', pinyin: 'zǐ', example: '儿子 (ér zi)' },
+{ rank:'38', char: '那', pinyin: 'nèi/nà', example: '那个 (nèi/nà gè)' },
+{ rank:'39', char: '得', pinyin: 'dé', example: '得到 (dé dào)' },
+{ rank:'39', char: '得', pinyin: 'děi', example: '我得去 (wǒ děi qù)' },
+{ rank:'40', char: '于', pinyin: 'yú', example: '由于 (yóu yú)' },
+	
+{ rank:'41', char: '着', pinyin: 'zhāo', example: '着急 (zhāo jí)' },
+{ rank:'41', char: '着', pinyin: 'zháo', example: '睡着 (shuì zháo)' },
+{ rank:'41', char: '着', pinyin: 'zhe', example: '我看着你 (wǒ kàn zhe nǐ)' },
+{ rank:'41', char: '着', pinyin: 'zhuó', example: '着陆 (zhuó lù)' },
+{ rank:'42', char: '下', pinyin: 'xià', example: '下楼 (xià lóu)' },
+{ rank:'43', char: '自', pinyin: 'zì', example: '自己 (zì jǐ)' },
+{ rank:'44', char: '之', pinyin: 'zhī', example: '之前 (zhī qián)' },
+{ rank:'45', char: '年', pinyin: 'nián', example: '一年 (yī nián)' },
+{ rank:'46', char: '过', pinyin: 'guò', example: '过生日 (guò shēng rì)' },
+{ rank:'47', char: '发', pinyin: 'fā', example: '发消息 (fā xiāo xī)' },
+{ rank:'47', char: '发', pinyin: 'fà', example: '头发 (tóu fà)' },
+{ rank:'48', char: '后', pinyin: 'hòu', example: '后天 (hòu tiān)' },
+{ rank:'49', char: '作', pinyin: 'zuò', example: '工作 (gōng zuò)' },
+{ rank:'50', char: '里', pinyin: 'lǐ', example: '家里 (jiā lǐ)' },
+{ rank:'51', char: '用', pinyin: 'yòng', example: '使用 (shǐ yòng)' },
+{ rank:'52', char: '道', pinyin: 'dào', example: '知道 (zhī dào)' },
+{ rank:'53', char: '行', pinyin: 'háng', example: '银行 (yín háng)' },
+{ rank:'53', char: '行', pinyin: 'xíng', example: '行走 (xíng zǒu)' },
+{ rank:'54', char: '所', pinyin: 'suǒ', example: '厕所 (cè suǒ)' },
+{ rank:'55', char: '然', pinyin: 'rán', example: '当然 (dāng rán)' },
+{ rank:'56', char: '家', pinyin: 'jiā', example: '我的家 (wǒ de jiā)' },
+{ rank:'57', char: '种', pinyin: 'zhǒng', example: '种类 (zhǒng lèi)' },
+{ rank:'57', char: '种', pinyin: 'zhòng', example: '种地 (zhòng dì)' },
+{ rank:'58', char: '事', pinyin: 'shì', example: '事情 (shì qíng)' },
+{ rank:'59', char: '成', pinyin: 'chéng', example: '成功 (chéng gōng)' },
+{ rank:'60', char: '方', pinyin: 'fāng', example: '方法 (fāng fǎ)' },
+{ rank:'61', char: '多', pinyin: 'duō', example: '很多 (hěn duō)' },
+{ rank:'62', char: '经', pinyin: 'jīng', example: '已经 (yǐ jīng)' },	
+{ rank:'63', char: '么', pinyin: 'ma', example: '干么 (gàn ma)' },
+{ rank:'63', char: '么', pinyin: 'me', example: '什么 (shén me)' },
+	
+{ rank:'64', char: '去', pinyin: 'qù', example: '去学校 (qù xué xiào)' },
+{ rank:'65', char: '法', pinyin: 'fǎ', example: '法律 (fǎ lǜ)' },
+{ rank:'66', char: '学', pinyin: 'xué', example: '学生 (xué shēng)' },
+{ rank:'67', char: '如', pinyin: 'rú', example: '如果 (rú guǒ)' },
+{ rank:'68', char: '都', pinyin: 'dōu', example: '他们都去 (tā men dōu qù)' },
+{ rank:'68', char: '都', pinyin: 'dū', example: '首都 (shǒu dū)' },
+{ rank:'69', char: '同', pinyin: 'tóng', example: '同学 (tóng xué)' },
+{ rank:'70', char: '现', pinyin: 'xiàn', example: '现在 (xiàn zài)' },
+{ rank:'71', char: '当', pinyin: 'dāng', example: '当老师 (dāng lǎo shī)' },
+{ rank:'71', char: '当', pinyin: 'dàng', example: '当场 (dàng chǎng)' },
+{ rank:'72', char: '没', pinyin: 'méi', example: '没有 (méi yǒu)' },
+{ rank:'72', char: '没', pinyin: 'mò', example: '淹没 (yān mò)' },
+{ rank:'73', char: '动', pinyin: 'dòng', example: '活动 (huó dòng)' },
+{ rank:'74', char: '面', pinyin: 'miàn', example: '面包 (miàn bāo)' },
+{ rank:'75', char: '起', pinyin: 'qǐ', example: '起来 (qǐ lái)' },
+{ rank:'76', char: '看', pinyin: 'kān', example: '看守 (kān shǒu)' },
+{ rank:'76', char: 'kàn', example: '看书 (kàn shū)' },
+{ rank:'77', char: '定', pinyin: 'dìng', example: '确定 (què dìng)' },
+{ rank:'78', char: '天', pinyin: 'tiān', example: '天气 (tiān qì)' },
+{ rank:'79', char: '分', pinyin: 'fēn', example: '分开 (fēn kāi)' },
+{ rank:'79', char: 'fèn', example: '部分 (bù fèn)' },
+{ rank:'80', char: '还', pinyin: 'hái', example: '还有 (hái yǒu)' },
+{ rank:'80', char: 'huán', example: '还钱 (huán qián)' },
+{ rank:'81', char: '进', pinyin: 'jìn', example: '进来 (jìn lái)' },
+{ rank:'82', char: '好', pinyin: 'hǎo', example: '你好 (nǐ hǎo)' },
+{ rank:'82', char: 'hào', example: '好学 (hào xué)' },
+{ rank:'83', char: '小', pinyin: 'xiǎo', example: '小孩 (xiǎo hái)' },
+{ rank:'84', char: '部', pinyin: 'bù', example: '部分 (bù fèn)' },
+{ rank:'85', char: '其', pinyin: 'qí', example: '其实 (qí shí)' },
+{ rank:'86', char: '些', pinyin: 'xiē', example: '这些 (zhè xiē)' },
+{ rank:'87', char: '主', pinyin: 'zhǔ', example: '主意 (zhǔ yi)' },
+{ rank:'88', char: '样', pinyin: 'yàng', example: '样子 (yàng zi)' },
+{ rank:'89', char: '理', pinyin: 'lǐ', example: '道理 (dào lǐ)' },
+{ rank:'90', char: '心', pinyin: 'xīn', example: '心情 (xīn qíng)' },
+{ rank:'91', char: '她', pinyin: 'tā', example: '她的 (tā de)' },
+{ rank:'92', char: '本', pinyin: 'běn', example: '本书 (běn shū)' },
+{ rank:'93', char: '前', pinyin: 'qián', example: '前面 (qián miàn)' },
+{ rank:'94', char: '开', pinyin: 'kāi', example: '开门 (kāi mén)' },
+{ rank:'95', char: '但', pinyin: 'dàn', example: '但是 (dàn shì)' },
+{ rank:'96', char: '因', pinyin: 'yīn', example: '因为 (yīn wèi)' },
+{ rank:'97', char: '只', pinyin: 'zhī', example: '只要 (zhī yào)' },
+{ rank:'97', char: 'zhǐ', example: '只好 (zhǐ hǎo)' },
+{ rank:'98', char: '从', pinyin: 'cóng', example: '从来 (cóng lái)' },
+{ rank:'99', char: '想', pinyin: 'xiǎng', example: '我想你 (wǒ xiǎng nǐ)' },
+{ rank:'100', char: '实', pinyin: 'shí', example: '真实 (zhēn shí)' },
+
+
+
+
+
+
+
+
+
 
 	
-// 34. 吗
-{ rank:'34', char: '吗', pinyin: 'ma', example: '你好吗（nǐ hǎo ma）' },
-{ rank:'34', char: '吗', pinyin: 'mǎ', example: '吗啡 （mǎ fēi）' },
-{ rank:'34', char: '吗', pinyin: 'má', example: '干吗（Gàn má）' },
-
-// 35. 里
-{ rank:'35', char: '里', pinyin: 'lǐ', example: '我在家里 （wǒ zài jiālǐ）' },
-
-// 36. 然
-{ rank:'36', char: '然', pinyin: 'rán', example: '这是自然的现象 （zhè shì zìrán de xiànxiàng）' },
-
-// 37. 后
-{ rank:'37', char: '后', pinyin: 'hòu', example: '我们后天见 （wǒmen hòutiān jiàn）' },
-
-// 38. 自
-{ rank:'38', char: '自', pinyin: 'zì', example: '我自学汉语 （wǒ zìxué hànyǔ）' },
-
-// 39. 以
-{ rank:'39', char: '以', pinyin: 'yǐ', example: '我以他为例 （wǒ yǐ tā wéi lì）' },
-
-// 40. 说
-{ rank:'40', char: '说', pinyin: 'shuō', example: '他说他很高兴 （tā shuō tā hěn gāoxìng）' },
-
-// 41. 生
-{ rank:'41', char: '生', pinyin: 'shēng', example: '我在北京出生 （wǒ zài běijīng chūshēng）' },
-
-// 42. 只
-{ rank:'42', char: '只', pinyin: 'zhī', example: '这只猫很可爱 （zhè zhī māo hěn kěài）' },
-{ rank:'42', char: '只', pinyin: 'zhǐ', example: '我只需要一个 （wǒ zhǐ xūyào yī gè）' },
-
-// 43. 现
-{ rank:'43', char: '现', pinyin: 'xiàn', example: '现在 （xiàn zài）' },
-
-// 44. 见
-{ rank:'44', char: '见', pinyin: 'jiàn', example: '见面 （jiàn miàn）' },
-
-// 45. 只
-{ rank:'45', char: '只', pinyin: 'zhī', example: '我只买了一个 （wǒ zhī mǎi le yī gè）' },
-
-// 46. 机
-{ rank:'46', char: '机', pinyin: 'jī', example: '机器 （jī qì）' },
-
-// 47. 见
-{ rank:'47', char: '见', pinyin: 'jiàn', example: '我们见面了 （wǒmen jiànmiàn le）' },
-
-// 48. 事
-{ rank:'48', char: '事', pinyin: 'shì', example: '这是一件重要的事 （zhè shì yī jiàn zhòngyào de shì）' },
-
-// 49. 下
-{ rank:'49', char: '下', pinyin: 'xià', example: '明天下雨 （míngtiān xià yǔ）' },
-
-// 50. 们
-{ rank:'50', char: '们', pinyin: 'men', example: '我们一起去 （wǒmen yīqǐ qù）' },
-
-// 51. 向
-{ rank:'51', char: '向', pinyin: 'xiàng', example: '我们向前走 （wǒmen xiàng qián zǒu）' },
-
-// 52. 情
-{ rank:'52', char: '情', pinyin: 'qíng', example: '她有很多感情 （tā yǒu hěn duō gǎnqíng）' },
-
-// 53. 说
-{ rank:'53', char: '说', pinyin: 'shuō', example: '他说的很清楚 （tā shuō de hěn qīngchǔ）' },
-
-// 54. 道
-{ rank:'54', char: '道', pinyin: 'dào', example: '我知道答案了 （wǒ zhīdào dáàn le）' },
-
-// 55. 方
-{ rank:'55', char: '方', pinyin: 'fāng', example: '这是一个四方形 （zhè shì yī gè sì fāngxíng）' },
-
-// 56. 时
-{ rank:'56', char: '时', pinyin: 'shí', example: '那时候很冷 （nà shíhòu hěn lěng）' },
-
-// 57. 问
-{ rank:'57', char: '问', pinyin: 'wèn', example: '我有一个问题要问 （wǒ yǒu yī gè wèntí yào wèn）' },
-
-// 58. 知
-{ rank:'58', char: '知', pinyin: 'zhī', example: '我知道她的名字 （wǒ zhīdào tā de míngzì）' },
-
-// 59. 见
-{ rank:'59', char: '见', pinyin: 'jiàn', example: '我们见面了 （wǒmen jiànmiàn le）' },
-
-// 60. 上
-{ rank:'60', char: '上', pinyin: 'shàng', example: '他上了楼 （tā shàng le lóu）' },
-
-// 61. 回
-{ rank:'61', char: '回', pinyin: 'huí', example: '我回家了 （wǒ huí jiā le）' },
-
-// 62. 做
-{ rank:'62', char: '做', pinyin: 'zuò', example: '我在做作业 （wǒ zài zuò zuòyè）' },
-
-// 63. 可
-{ rank:'63', char: '可', pinyin: 'kě', example: '这个问题很难可 （zhè ge wèntí hěn nán kě）' },
-
-// 64. 吗
-{ rank:'64', char: '吗', pinyin: 'ma', example: '你好吗？ （nǐ hǎo ma?）' },
-
-// 65. 里
-{ rank:'65', char: '里', pinyin: 'lǐ', example: '书在桌子里 （shū zài zhuōzi lǐ）' },
-
-// 66. 生
-{ rank:'66', char: '生', pinyin: 'shēng', example: '他是一个医生 （tā shì yī gè yīshēng）' },
-
-// 67. 小
-{ rank:'67', char: '小', pinyin: 'xiǎo', example: '这只狗很小 （zhè zhī gǒu hěn xiǎo）' },
-
-// 68. 部
-{ rank:'68', char: '部', pinyin: 'bù', example: '这部电影很好看 （zhè bù diànyǐng hěn hǎokàn）' },
-
-// 69. 头
-{ rank:'69', char: '头', pinyin: 'tóu', example: '他的头发很长 （tā de tóufà hěn cháng）' },
-
-// 70. 除
-{ rank:'70', char: '除', pinyin: 'chú', example: '我除了她没有别的选择 （wǒ chúle tā méiyǒu bié de xuǎnzé）' },
-
-// 71. 日
-{ rank:'71', char: '日', pinyin: 'rì', example: '今天是几号？ （jīntiān shì jǐ hào?）' },
-
-// 72. 变
-{ rank:'72', char: '变', pinyin: 'biàn', example: '天气变冷了 （tiānqì biàn lěng le）' },
-
-// 73. 两
-{ rank:'73', char: '两', pinyin: 'liǎng', example: '我有两本书 （wǒ yǒu liǎng běn shū）' },
-
-// 74. 要
-{ rank:'74', char: '要', pinyin: 'yào', example: '你要什么？ （nǐ yào shénme?）' },
-
-// 75. 快
-{ rank:'75', char: '快', pinyin: 'kuài', example: '快来这里！ （kuài lái zhè lǐ!）' },
-
-// 76. 知
-{ rank:'76', char: '知', pinyin: 'zhī', example: '我知道她的名字 （wǒ zhīdào tā de míngzì）' },
-
-// 77. 虽
-{ rank:'77', char: '虽', pinyin: 'suī', example: '虽然很累，但我还要工作 （suīrán hěn lèi, dàn wǒ hái yào gōngzuò）' },
-
-// 78. 名
-{ rank:'78', char: '名', pinyin: 'míng', example: '她的名字是李华 （tā de míngzì shì lǐ huá）' },
-
-// 79. 那
-{ rank:'79', char: '那', pinyin: 'nà', example: '那是我的书 （nà shì wǒ de shū）' },
-
-// 80. 然
-{ rank:'80', char: '然', pinyin: 'rán', example: '这是自然的现象 （zhè shì zìrán de xiànxiàng）' },
-
-// 81. 向
-{ rank:'81', char: '向', pinyin: 'xiàng', example: '我们向前走 （wǒmen xiàng qián zǒu）' },
-
-// 82. 结
-{ rank:'82', char: '结', pinyin: 'jié', example: '这个问题没有解决 （zhè ge wèntí méiyǒu jiějué）' },
-
-// 83. 物
-{ rank:'83', char: '物', pinyin: 'wù', example: '这是一件有用的物品 （zhè shì yī jiàn yǒuyòng de wùpǐn）' },
-
-// 84. 一
-{ rank:'84', char: '一', pinyin: 'yī', example: '我吃了一个苹果 （wǒ chī le yī gè píngguǒ）' },
-
-// 85. 又
-{ rank:'85', char: '又', pinyin: 'yòu', example: '他又来了 （tā yòu lái le）' },
-
-// 86. 全
-{ rank:'86', char: '全', pinyin: 'quán', example: '这是全世界最美的地方 （zhè shì quán shìjiè zuì měi de dìfāng）' },
-
-// 87. 来
-{ rank:'87', char: '来', pinyin: 'lái', example: '他来我家了 （tā lái wǒ jiā le）' },
-
-// 88. 过
-{ rank:'88', char: '过', pinyin: 'guò', example: '我去过中国 （wǒ qù guò zhōngguó）' },
-
-// 89. 近
-{ rank:'89', char: '近', pinyin: 'jìn', example: '我家离学校很近 （wǒ jiā lí xuéxiào hěn jìn）' },
-
-// 90. 吗
-{ rank:'90', char: '吗', pinyin: 'ma', example: '你喜欢这本书吗？ （nǐ xǐhuān zhè běn shū ma?）' },
-
-// 91. 车
-{ rank:'91', char: '车', pinyin: 'chē', example: '这是一辆车 （zhè shì yī liàng chē）' },
-
-// 92. 虽
-{ rank:'92', char: '虽', pinyin: 'suī', example: '虽然很贵，但我还是买了 （suīrán hěn guì, dàn wǒ hái shì mǎi le）' },
-
-// 93. 飞
-{ rank:'93', char: '飞', pinyin: 'fēi', example: '鸟在天上飞 （niǎo zài tiānshàng fēi）' },
-
-// 94. 事
-{ rank:'94', char: '事', pinyin: 'shì', example: '这件事很重要 （zhè jiàn shì hěn zhòngyào）' },
-
-// 95. 吧
-{ rank:'95', char: '吧', pinyin: 'ba', example: '我们走吧 （wǒmen zǒu ba）' },
-
-// 96. 条
-{ rank:'96', char: '条', pinyin: 'tiáo', example: '这条裙子很漂亮 （zhè tiáo qúnzi hěn piàoliang）' },
-
-// 97. 向
-{ rank:'97', char: '向', pinyin: 'xiàng', example: '他向我求助 （tā xiàng wǒ qiúzhù）' },
-
-// 98. 内
-{ rank:'98', char: '内', pinyin: 'nèi', example: '这个盒子里面有很多东西 （zhè ge hézi lǐmiàn yǒu hěn duō dōngxi）' },
-
-// 99. 只
-{ rank:'99', char: '只', pinyin: 'zhī', example: '这只猫很懒 （zhè zhī māo hěn lǎn）' },
-
-// 100. 这
-{ rank:'100', char: '这', pinyin: 'zhè', example: '这是一只狗 （zhè shì yī zhī gǒu）' },
-
 
 { rank: '101', char: '日', pinyin: 'rì', example: '今天是星期日 (jīn tiān shì xīng qī rì)' },
 { rank: '102', char: '军', pinyin: 'jūn', example: '军队 (jūn duì)' },
