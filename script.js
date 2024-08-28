@@ -57,7 +57,7 @@ const characters = [
 { rank:'17', char: '大', pinyin: 'dà', example: '这是一辆大车 （zhè shì yī liàng dà chē）' },
 
 // 18. 为
-{ rank:'18', char: '为', pinyin: 'wéi', example: '胡作非为 为所欲为（wéi suǒ yù wéi）' },
+{ rank:'18', char: '为', pinyin: 'wéi', example: '为所欲为（wéi suǒ yù wéi）' },
 { rank:'18', char: '为', pinyin: 'wèi', example: '这是为了你 （zhè shì wèi nǐ）' },
 
 // 19. 和
@@ -69,11 +69,10 @@ const characters = [
 { rank:'20', char: '国', pinyin: 'guó', example: '国家 （Guó jiā）' },
 
 // 21. 地
-{ rank:'21', char: '地', pinyin: 'de', example: '高兴地说 （gāo xìng de shuō）' },
-{ rank:'21', char: '地', pinyin: 'dì', example: '我们到达了目的地 （wǒ men dào dá le mùdì dì）' },
+{ rank:'21', char: '地', pinyin: 'dì', example: '土地 （tǔ dì）' },
 
 // 22. 到
-{ rank:'22', char: '到', pinyin: 'dào', example: '我到家了 （wǒ dào jiā le）' },
+{ rank:'22', char: '到', pinyin: 'dào', example: '到家了 （dào jiā le）' },
 
 // 23. 以
 { rank:'23', char: '以', pinyin: 'yǐ', example: '我以他为例 （wǒ yǐ tā wéi lì）' },
@@ -85,14 +84,14 @@ const characters = [
 { rank:'25', char: '时', pinyin: 'shí', example: '时间 （shí jiān）' },
 
 // 26. 要
-{ rank:'26', char: '要', pinyin: 'yào', example: '需要 （xū yào）' },
 { rank:'26', char: '要', pinyin: 'yāo', example: '要求 （yāo qiú）' },
+{ rank:'26', char: '要', pinyin: 'yào', example: '需要 （xū yào）' },
 
 // 27. 就
 { rank:'27', char: '就', pinyin: 'jiù', example: '我们就这样做 （wǒ men jiù zhè yàng zuò）' },
 
 // 28. 出
-{ rank:'28', char: '出', pinyin: 'chū', example: '我出门了 （wǒ chūmén le）' },
+{ rank:'28', char: '出', pinyin: 'chū', example: '出发 （Chū fā）' },
 
 // 29. 会
 { rank:'29', char: '会', pinyin: 'huì', example: '会见 （huì jiàn）' },
@@ -108,11 +107,12 @@ const characters = [
 { rank:'32', char: '你', pinyin: 'nǐ', example: '你好吗？ （nǐ hǎo ma?）' },
 
 // 33. 对
-{ rank:'33', char: '对', pinyin: 'duì', example: '这对我很重要 （zhè duì wǒ hěn zhòngyào）' },
+{ rank:'33', char: '对', pinyin: 'duì', example: '这对我很重要 （zhè duì wǒ hěn zhòng yào）' },
 
-{ rank:'34', char: '生', pinyin: '', example: '' },
+{ rank:'34', char: '生', pinyin: '', example: '生活 （Shēng huó）' },
 
 
+	
 // 34. 吗
 { rank:'34', char: '吗', pinyin: 'ma', example: '你好吗（nǐ hǎo ma）' },
 { rank:'34', char: '吗', pinyin: 'mǎ', example: '吗啡 （mǎ fēi）' },
