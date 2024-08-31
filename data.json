@@ -1,7 +1,7 @@
 [
-{ "rank":"1", "char": "的", "pinyin": "dè", "example": "他的书 （tā dè shū）", 			"english": "Definition: of, genetive marker.  Usage: His book" },
-{ "rank":"1", "char": "的", "pinyin": "dí", "example": "的确 （dí què）", 				"english": "Indeed" },
-{ "rank":"1", "char": "的", "pinyin": "dì", "example": "目的 （mù dì）", 					"english": "Objective, Goal" },
+{ "rank":"1", "char": "的", "pinyin": "dè", "example": "他的书 （tā dè shū）", "english": "Definition: of, genetive marker.  Usage: His book" },
+{ "rank":"1", "char": "的", "pinyin": "dí", "example": "的确 （dí què）", "english": "Indeed" },
+{ "rank":"1", "char": "的", "pinyin": "dì", "example": "目的 （mù dì）", "english": "Objective, Goal" },
 { "rank":"2", "char": "一", "pinyin": "yī", "example": "我有一只猫 （wǒ yǒu yī zhī māo）", "english": "one, a.  Usage: I have a cat"  },
 { "rank":"3", "char": "是", "pinyin": "shì", "example": "这是我的书 （zhè shì wǒ de shū）", "english": "Definition: is.  Usage: This is my book" },
 { "rank":"4", "char": "不", "pinyin": "bù", "example": "不喜欢 （bù xǐ huān）" },
@@ -14,7 +14,7 @@
 { "rank":"9", "char": "我", "pinyin": "wǒ", "example": "我是学生 （wǒ shì xuéshēng）" },
 { "rank":"10", "char": "他", "pinyin": "tā", "example": "他是我的老师 （tā shì wǒ de lǎoshī）" },
 { "rank":"11", "char": "这", "pinyin": "zhè", "example": "这是我的书 （zhè shì wǒ de shū）" },
-{ "rank":"11", "char": "这", "pinyin": "zhèi", "example": """ },
+{ "rank":"11", "char": "这", "pinyin": "zhèi", "example": "" },
 { "rank":"12", "char": "个", "pinyin": "gè", "example": "我买了一个苹果 （wǒ mǎi le yī gè píngguǒ）" },
 { "rank":"13", "char": "们", "pinyin": "men", "example": "我们一起去 （wǒmen yīqǐ qù）" },
 { "rank":"14", "char": "中", "pinyin": "zhōng", "example": "他在中学 （tā zài zhōngxué）" },
@@ -245,7 +245,6 @@
 { "rank": "199", "char": "比", "pinyin": "bǐ", "example": "比较 (bǐ jiào)" },
 { "rank": "199", "char": "比", "pinyin": "bì", "example": "比喻 (bǐ yù)" },
 { "rank": "200", "char": "员", "pinyin": "yuán", "example": "成员 (chéng yuán)" },
-
 { "rank": "201", "char": "解", "pinyin": "jiě/xiè", "example": "解释 (jiě shì) / 解决 (jiě jué)" },
 { "rank": "202", "char": "水", "pinyin": "shuǐ", "example": "水瓶 (shuǐ píng)" },
 { "rank": "203", "char": "名", "pinyin": "míng", "example": "名字 (míng zì)" },
