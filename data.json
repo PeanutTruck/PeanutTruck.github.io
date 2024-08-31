@@ -13,5 +13,6 @@
 { "rank":"8", "char": "有", "pinyin": "yǒu", "example": "我有一个朋友 （wǒ yǒu yī gè péngyǒu）" },
 { "rank":"9", "char": "我", "pinyin": "wǒ", "example": "我是学生 （wǒ shì xuéshēng）" },
 { "rank":"10", "char": "他", "pinyin": "tā", "example": "他是我的老师 （tā shì wǒ de lǎoshī）" },
-{ "rank":"11", "char": "这", "pinyin": "zhè", "example": "这是我的书 （zhè shì wǒ de shū）" }
+{ "rank":"11", "char": "这", "pinyin": "zhè", "example": "这是我的书 （zhè shì wǒ de shū）" },
+{ "rank":"11", "char": "这", "pinyin": "zhèi", "example": "" }
 ]

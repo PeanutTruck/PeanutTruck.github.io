@@ -91,12 +91,7 @@ function parseBoolean(str) {
 }
 
 function launchPage() {
-    //characters = JSON.parse( '[{ "rank":1, "char": "的", "pinyin": "dè", "example": "他的书 （tā dè shū)", "english": "Definition: of, genetive marker.  Example: His book" }]' );
-    //characters = JSON.parse( "[\n{ \"rank\":\"1\", \"char\": \"的\", \"pinyin\": \"dè\", \"example\": \"他的书 （tā dè shū）\", \"english\": \"Definition: of, genetive marker.  Usage: His book\" },\n{ \"rank\":\"1\", \"char\": \"的\", \"pinyin\": \"dí\", \"example\": \"的确 （dí què）\", \"english\": \"Indeed\" },\n{ \"rank\":\"1\", \"char\": \"的\", \"pinyin\": \"dì\", \"example\": \"目的 （mù dì）\", \"english\": \"Objective, Goal\" },\n{ \"rank\":\"2\", \"char\": \"一\", \"pinyin\": \"yī\", \"example\": \"我有一只猫 （wǒ yǒu yī zhī māo）\", \"english\": \"one, a.  Usage: I have a cat\"  },\n{ \"rank\":\"3\", \"char\": \"是\", \"pinyin\": \"shì\", \"example\": \"这是我的书 （zhè shì wǒ de shū）\", \"english\": \"Definition: is.  Usage: This is my book\" },\n{ \"rank\":\"4\", \"char\": \"不\", \"pinyin\": \"bù\", \"example\": \"不喜欢 （bù xǐ huān）\" },\n{ \"rank\":\"4\", \"char\": \"不\", \"pinyin\": \"bú\", \"example\": \"不要 （bú yào）\" },\n{ \"rank\":\"5\", \"char\": \"了\", \"pinyin\": \"le\", \"example\": \"我吃饭了 （wǒ chīfàn le）\" },\n{ \"rank\":\"5\", \"char\": \"了\", \"pinyin\": \"liǎo\", \"example\": \"事已经了解了 （shì yǐjīng liǎo jiě le）\" },\n{ \"rank\":\"6\", \"char\": \"在\", \"pinyin\": \"zài\", \"example\": \"我在家里 （wǒ zài jiālǐ）\" }\n]" );
 
-	//console.log("characters ", characters);
-	
-// Fetch data from the URL
 fetch('https://peanuttruck.github.io/data.json', { 
   method: 'GET'
 })
