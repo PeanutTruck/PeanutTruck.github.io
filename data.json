@@ -15,7 +15,6 @@
 { "rank":"10", "char": "他", "pinyin": "tā", "example": "他是我的老师 （tā shì wǒ de lǎoshī）" },
 { "rank":"11", "char": "这", "pinyin": "zhè", "example": "这是我的书 （zhè shì wǒ de shū）" },
 { "rank":"11", "char": "这", "pinyin": "zhèi", "example": "" },
-{ "rank":"11", "char": "这", "pinyin": "zhèi", "example": "" },
 { "rank":"12", "char": "个", "pinyin": "gè", "example": "我买了一个苹果 （wǒ mǎi le yī gè píngguǒ）" },
 { "rank":"13", "char": "们", "pinyin": "men", "example": "我们一起去 （wǒmen yīqǐ qù）" },
 { "rank":"14", "char": "中", "pinyin": "zhōng", "example": "他在中学 （tā zài zhōngxué）" },
