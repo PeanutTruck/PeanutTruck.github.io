@@ -513,6 +513,9 @@ function parseBoolean(str) {
 }
 
 function launchPage() {
+    characters = JSON.parse( '[{ "rank":1, "char": "的", "pinyin": "dè", "example": "他的书 （tā dè shū)", "english": "Definition: of, genetive marker.  Example: His book" }]' );
+	console.log("characters ", characters);
+	
 	
 	fetch('https://peanuttruck.github.io/data.json')
 	.then(response => response.json())
@@ -520,7 +523,9 @@ function launchPage() {
 		characters = data;
 	})
 	.catch(error => console.error('Error loading the JSON file:', error));
+	
 
+ 
 	
 	lastPage = Math.ceil(characters.length / rowsPerPage);
 	const params = new URLSearchParams(window.location.search);
