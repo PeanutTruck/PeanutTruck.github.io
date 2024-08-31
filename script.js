@@ -1,17 +1,15 @@
 const characters = [
-// 1. 的
-{ rank:'1', char: '的', pinyin: 'dè', example: '他的书 （tā dè shū）', english: "of, genetive marker.  Example: His book" },
-{ rank:'1', char: '的', pinyin: 'dí', example: '的确 （dí què）' },
-{ rank:'1', char: '的', pinyin: 'dì', example: '目的 （mù dì）' },
 
-// 2. 一
-{ rank:'2', char: '一', pinyin: 'yī', example: '我有一只猫 （wǒ yǒu yī zhī māo）' },
+{ rank:'1', char: '的', pinyin: 'dè', example: '他的书 （tā dè shū）', 			english: "Definition: of, genetive marker.  Example: His book" },
+{ rank:'1', char: '的', pinyin: 'dí', example: '的确 （dí què）', 				english: "Indeed" },
+{ rank:'1', char: '的', pinyin: 'dì', example: '目的 （mù dì）', 					english: "Objective, Goal" },
+{ rank:'2', char: '一', pinyin: 'yī', example: '我有一只猫 （wǒ yǒu yī zhī māo）', english: "one, a.  Example: I have a cat"  },
 
 // 3. 是
-{ rank:'3', char: '是', pinyin: 'shì', example: '这是我的书 （zhè shì wǒ de shū）' },
+{ rank:'3', char: '是', pinyin: 'shì', example: '这是我的书 （zhè shì wǒ de shū）', english: "Definition: is.  Example: This is my book" },
 
 // 4. 不
-{ rank:'4', char: '不', pinyin: 'bù', example: '不喜欢 （bù xǐhuān）' },
+{ rank:'4', char: '不', pinyin: 'bù', example: '不喜欢 （bù xǐ huān）' },
 { rank:'4', char: '不', pinyin: 'bú', example: '不要 （bú yào）' },
 
 // 5. 了
@@ -425,6 +423,7 @@ const characters = [
 const rowsPerPage = 10;
 let currentPage = 1;
 var lastPage = 0;
+var showEng = 0;
 
 function renderTable(page) {
     const start = (page - 1) * rowsPerPage;
@@ -434,25 +433,24 @@ function renderTable(page) {
 	
 	const pagechars = characters.slice(start, end)
 
+	const tableHdr = `<th>Frequency Rank</th><th>Character</th><th>Pinyin</th><th>Example</th>${showEng ? `<th>English</th>`:``}`
     const rows = pagechars.map(item => `
-        <tr>
+        <tr ${item.english ? ` title="${item.english}"` : ''} >
             <td>${item.rank}</td>
-			<td${item.english ? ` title="${item.english}"` : ''}>${item.char}</td>
+			<td>${item.char}</td>
             <td>${item.pinyin}</td>
             <td>${item.example}</td>
+			${showEng ? `<td>${item.english ? `${item.english}` : ''}</td>`:``}
 
         </tr>
     `).join('');
 	
-    tableBody.innerHTML = rows;
+    tableBody.innerHTML = tableHdr + rows;
 
     document.querySelector('.prev').disabled = page === 1;
     document.querySelector('.next').disabled = page === lastPage;
-	
 	document.getElementById("infospan").textContent=`Page: ${page} of ${lastPage} `;
 
-	
-	
 	var cbaretable = document.getElementById("cbare");
 	cbaretable.innerHTML = '';
 	var row = cbaretable.insertRow(0);
@@ -478,6 +476,9 @@ function renderTable(page) {
 	const params = new URLSearchParams(window.location.search);
     params.set('page', page);
     window.history.pushState({}, '', `${window.location.pathname}?${params.toString()}`);
+    params.set('eng', showEng);
+    window.history.pushState({}, '', `${window.location.pathname}?${params.toString()}`);
+
 }
 
 function changePage(offset) {
@@ -505,17 +506,28 @@ function jumpToPage( jumpPage ) {
     renderTable(currentPage);
 }
 
+function parseBoolean(str) {
+    return str.toLowerCase() === 'true';
+}
+
 function launchPage() {
 	lastPage = Math.ceil(characters.length / rowsPerPage);
 	const params = new URLSearchParams(window.location.search);
 	const page = parseInt(params.get('page'));
 	if ( page )
-		currentPage = Math.min(Math.max( page, 1), lastPage);	
+		currentPage = Math.min(Math.max( page, 1), lastPage);
+	showEng = parseBoolean(params.get('eng'));
+	document.getElementById('toggleEnglish').checked = showEng;
+
 
 	console.log("launchPage currentPage ",currentPage);
-
+	
 	renderTable(currentPage);
 		
 }
 
 document.addEventListener('DOMContentLoaded', () => launchPage());
+document.getElementById('toggleEnglish').addEventListener('change', function() {
+	showEng = this.checked
+	renderTable(currentPage);
+});
