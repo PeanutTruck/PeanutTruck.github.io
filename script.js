@@ -516,8 +516,8 @@ function launchPage() {
 	const page = parseInt(params.get('page'));
 	if ( page )
 		currentPage = Math.min(Math.max( page, 1), lastPage);
-	showEng = parseBoolean(params.get('eng'));
-	document.getElementById('toggleEnglish').checked = showEng;
+	showEng = parseBoolean(params.get('eng') ? `params.get('eng')` : `` );
+	toggle = document.getElementById('toggleEnglish').checked = showEng;
 
 
 	console.log("launchPage currentPage ",currentPage);
