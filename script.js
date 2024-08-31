@@ -95,9 +95,7 @@ function launchPage() {
 	//console.log("characters ", characters);
 	
 // Fetch data from the URL
-fetch('https://peanuttruck.github.io/data.json', { 
-  method: 'GET'
-})
+fetch('./data.json')
 .then(function(response) {
   if (!response.ok) {
     throw new Error('Network response was not ok ' + response.statusText);
