@@ -1,4 +1,6 @@
-const characters = [
+var characters;
+
+var characters1 = [
 
 { rank:'1', char: '的', pinyin: 'dè', example: '他的书 （tā dè shū）', 			english: "Definition: of, genetive marker.  Example: His book" },
 { rank:'1', char: '的', pinyin: 'dí', example: '的确 （dí què）', 				english: "Indeed" },
@@ -511,6 +513,15 @@ function parseBoolean(str) {
 }
 
 function launchPage() {
+	
+	fetch('https://peanuttruck.github.io/data.json')
+	.then(response => response.json())
+	.then(data => {
+		characters = data;
+	})
+	.catch(error => console.error('Error loading the JSON file:', error));
+
+	
 	lastPage = Math.ceil(characters.length / rowsPerPage);
 	const params = new URLSearchParams(window.location.search);
 	const page = parseInt(params.get('page'));
@@ -526,8 +537,10 @@ function launchPage() {
 		
 }
 
-document.addEventListener('DOMContentLoaded', () => launchPage());
 document.getElementById('toggleEnglish').addEventListener('change', function() {
 	showEng = this.checked
 	renderTable(currentPage);
 });
+
+
+document.addEventListener('DOMContentLoaded', () => launchPage());

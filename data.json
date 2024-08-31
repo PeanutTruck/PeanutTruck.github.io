@@ -1,0 +1,6 @@
+[
+{ rank:'1', char: '的', pinyin: 'dè', example: '他的书 （tā dè shū）', 			english: "Definition: of, genetive marker.  Example: His book" },
+{ rank:'1', char: '的', pinyin: 'dí', example: '的确 （dí què）', 				english: "Indeed" },
+{ rank:'1', char: '的', pinyin: 'dì', example: '目的 （mù dì）', 					english: "Objective, Goal" },
+{ rank:'2', char: '一', pinyin: 'yī', example: '我有一只猫 （wǒ yǒu yī zhī māo）', english: "one, a.  Example: I have a cat"  }
+]
