@@ -1,6 +1,6 @@
 const characters = [
 // 1. 的
-{ rank:'1', char: '的', pinyin: 'dè', example: '他的书 （tā dè shū）' },
+{ rank:'1', char: '的', pinyin: 'dè', example: '他的书 （tā dè shū）', english: "of, genetive marker.  Example: His book" },
 { rank:'1', char: '的', pinyin: 'dí', example: '的确 （dí què）' },
 { rank:'1', char: '的', pinyin: 'dì', example: '目的 （mù dì）' },
 
@@ -446,9 +446,14 @@ function renderTable(page) {
     const rows = pagechars.map(item => `
         <tr>
             <td>${item.rank}</td>
-            <td>${item.char}</td>
+            if ('english' in obj) {
+		<p><span title=${item.english}>${item.char}</span></p>
+	    } else {
+                <td>${item.char}</td>
+	    }
             <td>${item.pinyin}</td>
             <td>${item.example}</td>
+
         </tr>
     `).join('');
 	
