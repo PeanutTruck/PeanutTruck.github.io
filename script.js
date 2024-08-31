@@ -198,15 +198,6 @@ const characters = [
 
 
 
-
-
-
-
-
-
-
-	
-
 { rank: '101', char: '日', pinyin: 'rì', example: '今天是星期日 (jīn tiān shì xīng qī rì)' },
 { rank: '102', char: '军', pinyin: 'jūn', example: '军队 (jūn duì)' },
 { rank: '103', char: '者', pinyin: 'zhě', example: '作者 (zuò zhě)' },
@@ -446,11 +437,7 @@ function renderTable(page) {
     const rows = pagechars.map(item => `
         <tr>
             <td>${item.rank}</td>
-            if ('english' in obj) {
-		<p><span title=${item.english}>${item.char}</span></p>
-	    } else {
-                <td>${item.char}</td>
-	    }
+			<td${item.english ? ` title="${item.english}"` : ''}>${item.char}</td>
             <td>${item.pinyin}</td>
             <td>${item.example}</td>
 
