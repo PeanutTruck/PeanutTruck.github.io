@@ -1,0 +1,8 @@
+
+Produce a python script which will parse this file and produce a JSON array such as this:
+
+[
+{ "rank":"1", "char": "的", "pinyin": "dè" },
+{ "rank":"1", "char": "的", "pinyin": "dí" },
+{ "rank":"1", "char": "的", "pinyin": "dì" }
+]
