@@ -33,29 +33,14 @@ function renderTable(page) {
 
     document.querySelector('.prev').disabled = page === 1;
     document.querySelector('.next').disabled = page === lastPage;
-	document.getElementById("infospan").textContent=`Page: ${page} of ${lastPage} `;
+	document.getElementById("infospan").textContent=`Page ${page} of ${lastPage}`;
 
-	var cbaretable = document.getElementById("cbare");
-	cbaretable.innerHTML = '';
-	var row = cbaretable.insertRow(0);
-	var row2 = cbaretable.insertRow(1);
-
+	var charGrid = document.getElementById("cbare");
 	const seen = new Set();
 	pagechars.forEach(item => { seen.add(item.char) });
-	
-	uniarry = Array.from(seen)
-	const midpt = Math.ceil(uniarry.length / 2);
-	
-	if( uniarry.length > 4 ) {
-		const c1 = uniarry.slice(0, midpt).map(item => `<td>${item}</td> `).join('');
-		row.innerHTML = c1;
-		const c2 = uniarry.slice(midpt).map(item => `<td>${item}</td> `).join('');
-		row2.innerHTML = c2;
-
-	} else {
-		const charcols = uniarry.map(item => `<td>${item}</td> `).join('');
-		row.innerHTML = charcols;
-	}
+	charGrid.innerHTML = Array.from(seen)
+		.map(c => `<div class="char-cell">${c}</div>`)
+		.join('');
 	
 	const params = new URLSearchParams(window.location.search);
     params.set('page', page);

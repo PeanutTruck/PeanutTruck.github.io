@@ -3,57 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinese Characters Table</title>
+    <title>Chinese Character Study</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Chinese Characters Table</h1>
-		
-        <div class="table-container">
-            <table id="cbare" class="large-font-table" >
+
+        <h1>Chinese Character Study</h1>
+        <p class="header-sub">Frequency-ranked characters with readings and examples</p>
+
+        <!-- Large character display grid -->
+        <div class="char-grid-section">
+            <div class="char-grid-label">This page</div>
+            <div id="cbare" class="char-grid"></div>
+        </div>
+
+        <!-- Detail table -->
+        <div class="detail-section">
+            <table id="characters-table">
+                <thead></thead>
+                <tbody></tbody>
             </table>
         </div>
 
-		
-        <table id="characters-table">
-            <thead>
-
-            </thead>
-            <tbody>
-                <!-- Table rows will be inserted here by JavaScript -->
-            </tbody>
-        </table>
-		<span id="infospan"> hereismytext </span>
-		<hr>
-		<form>
-            <label>
-                <input type="checkbox" id="toggleEnglish"> Show English
+        <!-- Controls: show-English toggle + page info -->
+        <div class="controls">
+            <label class="toggle-label">
+                <input type="checkbox" id="toggleEnglish">
+                Show English
             </label>
-        </form>
-		<hr>
+            <span class="page-info" id="infospan"></span>
+        </div>
 
+        <!-- Pagination -->
         <div class="pagination">
-            <button class="first" onclick="jumpToPage(1)">First</button>
-            <button class="prev" onclick="changePage(-1)">Previous</button>
-            <button class="next" onclick="changePage(1)">Next</button>
-            <button class="last" onclick="jumpToPage(-1)">Last</button>
+            <button onclick="jumpToPage(1)">First</button>
+            <button class="prev" onclick="changePage(-1)">← Prev</button>
+            <button class="next" onclick="changePage(1)">Next →</button>
+            <button onclick="jumpToPage(-1)">Last</button>
 
-	    <br><br>
+            <span class="pagination-spacer"></span>
 
-            <label for="jump-page">Jump to page:</label>
-            <input type="number" id="jump-page" min="1" placeholder="Page number">
-            <button onclick="jumpToPage()">Go</button>
-
+            <span class="jump-group">
+                <label for="jump-page">Jump to</label>
+                <input type="number" id="jump-page" min="1" placeholder="Page">
+                <button onclick="jumpToPage()">Go</button>
+            </span>
         </div>
 
         <hr>
 
-        <div class="local-file">
-            <label for="local-data">Local data.json:</label>
-            <input type="file" id="local-data" accept=".json">
-            <span id="datasource"></span>
+        <!-- Local file loader -->
+        <div class="file-section">
+            <span class="file-label">Data source</span>
+            <div class="file-row">
+                <input type="file" id="local-data" accept=".json" class="file-input">
+                <span class="file-status" id="datasource">Loading…</span>
+            </div>
         </div>
+
     </div>
     <script src="script.js"></script>
 </body>
