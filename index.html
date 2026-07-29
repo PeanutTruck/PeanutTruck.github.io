@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,29 @@
 <body>
     <div class="container">
 
-        <h1>Chinese Character Study</h1>
-        <p class="header-sub">Frequency-ranked characters with readings and examples</p>
+        <div class="header-row">
+            <div>
+                <h1>Chinese Character Study</h1>
+                <p class="header-sub" id="header-sub">Frequency-ranked characters with readings and examples</p>
+            </div>
+            <div class="toggle-group">
+                <button id="toggle-dark" class="toggle-btn" title="Toggle dark mode">🌙</button>
+                <button id="toggle-eng" class="toggle-btn" data-active="false" title="Show English definitions">ENG</button>
+                <button id="toggle-study" class="toggle-btn" data-active="false" title="Study mode: hide pinyin &amp; examples">🎓</button>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-bar">
+            <input type="text" id="search-input" class="search-input"
+                   placeholder="Search by character, pinyin, or English…"
+                   autocomplete="off">
+            <span class="search-info" id="search-info"></span>
+        </div>
 
         <!-- Large character display grid -->
         <div class="char-grid-section">
-            <div class="char-grid-label">This page</div>
+            <div class="char-grid-label">Characters on this page</div>
             <div id="cbare" class="char-grid"></div>
         </div>
 
@@ -26,12 +43,8 @@
             </table>
         </div>
 
-        <!-- Controls: show-English toggle + page info -->
+        <!-- Controls: page info -->
         <div class="controls">
-            <label class="toggle-label">
-                <input type="checkbox" id="toggleEnglish">
-                Show English
-            </label>
             <span class="page-info" id="infospan"></span>
         </div>
 

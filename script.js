@@ -1,137 +1,288 @@
-var characters;
+/* ═══════════════════════════════════════════════════════════════════════════
+   Chinese Character Study — Script
+   ═══════════════════════════════════════════════════════════════════════════ */
 
+var characters = [];           // full dataset
+var filteredCharacters = [];   // subset after search filter
+var searchQuery = '';
 const rowsPerPage = 10;
 let currentPage = 1;
 var lastPage = 0;
-var showEng = 0;
+var showEng = true;
+var darkMode = false;
+var studyMode = false;
 var dataSourceLabel = '';
 
-// ── Default remote data URL ────────────────────────────────────────────
 const REMOTE_DATA_URL = 'https://peanuttruck.github.io/data.json';
+const LS_DARK = 'ccs-dark-mode';
+
+// ── Utility ────────────────────────────────────────────────────────────────
+
+function escapeHtml(s) {
+    if (!s) return '';
+    return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+// ── Toggle button helpers ──────────────────────────────────────────────────
+
+function setToggleActive(id, active) {
+    var btn = document.getElementById(id);
+    btn.setAttribute('data-active', active ? 'true' : 'false');
+}
+
+function toggleBtnState(id) {
+    var btn = document.getElementById(id);
+    var cur = btn.getAttribute('data-active') === 'true';
+    return !cur;
+}
+
+// ── Apply search filter ────────────────────────────────────────────────────
+
+function applySearch() {
+    var q = searchQuery.trim().toLowerCase();
+    if (!q) {
+        filteredCharacters = characters;
+        document.getElementById('search-info').textContent = '';
+    } else {
+        filteredCharacters = characters.filter(function(item) {
+            return (item.char && item.char.includes(q)) ||
+                   (item.pinyin && item.pinyin.toLowerCase().includes(q)) ||
+                   (item.english && item.english.toLowerCase().includes(q)) ||
+                   (item.example && item.example.toLowerCase().includes(q)) ||
+                   (item.extraexample && item.extraexample.toLowerCase().includes(q));
+        });
+        var info = document.getElementById('search-info');
+        info.textContent = filteredCharacters.length + ' match' +
+            (filteredCharacters.length !== 1 ? 'es' : '');
+    }
+    lastPage = Math.max(1, Math.ceil(filteredCharacters.length / rowsPerPage));
+    currentPage = 1;
+    renderTable(currentPage);
+}
+
+// ── Render table ───────────────────────────────────────────────────────────
 
 function renderTable(page) {
-    const start = (page - 1) * rowsPerPage;
-    const end = start + rowsPerPage;
-    const tableBody = document.querySelector('#characters-table tbody');
-    tableBody.innerHTML = '';
-	
-	const pagechars = characters.slice(start, end)
+    var start = (page - 1) * rowsPerPage;
+    var end = Math.min(start + rowsPerPage, filteredCharacters.length);
+    var pagechars = filteredCharacters.slice(start, end);
 
-	const tableHdr = `<th>Frequency Rank</th><th>Character</th><th>Pinyin</th><th>Example</th>${showEng ? `<th>English</th>`:``}`
-    const rows = pagechars.map(item => `
-        <tr ${item.extraexample ? ` title="${item.extraexample}"` : ''} >
-            <td>${item.rank}</td>
-			<td>${item.char}</td>
-            <td>${item.pinyin}</td>
-            <td>${item.example}</td>
-			${showEng ? `<td>${item.english ? `${item.english}` : ''}</td>`:``}
+    // ── Table head ──────────────────────────────────────────────────────
+    var thead = document.querySelector('#characters-table thead');
+    thead.innerHTML = '<tr><th>#</th><th>字</th><th>Pinyin</th><th>Example</th><th class="col-eng">English</th></tr>';
 
-        </tr>
-    `).join('');
-	
-    tableBody.innerHTML = tableHdr + rows;
+    // ── Table body ──────────────────────────────────────────────────────
+    var tbody = document.querySelector('#characters-table tbody');
+    var rows = pagechars.map(function(item) {
+        var engCell = '<td class="col-eng">' + escapeHtml(item.english || '') + '</td>';
+        var exampleHtml = escapeHtml(item.example || '');
+        var exampleTitle = item.extraexample
+            ? ' title="' + escapeHtml(item.extraexample) + '"'
+            : '';
+        var rowTitle = item.english ? ' title="' + escapeHtml(item.english) + '"' : '';
+        return '<tr' + rowTitle + '>' +
+            '<td>' + escapeHtml(item.rank) + '</td>' +
+            '<td>' + escapeHtml(item.char) + '</td>' +
+            '<td>' + escapeHtml(item.pinyin) + '</td>' +
+            '<td' + exampleTitle + '>' + exampleHtml + '</td>' +
+            engCell +
+            '</tr>';
+    }).join('');
+    tbody.innerHTML = rows;
 
-    document.querySelector('.prev').disabled = page === 1;
-    document.querySelector('.next').disabled = page === lastPage;
-	document.getElementById("infospan").textContent=`Page ${page} of ${lastPage}`;
+    // ── Pagination state ────────────────────────────────────────────────
+    document.querySelector('.prev').disabled = (page === 1);
+    document.querySelector('.next').disabled = (page === lastPage);
 
-	var charGrid = document.getElementById("cbare");
-	const seen = new Set();
-	pagechars.forEach(item => { seen.add(item.char) });
-	charGrid.innerHTML = Array.from(seen)
-		.map(c => `<div class="char-cell">${c}</div>`)
-		.join('');
-	
-	const params = new URLSearchParams(window.location.search);
+    // ── Page info ───────────────────────────────────────────────────────
+    var total = filteredCharacters.length;
+    var showing = pagechars.length > 0
+        ? ((page - 1) * rowsPerPage + 1) + '–' + end
+        : '0–0';
+    document.getElementById('infospan').textContent =
+        'Showing ' + showing + ' of ' + total +
+        (searchQuery ? ' (filtered from ' + characters.length + ')' : '');
+
+    // ── Character grid ──────────────────────────────────────────────────
+    var charGrid = document.getElementById('cbare');
+    var seen = new Set();
+    pagechars.forEach(function(item) { seen.add(item.char); });
+    charGrid.innerHTML = Array.from(seen)
+        .map(function(c) { return '<div class="char-cell">' + escapeHtml(c) + '</div>'; })
+        .join('');
+
+    // ── Subtitle — rank range ───────────────────────────────────────────
+    if (pagechars.length > 0) {
+        var minRank = pagechars[0].rank;
+        var maxRank = pagechars[pagechars.length - 1].rank;
+        document.getElementById('header-sub').textContent =
+            'Frequency ranks ' + minRank + '–' + maxRank +
+            ' · ' + total + ' entries';
+    }
+
+    // ── URL state ───────────────────────────────────────────────────────
+    var params = new URLSearchParams(window.location.search);
     params.set('page', page);
-    window.history.pushState({}, '', `${window.location.pathname}?${params.toString()}`);
-    params.set('eng', showEng);
-    window.history.pushState({}, '', `${window.location.pathname}?${params.toString()}`);
-
+    if (showEng) params.set('eng', '1'); else params.delete('eng');
+    window.history.replaceState({}, '', window.location.pathname + '?' + params.toString());
 }
+
+// ── Pagination ─────────────────────────────────────────────────────────────
 
 function changePage(offset) {
-    currentPage += offset;	
+    currentPage += offset;
     renderTable(currentPage);
 }
 
-function jumpToPage( jumpPage ) {
-	
-	if( jumpPage && ( jumpPage == 1 ) )
-		currentPage = jumpPage
-	else if( jumpPage && ( jumpPage == -1 ) )
-		currentPage = lastPage
-	else {
-        const pageInput = document.getElementById('jump-page').value;
-        const page = parseInt(pageInput, 10);
-        if (page >= 1 && page <= lastPage) {
-            currentPage = page;
+function jumpToPage(jumpPage) {
+    if (jumpPage === 1) {
+        currentPage = 1;
+    } else if (jumpPage === -1) {
+        currentPage = lastPage;
+    } else {
+        var val = parseInt(document.getElementById('jump-page').value, 10);
+        if (val >= 1 && val <= lastPage) {
+            currentPage = val;
         } else {
-            alert('Please enter a valid page number.');
-			return;
+            alert('Please enter a page number between 1 and ' + lastPage + '.');
+            return;
         }
-	}
-	
+    }
     renderTable(currentPage);
 }
 
-function parseBoolean(str) {
-    return str.toLowerCase() === 'true';
-}
+// ── Data init ──────────────────────────────────────────────────────────────
 
-// ── Load characters from a parsed JSON array ───────────────────────────
 function initFromData(data, sourceLabel) {
     characters = data;
     dataSourceLabel = sourceLabel;
-    lastPage = Math.ceil(characters.length / rowsPerPage);
+    filteredCharacters = data;
+    lastPage = Math.max(1, Math.ceil(data.length / rowsPerPage));
 
-    const params = new URLSearchParams(window.location.search);
-    const page = parseInt(params.get('page'));
-    if (page)
-        currentPage = Math.min(Math.max(page, 1), lastPage);
+    var params = new URLSearchParams(window.location.search);
+    var page = parseInt(params.get('page'));
+    if (page) currentPage = Math.min(Math.max(page, 1), lastPage);
 
-    // Fix: parse the 'eng' param properly
-    const engParam = params.get('eng');
-    showEng = (engParam === 'true' || engParam === '1');
-    document.getElementById('toggleEnglish').checked = showEng;
+    // English on by default; only disable if eng=0 in URL
+    showEng = params.get('eng') !== '0';
+    setToggleActive('toggle-eng', showEng);
+    if (!showEng) {
+        document.body.classList.add('hide-eng');
+    }
 
     document.getElementById('datasource').textContent =
-        'Loaded: ' + dataSourceLabel + ' (' + characters.length + ' entries)';
+        'Loaded: ' + sourceLabel + ' (' + data.length + ' entries)';
 
-    console.log('launchPage currentPage', currentPage, 'source', sourceLabel);
-    renderTable(currentPage);
+    if (studyMode) {
+        document.body.classList.add('study-mode');
+    }
+
+    applySearch();  // renders table with any existing search query
 }
 
-// ── Fetch remote data ──────────────────────────────────────────────────
 function fetchRemote() {
     document.getElementById('datasource').textContent = 'Fetching remote data…';
     fetch(REMOTE_DATA_URL, { method: 'GET' })
-        .then(function(response) {
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-            return response.json();
+        .then(function(r) {
+            if (!r.ok) throw new Error(r.status + ' ' + r.statusText);
+            return r.json();
         })
-        .then(function(data) {
-            initFromData(data, REMOTE_DATA_URL);
-        })
-        .catch(function(error) {
-            console.error('Fetch error:', error);
+        .then(function(data) { initFromData(data, REMOTE_DATA_URL); })
+        .catch(function(err) {
+            console.error('Fetch error:', err);
             document.getElementById('datasource').textContent =
-                'Remote fetch failed: ' + error.message;
+                'Remote fetch failed: ' + err.message;
         });
 }
 
-// ── File input handler ─────────────────────────────────────────────────
-document.getElementById('local-data').addEventListener('change', function(ev) {
-    const file = ev.target.files[0];
-    if (!file) return;
+// ── Toggle: dark mode ──────────────────────────────────────────────────────
 
-    const reader = new FileReader();
+function applyDarkMode(on) {
+    darkMode = on;
+    document.documentElement.setAttribute('data-theme', on ? 'dark' : 'light');
+    document.getElementById('toggle-dark').textContent = on ? '☀' : '🌙';
+    setToggleActive('toggle-dark', on);
+    try { localStorage.setItem(LS_DARK, on ? '1' : '0'); } catch(e) {}
+}
+
+document.getElementById('toggle-dark').addEventListener('click', function() {
+    applyDarkMode(!darkMode);
+});
+
+// ── Toggle: show English ───────────────────────────────────────────────────
+
+document.getElementById('toggle-eng').addEventListener('click', function() {
+    showEng = !showEng;
+    setToggleActive('toggle-eng', showEng);
+    if (showEng) {
+        document.body.classList.remove('hide-eng');
+    } else {
+        document.body.classList.add('hide-eng');
+    }
+    renderTable(currentPage);
+});
+
+// ── Toggle: study mode ─────────────────────────────────────────────────────
+
+document.getElementById('toggle-study').addEventListener('click', function() {
+    studyMode = !studyMode;
+    setToggleActive('toggle-study', studyMode);
+    if (studyMode) {
+        document.body.classList.add('study-mode');
+    } else {
+        document.body.classList.remove('study-mode');
+    }
+});
+
+// ── Search input ───────────────────────────────────────────────────────────
+
+var searchTimer = null;
+document.getElementById('search-input').addEventListener('input', function() {
+    searchQuery = this.value;
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(function() {
+        applySearch();
+    }, 200);
+});
+
+// Clear search on Escape
+document.getElementById('search-input').addEventListener('keydown', function(ev) {
+    if (ev.key === 'Escape') {
+        this.value = '';
+        searchQuery = '';
+        applySearch();
+    }
+});
+
+// ── Keyboard navigation ────────────────────────────────────────────────────
+
+document.addEventListener('keydown', function(ev) {
+    // Don't capture if focus is in an input (except Escape handled above)
+    var tag = document.activeElement ? document.activeElement.tagName : '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+
+    if (ev.key === 'ArrowLeft') {
+        ev.preventDefault();
+        if (currentPage > 1) changePage(-1);
+    } else if (ev.key === 'ArrowRight') {
+        ev.preventDefault();
+        if (currentPage < lastPage) changePage(1);
+    }
+});
+
+// ── File input ─────────────────────────────────────────────────────────────
+
+document.getElementById('local-data').addEventListener('change', function(ev) {
+    var file = ev.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
     reader.onload = function(e) {
         try {
-            const data = JSON.parse(e.target.result);
-            initFromData(data, file.name);
+            initFromData(JSON.parse(e.target.result), file.name);
         } catch (err) {
             alert('Failed to parse JSON: ' + err.message);
             document.getElementById('datasource').textContent =
@@ -141,16 +292,17 @@ document.getElementById('local-data').addEventListener('change', function(ev) {
     reader.readAsText(file);
 });
 
-document.getElementById('toggleEnglish').addEventListener('change', function() {
-	showEng = this.checked
-	renderTable(currentPage);
-});
-
+// ── Startup ────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Check for a ?source= URL param pointing to an alternate data URL
-    const params = new URLSearchParams(window.location.search);
-    const sourceParam = params.get('source');
+    // Restore dark mode preference
+    var savedDark = '0';
+    try { savedDark = localStorage.getItem(LS_DARK) || '0'; } catch(e) {}
+    applyDarkMode(savedDark === '1');
+
+    // Check source param
+    var params = new URLSearchParams(window.location.search);
+    var sourceParam = params.get('source');
     if (sourceParam) {
         document.getElementById('datasource').textContent = 'Fetching ' + sourceParam + '…';
         fetch(sourceParam, { method: 'GET' })

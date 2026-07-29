@@ -1,9 +1,11 @@
 /* ═══════════════════════════════════════════════════════════════════════════
    Chinese Character Study — Modern Minimalist
-   Greyscale palette with subtle pale accents.
+   Greyscale palette with subtle pale accents.  Light + Dark themes.
    ═══════════════════════════════════════════════════════════════════════════ */
 
-:root {
+/* ── Light theme (default) ───────────────────────────────────────────────── */
+:root,
+[data-theme="light"] {
     --bg:            #f6f5f4;
     --surface:       #ffffff;
     --text:          #1c1c1c;
@@ -11,37 +13,66 @@
     --text-faint:    #b0b0b0;
     --border:        #e6e5e3;
     --border-light:  #f0efed;
-    --accent:        #e9e5f2;   /* very pale lavender */
-    --accent-alt:    #e5edf2;   /* very pale blue-grey */
     --hover:         #f2f1f0;
+    --char-bg:       #fafaf9;
+    --char-border:   #ecebe9;
     --btn-bg:        #2d2d2d;
     --btn-hover:     #1a1a1a;
     --btn-disabled:  #c5c5c5;
-    --char-bg:       #fafaf9;
-    --char-border:   #ecebe9;
+    --toggle-off:    #e5e5e3;
+    --toggle-on:     #2d2d2d;
+    --toggle-text:   #555;
+    --toggle-text-on:#fff;
     --shadow-sm:     0 1px 2px rgba(0,0,0,0.04);
     --shadow-md:     0 2px 8px rgba(0,0,0,0.06);
-    --radius:        8px;
-    --radius-sm:     5px;
-    --font:          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-                     'Helvetica Neue', Arial, sans-serif;
+    --study-hidden:  #d5d5d3;
+    --search-bg:     #fafaf9;
+    --input-bg:      #ffffff;
 }
 
+/* ── Dark theme ──────────────────────────────────────────────────────────── */
+[data-theme="dark"] {
+    --bg:            #1a1a1c;
+    --surface:       #242426;
+    --text:          #e4e4e4;
+    --text-muted:    #9a9a9a;
+    --text-faint:    #666;
+    --border:        #38383a;
+    --border-light:  #303032;
+    --hover:         #2c2c2e;
+    --char-bg:       #2a2a2c;
+    --char-border:   #363638;
+    --btn-bg:        #e4e4e4;
+    --btn-hover:     #ffffff;
+    --btn-disabled:  #444;
+    --toggle-off:    #38383a;
+    --toggle-on:     #e4e4e4;
+    --toggle-text:   #9a9a9a;
+    --toggle-text-on:#1a1a1c;
+    --shadow-sm:     0 1px 2px rgba(0,0,0,0.2);
+    --shadow-md:     0 2px 12px rgba(0,0,0,0.25);
+    --study-hidden:  #48484a;
+    --search-bg:     #2a2a2c;
+    --input-bg:      #2a2a2c;
+}
+
+/* ── Base ────────────────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: var(--font);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                 'Helvetica Neue', Arial, sans-serif;
     font-size: 15px;
     line-height: 1.6;
     color: var(--text);
     background: var(--bg);
     -webkit-font-smoothing: antialiased;
+    transition: background 0.2s, color 0.2s;
 }
 
 /* ── Container ───────────────────────────────────────────────────────────── */
-
 .container {
     max-width: 900px;
     margin: 40px auto;
@@ -49,6 +80,7 @@ body {
     background: var(--surface);
     border-radius: 12px;
     box-shadow: var(--shadow-md);
+    transition: background 0.2s, box-shadow 0.2s;
 }
 
 @media (max-width: 960px) {
@@ -60,9 +92,17 @@ body {
 }
 
 /* ── Header ──────────────────────────────────────────────────────────────── */
+.header-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
 
 h1 {
-    margin: 0 0 8px;
+    margin: 0 0 4px;
     font-size: 22px;
     font-weight: 600;
     color: var(--text);
@@ -70,15 +110,89 @@ h1 {
 }
 
 .header-sub {
-    margin: 0 0 28px;
+    margin: 0;
     font-size: 13px;
     color: var(--text-muted);
 }
 
-/* ── Character Grid (large display) ──────────────────────────────────────── */
+/* ── Toggle buttons ──────────────────────────────────────────────────────── */
+.toggle-group {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
 
+.toggle-btn {
+    padding: 6px 14px;
+    font-size: 13px;
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--toggle-text);
+    background: var(--toggle-off);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+
+.toggle-btn:hover {
+    border-color: var(--text-muted);
+}
+
+.toggle-btn[data-active="true"] {
+    color: var(--toggle-text-on);
+    background: var(--toggle-on);
+    border-color: var(--toggle-on);
+}
+
+#toggle-dark {
+    font-size: 16px;
+    padding: 6px 10px;
+    line-height: 1;
+}
+
+/* ── Search bar ──────────────────────────────────────────────────────────── */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--text);
+    background: var(--input-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.15s, background 0.2s;
+}
+
+.search-input:focus {
+    border-color: var(--text-muted);
+}
+
+.search-input::placeholder {
+    color: var(--text-faint);
+}
+
+.search-info {
+    font-size: 12px;
+    color: var(--text-faint);
+    white-space: nowrap;
+    min-width: 60px;
+    text-align: right;
+}
+
+/* ── Character Grid ──────────────────────────────────────────────────────── */
 .char-grid-section {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 .char-grid-label {
@@ -104,14 +218,14 @@ h1 {
     font-size: 40px;
     background: var(--char-bg);
     border: 1px solid var(--char-border);
-    border-radius: var(--radius-sm);
+    border-radius: 5px;
     line-height: 1;
+    transition: background 0.2s, border-color 0.2s;
 }
 
 /* ── Detail Table ────────────────────────────────────────────────────────── */
-
 .detail-section {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 #characters-table {
@@ -120,7 +234,7 @@ h1 {
     font-size: 14px;
 }
 
-#characters-table th {
+#characters-table thead th {
     padding: 10px 12px;
     text-align: left;
     font-weight: 600;
@@ -136,6 +250,7 @@ h1 {
     padding: 10px 12px;
     border-bottom: 1px solid var(--border-light);
     vertical-align: middle;
+    transition: color 0.15s;
 }
 
 #characters-table tbody tr:hover {
@@ -159,36 +274,24 @@ h1 {
     color: var(--text-muted);
 }
 
-/* ── Controls row ────────────────────────────────────────────────────────── */
+/* ── English column visibility ──────────────────────────────────────────── */
+.hide-eng .col-eng {
+    display: none;
+}
 
+/* ── Study mode — hide detail table ─────────────────────────────────────── */
+.study-mode .detail-section,
+.study-mode .controls,
+.study-mode .pagination {
+    display: none;
+}
+
+/* ── Controls ────────────────────────────────────────────────────────────── */
 .controls {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-bottom: 24px;
-    padding: 12px 16px;
-    background: var(--char-bg);
-    border-radius: var(--radius);
-    border: 1px solid var(--border-light);
-}
-
-.toggle-label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 13px;
-    color: var(--text-muted);
-    cursor: pointer;
-    user-select: none;
-}
-
-.toggle-label input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    accent-color: #555;
-    cursor: pointer;
+    justify-content: center;
+    margin-bottom: 16px;
 }
 
 .page-info {
@@ -197,7 +300,6 @@ h1 {
 }
 
 /* ── Pagination ──────────────────────────────────────────────────────────── */
-
 .pagination {
     display: flex;
     align-items: center;
@@ -210,12 +312,12 @@ h1 {
 .pagination button {
     padding: 8px 16px;
     font-size: 13px;
-    font-family: var(--font);
+    font-family: inherit;
     font-weight: 500;
-    color: #fff;
+    color: var(--toggle-text-on);
     background: var(--btn-bg);
     border: none;
-    border-radius: var(--radius-sm);
+    border-radius: 5px;
     cursor: pointer;
     transition: background 0.15s;
 }
@@ -245,26 +347,26 @@ h1 {
     width: 70px;
     padding: 7px 10px;
     font-size: 13px;
-    font-family: var(--font);
+    font-family: inherit;
     border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--surface);
+    border-radius: 5px;
+    background: var(--input-bg);
     color: var(--text);
     outline: none;
-    transition: border-color 0.15s;
+    transition: border-color 0.15s, background 0.2s;
 }
 
 .jump-group input[type="number"]:focus {
-    border-color: #aaa;
+    border-color: var(--text-muted);
 }
 
 /* ── File section ────────────────────────────────────────────────────────── */
-
 .file-section {
     padding: 16px;
     background: var(--char-bg);
     border: 1px solid var(--border-light);
-    border-radius: var(--radius);
+    border-radius: 8px;
+    transition: background 0.2s, border-color 0.2s;
 }
 
 .file-label {
@@ -292,12 +394,12 @@ h1 {
 .file-input::file-selector-button {
     padding: 7px 16px;
     font-size: 13px;
-    font-family: var(--font);
+    font-family: inherit;
     font-weight: 500;
     color: var(--text);
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
+    border-radius: 5px;
     cursor: pointer;
     margin-right: 10px;
     transition: background 0.15s;
@@ -313,9 +415,28 @@ h1 {
 }
 
 /* ── Divider ─────────────────────────────────────────────────────────────── */
-
 hr {
     border: none;
     border-top: 1px solid var(--border-light);
     margin: 24px 0;
+}
+
+/* ── Keyboard shortcut hint ──────────────────────────────────────────────── */
+.kbd-hint {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 11px;
+    color: var(--text-faint);
+}
+
+.kbd-hint kbd {
+    display: inline-block;
+    padding: 1px 6px;
+    font-size: 10px;
+    font-family: inherit;
+    color: var(--text-muted);
+    background: var(--char-bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    vertical-align: 1px;
 }
