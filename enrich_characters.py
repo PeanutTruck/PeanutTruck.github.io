@@ -44,12 +44,13 @@ and its pinyin reading, provide a concise English definition and an example
 Chinese word or short phrase that uses this character with this exact reading.
 
 Return ONLY a JSON object with these fields, no other text:
-- "english": a short definition in English under 15 words
+- "english": a definition in English under 30 words
 - "example": the example word/phrase in Chinese characters.  The Chinese example should be annotated with pinyin after it. Example: 的确 （dí què).
 - "extraexample": an alternate example in chinese characters similar to but different from example and slightly longer, under 10 characters.  The extra example should also be annotated with pinyin after it.
 
 Keep definitions precise and dictionary-style. For characters with multiple
-readings, the definition must match THIS SPECIFIC reading, not the most common one."""
+readings, the definition and examples must match THIS SPECIFIC reading and character, not the most common one.  
+If unsure of any field, market it as UNKNOWN """
 
 def build_user_prompt(char: str, pinyin: str) -> str:
     return f'Character: {char}\nPinyin: {pinyin}'

@@ -106,6 +106,9 @@ def parse_wordlist(file_content):
         rank = parts[0]
         char = parts[1]
         pinyin_part = parts[4]
+
+        englishdef = parts[5]
+        
         
         # Extract all pinyin variations (handle cases like de/di2/di4)
         pinyin_variations = []
@@ -142,7 +145,8 @@ def parse_wordlist(file_content):
             entries.append({
                 "rank": rank,
                 "char": char,
-                "pinyin": variation["accent_tone"]
+                "pinyin": variation["accent_tone"],
+                "englishdef": englishdef
             })
     
     return entries
