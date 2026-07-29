@@ -19,7 +19,7 @@ function renderTable(page) {
 
 	const tableHdr = `<th>Frequency Rank</th><th>Character</th><th>Pinyin</th><th>Example</th>${showEng ? `<th>English</th>`:``}`
     const rows = pagechars.map(item => `
-        <tr ${item.english ? ` title="${item.english}"` : ''} >
+        <tr ${item.extraexample ? ` title="${item.extraexample}"` : ''} >
             <td>${item.rank}</td>
 			<td>${item.char}</td>
             <td>${item.pinyin}</td>
