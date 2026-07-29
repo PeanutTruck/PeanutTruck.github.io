@@ -80,15 +80,16 @@ function renderTable(page) {
     var rows = pagechars.map(function(item) {
         var engCell = '<td class="col-eng">' + escapeHtml(item.english || '') + '</td>';
         var exampleHtml = escapeHtml(item.example || '');
-        var exampleTitle = item.extraexample
-            ? ' title="' + escapeHtml(item.extraexample) + '"'
-            : '';
+        if (item.extraexample) {
+            exampleHtml += '<span class="extra-example">' +
+                escapeHtml(item.extraexample) + '</span>';
+        }
         var rowTitle = item.english ? ' title="' + escapeHtml(item.english) + '"' : '';
         return '<tr' + rowTitle + '>' +
             '<td>' + escapeHtml(item.rank) + '</td>' +
             '<td>' + escapeHtml(item.char) + '</td>' +
             '<td>' + escapeHtml(item.pinyin) + '</td>' +
-            '<td' + exampleTitle + '>' + exampleHtml + '</td>' +
+            '<td>' + exampleHtml + '</td>' +
             engCell +
             '</tr>';
     }).join('');
@@ -186,16 +187,24 @@ function initFromData(data, sourceLabel) {
 
 function fetchRemote() {
     document.getElementById('datasource').textContent = 'Fetching remote data…';
-    fetch(REMOTE_DATA_URL, { method: 'GET' })
+
+    var controller = new AbortController();
+    var timeout = setTimeout(function() { controller.abort(); }, 15000);
+
+    fetch(REMOTE_DATA_URL, { method: 'GET', signal: controller.signal })
         .then(function(r) {
+            clearTimeout(timeout);
             if (!r.ok) throw new Error(r.status + ' ' + r.statusText);
             return r.json();
         })
         .then(function(data) { initFromData(data, REMOTE_DATA_URL); })
         .catch(function(err) {
+            clearTimeout(timeout);
             console.error('Fetch error:', err);
-            document.getElementById('datasource').textContent =
-                'Remote fetch failed: ' + err.message;
+            var msg = err.name === 'AbortError'
+                ? 'Fetch timed out after 15s'
+                : 'Fetch failed: ' + err.message;
+            document.getElementById('datasource').textContent = msg;
         });
 }
 
@@ -305,13 +314,22 @@ document.addEventListener('DOMContentLoaded', function() {
     var sourceParam = params.get('source');
     if (sourceParam) {
         document.getElementById('datasource').textContent = 'Fetching ' + sourceParam + '…';
-        fetch(sourceParam, { method: 'GET' })
-            .then(function(r) { return r.json(); })
+        var ctrl = new AbortController();
+        var to = setTimeout(function() { ctrl.abort(); }, 15000);
+        fetch(sourceParam, { method: 'GET', signal: ctrl.signal })
+            .then(function(r) {
+                clearTimeout(to);
+                if (!r.ok) throw new Error(r.status + ' ' + r.statusText);
+                return r.json();
+            })
             .then(function(data) { initFromData(data, sourceParam); })
             .catch(function(err) {
+                clearTimeout(to);
                 console.error('Source fetch error:', err);
                 document.getElementById('datasource').textContent =
-                    'Source fetch failed: ' + err.message;
+                    err.name === 'AbortError'
+                        ? 'Fetch timed out after 15s'
+                        : 'Fetch failed: ' + err.message;
             });
     } else {
         fetchRemote();
