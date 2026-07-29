@@ -4,6 +4,10 @@ const rowsPerPage = 10;
 let currentPage = 1;
 var lastPage = 0;
 var showEng = 0;
+var dataSourceLabel = '';
+
+// ── Default remote data URL ────────────────────────────────────────────
+const REMOTE_DATA_URL = 'https://peanuttruck.github.io/data.json';
 
 function renderTable(page) {
     const start = (page - 1) * rowsPerPage;
@@ -90,44 +94,67 @@ function parseBoolean(str) {
     return str.toLowerCase() === 'true';
 }
 
-function launchPage() {
+// ── Load characters from a parsed JSON array ───────────────────────────
+function initFromData(data, sourceLabel) {
+    characters = data;
+    dataSourceLabel = sourceLabel;
+    lastPage = Math.ceil(characters.length / rowsPerPage);
 
-fetch('https://peanuttruck.github.io/data.json', { 
-  method: 'GET'
-})
-.then(function(response) {
-  if (!response.ok) {
-    throw new Error('Network response was not ok ' + response.statusText);
-  }
-  return response.text();
-})
-.then(function(jsontext) {
-	
-    characters = JSON.parse(jsontext);
-	lastPage = Math.ceil(characters.length / rowsPerPage);
-	const params = new URLSearchParams(window.location.search);
-	const page = parseInt(params.get('page'));
-	if ( page )
-		currentPage = Math.min(Math.max( page, 1), lastPage);
-	showEng = parseBoolean(params.get('eng') ? `params.get('eng')` : `` );
-	toggle = document.getElementById('toggleEnglish').checked = showEng;
+    const params = new URLSearchParams(window.location.search);
+    const page = parseInt(params.get('page'));
+    if (page)
+        currentPage = Math.min(Math.max(page, 1), lastPage);
 
+    // Fix: parse the 'eng' param properly
+    const engParam = params.get('eng');
+    showEng = (engParam === 'true' || engParam === '1');
+    document.getElementById('toggleEnglish').checked = showEng;
 
-	console.log("launchPage currentPage ",currentPage);
-	
-	renderTable(currentPage);
-  
-})
-.catch(function(error) {
-  console.error('There has been a problem with your fetch operation:', error);
-});
+    document.getElementById('datasource').textContent =
+        'Loaded: ' + dataSourceLabel + ' (' + characters.length + ' entries)';
 
-
- 
-	
-
-		
+    console.log('launchPage currentPage', currentPage, 'source', sourceLabel);
+    renderTable(currentPage);
 }
+
+// ── Fetch remote data ──────────────────────────────────────────────────
+function fetchRemote() {
+    document.getElementById('datasource').textContent = 'Fetching remote data…';
+    fetch(REMOTE_DATA_URL, { method: 'GET' })
+        .then(function(response) {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(function(data) {
+            initFromData(data, REMOTE_DATA_URL);
+        })
+        .catch(function(error) {
+            console.error('Fetch error:', error);
+            document.getElementById('datasource').textContent =
+                'Remote fetch failed: ' + error.message;
+        });
+}
+
+// ── File input handler ─────────────────────────────────────────────────
+document.getElementById('local-data').addEventListener('change', function(ev) {
+    const file = ev.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            const data = JSON.parse(e.target.result);
+            initFromData(data, file.name);
+        } catch (err) {
+            alert('Failed to parse JSON: ' + err.message);
+            document.getElementById('datasource').textContent =
+                'Parse error: ' + err.message;
+        }
+    };
+    reader.readAsText(file);
+});
 
 document.getElementById('toggleEnglish').addEventListener('change', function() {
 	showEng = this.checked
@@ -135,4 +162,21 @@ document.getElementById('toggleEnglish').addEventListener('change', function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => launchPage());
+document.addEventListener('DOMContentLoaded', function() {
+    // Check for a ?source= URL param pointing to an alternate data URL
+    const params = new URLSearchParams(window.location.search);
+    const sourceParam = params.get('source');
+    if (sourceParam) {
+        document.getElementById('datasource').textContent = 'Fetching ' + sourceParam + '…';
+        fetch(sourceParam, { method: 'GET' })
+            .then(function(r) { return r.json(); })
+            .then(function(data) { initFromData(data, sourceParam); })
+            .catch(function(err) {
+                console.error('Source fetch error:', err);
+                document.getElementById('datasource').textContent =
+                    'Source fetch failed: ' + err.message;
+            });
+    } else {
+        fetchRemote();
+    }
+});

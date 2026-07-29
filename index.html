@@ -44,7 +44,15 @@
             <label for="jump-page">Jump to page:</label>
             <input type="number" id="jump-page" min="1" placeholder="Page number">
             <button onclick="jumpToPage()">Go</button>
-		
+
+        </div>
+
+        <hr>
+
+        <div class="local-file">
+            <label for="local-data">Local data.json:</label>
+            <input type="file" id="local-data" accept=".json">
+            <span id="datasource"></span>
         </div>
     </div>
     <script src="script.js"></script>
