@@ -3,3 +3,4 @@ data_enriched.json
 __pycache__/
 *.swp
 *.swo
+*~

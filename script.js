@@ -27,6 +27,21 @@ function escapeHtml(s) {
         .replace(/"/g, '&quot;');
 }
 
+// ── Download data ──────────────────────────────────────────────────────────
+
+function downloadData() {
+    if (!characters || characters.length === 0) return;
+    var blob = new Blob([JSON.stringify(characters, null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'data.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
 // ── Toggle button helpers ──────────────────────────────────────────────────
 
 function setToggleActive(id, active) {
@@ -177,6 +192,7 @@ function initFromData(data, sourceLabel) {
 
     document.getElementById('datasource').textContent =
         'Loaded: ' + sourceLabel + ' (' + data.length + ' entries)';
+    document.getElementById('btn-download').style.display = '';
 
     if (studyMode) {
         document.body.classList.add('study-mode');

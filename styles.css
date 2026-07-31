@@ -423,6 +423,24 @@ h1 {
     color: var(--text-faint);
 }
 
+.download-btn {
+    padding: 6px 14px;
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--toggle-text-on);
+    background: var(--btn-bg);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.15s;
+    margin-left: auto;
+}
+
+.download-btn:hover {
+    background: var(--btn-hover);
+}
+
 /* ── Divider ─────────────────────────────────────────────────────────────── */
 hr {
     border: none;
