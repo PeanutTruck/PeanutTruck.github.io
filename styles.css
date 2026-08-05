@@ -314,10 +314,8 @@ h1 {
     font-style: italic;
 }
 
-/* ── Study mode — hide detail table ─────────────────────────────────────── */
-.study-mode .detail-section,
-.study-mode .controls,
-.study-mode .pagination {
+/* ── Study mode — hide detail table only ────────────────────────────────── */
+.study-mode .detail-section {
     display: none;
 }
 
