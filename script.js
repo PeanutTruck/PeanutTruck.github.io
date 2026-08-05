@@ -97,6 +97,41 @@ function speakRow(char, example, extraexample) {
     speechSynthesis.speak(utter);
 }
 
+// ── TTS: Read all characters in the grid ───────────────────────────────────
+
+function speakGrid() {
+    speechSynthesis.cancel();
+
+    var gridCells = document.querySelectorAll('#cbare .char-cell');
+    var parts = [];
+
+    gridCells.forEach(function(cell) {
+        var ch = cell.textContent.trim();
+        if (!ch) return;
+
+        var entries = characters.filter(function(e) { return e.char === ch; });
+        if (entries.length === 0) return;
+
+        parts.push(ch);
+        entries.forEach(function(entry) {
+            if (entry.example) {
+                parts.push(entry.example.replace(/\([^)]*\)/g, '').trim());
+            }
+            if (entry.extraexample) {
+                parts.push(entry.extraexample.replace(/\([^)]*\)/g, '').trim());
+            }
+        });
+    });
+
+    if (parts.length === 0) return;
+
+    var text = parts.join('\u3002');
+    var utter = new SpeechSynthesisUtterance(text);
+    utter.lang = 'zh-CN';
+    utter.rate = 0.9;
+    speechSynthesis.speak(utter);
+}
+
 // ── Render table ───────────────────────────────────────────────────────────
 
 function renderTable(page) {

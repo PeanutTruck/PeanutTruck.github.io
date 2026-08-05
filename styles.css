@@ -196,12 +196,38 @@ h1 {
 }
 
 .char-grid-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.6px;
     color: var(--text-muted);
     margin-bottom: 10px;
+}
+
+.speak-grid-btn {
+    padding: 3px 7px;
+    font-size: 14px;
+    line-height: 1;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.15s, background 0.15s, border-color 0.15s;
+}
+
+.speak-grid-btn:hover {
+    opacity: 1;
+    background: var(--hover);
+    border-color: var(--text-muted);
+}
+
+.speak-grid-btn:active {
+    background: var(--btn-bg);
+    color: var(--toggle-text-on);
 }
 
 .char-grid {
