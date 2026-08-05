@@ -21,11 +21,12 @@ import os
 import sys
 import time
 import requests
+import traceback
 
 # ── DeepSeek API configuration ──────────────────────────────────────────────
 #DEEPSEEK_API_KEY = ""          # resolved at runtime from --api-key, api_key file, or env
 DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1"
-DEEPSEEK_MODEL    = "deepseek-chat"
+DEEPSEEK_MODEL    = "deepseek-v4-pro"
 
 # ── Processing defaults ─────────────────────────────────────────────────────
 SCRIPT_DIR  = os.path.dirname(os.path.abspath(__file__))
@@ -72,7 +73,7 @@ def call_deepseek(char: str, pinyin: str,  DEEPSEEK_API_KEY: str) -> dict | None
             {"role": "user", "content": build_user_prompt(char, pinyin)},
         ],
         "temperature": 0.3,
-        "max_tokens": 200,
+        "max_tokens": 2048,
         "response_format": {"type": "json_object"},
     }
 
@@ -88,6 +89,7 @@ def call_deepseek(char: str, pinyin: str,  DEEPSEEK_API_KEY: str) -> dict | None
             if resp.status_code == 200:
                 body = resp.json()
                 content = body["choices"][0]["message"]["content"]
+                print(f"Content {content} body {body}")
                 parsed = json.loads(content)
                 return parsed
 
@@ -96,14 +98,15 @@ def call_deepseek(char: str, pinyin: str,  DEEPSEEK_API_KEY: str) -> dict | None
                 time.sleep(RETRY_DELAY)
                 continue
 
-            print(f"  HTTP {resp.status_code}: {resp.text[:200]}", file=sys.stderr)
+            print(f"  HTTP {resp.status_code}: {resp.text}", file=sys.stderr)
             if attempt < MAX_RETRIES:
                 time.sleep(RETRY_DELAY * attempt)
                 continue
             return None
 
         except (requests.RequestException, json.JSONDecodeError, KeyError) as e:
-            print(f"  Error (attempt {attempt}/{MAX_RETRIES}): {e}", file=sys.stderr)
+            print(f"  Error (attempt {attempt}/{MAX_RETRIES}):", file=sys.stderr)
+            traceback.print_exc(file=sys.stderr)
             if attempt < MAX_RETRIES:
                 time.sleep(RETRY_DELAY * attempt)
             else:
@@ -270,7 +273,6 @@ def main():
 
     results = list(existing_results)
     success_count = 0
-    fail_count = 0
 
     print(f"Starting API calls (delay={args.delay}s)...", file=sys.stderr)
 
@@ -284,9 +286,10 @@ def main():
         api_result = call_deepseek(char, pinyin, DEEPSEEK_API_KEY)
         
         if api_result is None:
-            print(f"FAILED entry {i}, content {entry}", file=sys.stderr)
-            fail_count += 1
-            # don't record garbage if call fails
+            print(f"\nFATAL: failed to process entry rank={rank} char={char} pinyin={pinyin}", file=sys.stderr)
+            print(f"  Last successful entry: {results[-1] if results else 'none'}", file=sys.stderr)
+            print(f"  Output file updated at: {args.output}", file=sys.stderr)
+            sys.exit(1)
         else:
             english = api_result.get("english", "").strip()
             example = api_result.get("example", "").strip()
@@ -305,7 +308,7 @@ def main():
             time.sleep(args.delay)
 
     # ── Summary ─────────────────────────────────────────────────────────
-    print(f"\nDone.  Success: {success_count}  Failed: {fail_count}  "
+    print(f"\nDone.  Success: {success_count}  "
           f"Total in output: {len(results)}", file=sys.stderr)
     print(f"Output written to {args.output}", file=sys.stderr)
 

@@ -79,6 +79,24 @@ function applySearch() {
     renderTable(currentPage);
 }
 
+// ── TTS (Text-to-Speech) ───────────────────────────────────────────────────
+
+function speakRow(char, example, extraexample) {
+    speechSynthesis.cancel();
+    var parts = [char];
+    if (example) {
+        parts.push(example.replace(/\([^)]*\)/g, '').trim());
+    }
+    if (extraexample) {
+        parts.push(extraexample.replace(/\([^)]*\)/g, '').trim());
+    }
+    var text = parts.join('\u3002');
+    var utter = new SpeechSynthesisUtterance(text);
+    utter.lang = 'zh-CN';
+    utter.rate = 0.9;
+    speechSynthesis.speak(utter);
+}
+
 // ── Render table ───────────────────────────────────────────────────────────
 
 function renderTable(page) {
@@ -88,7 +106,7 @@ function renderTable(page) {
 
     // ── Table head ──────────────────────────────────────────────────────
     var thead = document.querySelector('#characters-table thead');
-    thead.innerHTML = '<tr><th>#</th><th>字</th><th>Pinyin</th><th>Example</th><th class="col-eng">English</th></tr>';
+    thead.innerHTML = '<tr><th>#</th><th>字</th><th>Pinyin</th><th>Example</th><th class="col-eng">English</th><th class="col-audio"></th></tr>';
 
     // ── Table body ──────────────────────────────────────────────────────
     var tbody = document.querySelector('#characters-table tbody');
@@ -100,12 +118,18 @@ function renderTable(page) {
                 escapeHtml(item.extraexample) + '</span>';
         }
         var rowTitle = item.english ? ' title="' + escapeHtml(item.english) + '"' : '';
+        var charEsc = escapeHtml(item.char).replace(/'/g, "\\'");
+        var exEsc = escapeHtml(item.example || '').replace(/'/g, "\\'");
+        var exxEsc = escapeHtml(item.extraexample || '').replace(/'/g, "\\'");
         return '<tr' + rowTitle + '>' +
             '<td>' + escapeHtml(item.rank) + '</td>' +
-            '<td>' + escapeHtml(item.char) + '</td>' +
+            '<td>' + charEsc + '</td>' +
             '<td>' + escapeHtml(item.pinyin) + '</td>' +
             '<td>' + exampleHtml + '</td>' +
             engCell +
+            '<td class="col-audio"><button class="speak-btn"' +
+            ' title="Read aloud"' +
+            ' onclick="speakRow(\'' + charEsc + '\', \'' + exEsc + '\', \'' + exxEsc + '\')">🔊</button></td>' +
             '</tr>';
     }).join('');
     tbody.innerHTML = rows;
