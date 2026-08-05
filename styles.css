@@ -441,6 +441,35 @@ h1 {
     background: var(--btn-hover);
 }
 
+/* ── Speak button ────────────────────────────────────────────────────────── */
+.col-audio {
+    width: 40px;
+    text-align: center;
+}
+
+.speak-btn {
+    padding: 4px 8px;
+    font-size: 16px;
+    line-height: 1;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    opacity: 0.5;
+}
+
+.speak-btn:hover {
+    opacity: 1;
+    background: var(--hover);
+    border-color: var(--text-muted);
+}
+
+.speak-btn:active {
+    background: var(--btn-bg);
+    color: var(--toggle-text-on);
+}
+
 /* ── Divider ─────────────────────────────────────────────────────────────── */
 hr {
     border: none;
