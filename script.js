@@ -81,8 +81,32 @@ function applySearch() {
 
 // ── TTS (Text-to-Speech) ───────────────────────────────────────────────────
 
-function speakRow(char, example, extraexample) {
+// ── TTS: shared helper ────────────────────────────────────────────────────
+
+function speakUtterance(text) {
+    if (!window.speechSynthesis) {
+        console.error('speechSynthesis not available');
+        return;
+    }
     speechSynthesis.cancel();
+    var utter = new SpeechSynthesisUtterance(text);
+    utter.lang = 'zh-CN';
+    utter.rate = 0.9;
+    utter.onerror = function(ev) {
+        console.error('TTS error:', ev.error);
+    };
+    // Preload voices (fixes silent-first-speak in some browsers)
+    var voices = speechSynthesis.getVoices();
+    if (voices.length) {
+        var zhVoice = voices.find(function(v) { return v.lang.startsWith('zh'); });
+        if (zhVoice) utter.voice = zhVoice;
+    }
+    speechSynthesis.speak(utter);
+}
+
+// ── TTS: speak a single table row ──────────────────────────────────────────
+
+function speakRow(char, example, extraexample) {
     var parts = [char];
     if (example) {
         parts.push(example.replace(/\([^)]*\)/g, '').trim());
@@ -90,46 +114,50 @@ function speakRow(char, example, extraexample) {
     if (extraexample) {
         parts.push(extraexample.replace(/\([^)]*\)/g, '').trim());
     }
-    var text = parts.join('\u3002');
-    var utter = new SpeechSynthesisUtterance(text);
-    utter.lang = 'zh-CN';
-    utter.rate = 0.9;
-    speechSynthesis.speak(utter);
+    speakUtterance(parts.join('\u3002'));
 }
 
 // ── TTS: Read all characters in the grid ───────────────────────────────────
 
 function speakGrid() {
-    speechSynthesis.cancel();
+    try {
+        var gridCells = document.querySelectorAll('#cbare .char-cell');
+        if (gridCells.length === 0) {
+            console.warn('speakGrid: no char-cell elements found');
+            return;
+        }
 
-    var gridCells = document.querySelectorAll('#cbare .char-cell');
-    var parts = [];
+        var parts = [];
 
-    gridCells.forEach(function(cell) {
-        var ch = cell.textContent.trim();
-        if (!ch) return;
+        gridCells.forEach(function(cell) {
+            var ch = cell.textContent.trim();
+            if (!ch) return;
 
-        var entries = characters.filter(function(e) { return e.char === ch; });
-        if (entries.length === 0) return;
+            var entries = characters.filter(function(e) { return e.char === ch; });
+            if (entries.length === 0) return;
 
-        parts.push(ch);
-        entries.forEach(function(entry) {
-            if (entry.example) {
-                parts.push(entry.example.replace(/\([^)]*\)/g, '').trim());
-            }
-            if (entry.extraexample) {
-                parts.push(entry.extraexample.replace(/\([^)]*\)/g, '').trim());
-            }
+            parts.push(ch);
+            entries.forEach(function(entry) {
+                if (entry.example) {
+                    parts.push(entry.example.replace(/\([^)]*\)/g, '').trim());
+                }
+                if (entry.extraexample) {
+                    parts.push(entry.extraexample.replace(/\([^)]*\)/g, '').trim());
+                }
+            });
         });
-    });
 
-    if (parts.length === 0) return;
+        if (parts.length === 0) {
+            console.warn('speakGrid: no content to speak');
+            return;
+        }
 
-    var text = parts.join('\u3002');
-    var utter = new SpeechSynthesisUtterance(text);
-    utter.lang = 'zh-CN';
-    utter.rate = 0.9;
-    speechSynthesis.speak(utter);
+        var text = parts.join('\u3002');
+        console.log('speakGrid text length:', text.length, 'chars in grid:', gridCells.length);
+        speakUtterance(text);
+    } catch (e) {
+        console.error('speakGrid exception:', e);
+    }
 }
 
 // ── Render table ───────────────────────────────────────────────────────────
