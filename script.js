@@ -16,6 +16,11 @@ var dataSourceLabel = '';
 const REMOTE_DATA_URL = 'https://peanuttruck.github.io/data.json';
 const LS_DARK = 'ccs-dark-mode';
 
+// ── Inline SVG icons ───────────────────────────────────────────────────────
+
+var SVG_PLAY  = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
+var SVG_PAUSE = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
 // ── Utility ────────────────────────────────────────────────────────────────
 
 function escapeHtml(s) {
@@ -151,7 +156,10 @@ function playQueue(queue, i, generation) {
     if (i >= queue.length) {
         gridQueueActive = false;
         gridQueuePaused = false;
-        document.getElementById('btn-pause-grid').style.display = 'none';
+        var pauseBtn = document.getElementById('btn-pause-grid');
+        pauseBtn.classList.remove('active');
+        pauseBtn.innerHTML = SVG_PAUSE;
+        pauseBtn.title = 'Pause';
         return;
     }
     // If paused, wait and poll
@@ -179,13 +187,24 @@ function toggleGridPause() {
     var btn = document.getElementById('btn-pause-grid');
     if (gridQueuePaused) {
         speechSynthesis.pause();
-        btn.textContent = '▶';
+        btn.classList.add('active');
         btn.title = 'Resume';
     } else {
         speechSynthesis.resume();
-        btn.textContent = '⏸';
+        btn.classList.remove('active');
         btn.title = 'Pause';
     }
+}
+
+function stopGrid() {
+    speechSynthesis.cancel();
+    gridQueueActive = false;
+    gridQueuePaused = false;
+    gridQueueGeneration++;
+    var pauseBtn = document.getElementById('btn-pause-grid');
+    pauseBtn.classList.remove('active');
+    pauseBtn.innerHTML = SVG_PAUSE;
+    pauseBtn.title = 'Pause';
 }
 
 // ── TTS: Read all characters in the grid ───────────────────────────────────
@@ -240,8 +259,8 @@ function speakGrid() {
         gridQueuePaused = false;
         gridQueueGeneration++;
         var pauseBtn = document.getElementById('btn-pause-grid');
-        pauseBtn.style.display = '';
-        pauseBtn.textContent = '⏸';
+        pauseBtn.classList.remove('active');
+        pauseBtn.innerHTML = SVG_PAUSE;
         pauseBtn.title = 'Pause';
         playQueue(queue, 0, gridQueueGeneration);
     } catch (e) {
