@@ -252,7 +252,7 @@ h1 {
     border: 1px solid var(--char-border);
     border-radius: 5px;
     line-height: 1;
-    transition: background 0.2s, border-color 0.2s;
+    transition: background 0.2s, border-color 0.2s, filter 0.2s;
 }
 
 /* ── Detail Table ────────────────────────────────────────────────────────── */
@@ -320,9 +320,13 @@ h1 {
     font-style: italic;
 }
 
-/* ── Study mode — hide detail table only ────────────────────────────────── */
+/* ── Study mode — blur grid, hide detail table ─────────────────────────── */
 .study-mode .detail-section {
     display: none;
+}
+
+.study-mode .char-cell {
+    filter: blur(12px);
 }
 
 /* ── Controls ────────────────────────────────────────────────────────────── */

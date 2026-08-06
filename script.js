@@ -124,16 +124,11 @@ function speakUtterance(text) {
 
 function speakRow(char, example, extraexample) {
     var parts = [char];
-	console.log("speakRow")
 
 	const re = /[(（][^)）]+[)）]/gu;
 	example = example.replace( re, '')
 	extraexample = extraexample.replace( re, '')
 
-	console.log( example )
-	console.log( extraexample )
-
-	
     if (example) {
         parts.push( example );
     }
@@ -147,8 +142,12 @@ function speakRow(char, example, extraexample) {
 
 var gridQueueActive = false;
 var gridQueuePaused = false;
+var gridQueueGeneration = 0;
 
-function playQueue(queue, i) {
+function playQueue(queue, i, generation) {
+    // Abort if a newer queue has been started
+    if (generation !== gridQueueGeneration) return;
+
     if (i >= queue.length) {
         gridQueueActive = false;
         gridQueuePaused = false;
@@ -157,7 +156,7 @@ function playQueue(queue, i) {
     }
     // If paused, wait and poll
     if (gridQueuePaused) {
-        setTimeout(function() { playQueue(queue, i); }, 200);
+        setTimeout(function() { playQueue(queue, i, generation); }, 200);
         return;
     }
     var item = queue[i];
@@ -165,11 +164,11 @@ function playQueue(queue, i) {
     utter.lang = item.lang || 'zh-CN';
     utter.rate = item.rate || 0.9;
     utter.onend = function() {
-        setTimeout(function() { playQueue(queue, i + 1); }, item.delayAfter || 0);
+        setTimeout(function() { playQueue(queue, i + 1, generation); }, item.delayAfter || 0);
     };
     utter.onerror = function(ev) {
         console.error('TTS error:', ev.error);
-        setTimeout(function() { playQueue(queue, i + 1); }, item.delayAfter || 0);
+        setTimeout(function() { playQueue(queue, i + 1, generation); }, item.delayAfter || 0);
     };
     speechSynthesis.speak(utter);
 }
@@ -239,11 +238,12 @@ function speakGrid() {
         speechSynthesis.cancel();
         gridQueueActive = true;
         gridQueuePaused = false;
+        gridQueueGeneration++;
         var pauseBtn = document.getElementById('btn-pause-grid');
         pauseBtn.style.display = '';
         pauseBtn.textContent = '⏸';
         pauseBtn.title = 'Pause';
-        playQueue(queue, 0);
+        playQueue(queue, 0, gridQueueGeneration);
     } catch (e) {
         console.error('speakGrid exception:', e);
     }
