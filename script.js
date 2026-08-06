@@ -335,7 +335,7 @@ function renderTable(page) {
     var infoText = tableEntries.length > 0
         ? ((page - 1) * gridCharsPerPage + 1) + '–' + end
         : '0–0';
-    infoText = 'Showing ' + infoText + ' of ' + totalUnique + ' characters' +
+    infoText = 'Page ' + page + ' of ' + lastPage + ' · Showing ' + infoText + ' of ' + totalUnique + ' characters' +
         (searchQuery ? ' (filtered from ' + getUniqueChars(characters).length + ')' : '');
 
     var subText = '';

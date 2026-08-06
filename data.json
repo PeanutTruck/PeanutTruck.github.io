@@ -1089,9 +1089,9 @@
     "rank": "97",
     "char": "只",
     "pinyin": "qí",
-    "example": "只 (qí) UNKNOWN",
-    "extraexample": "只 (qí) UNKNOWN",
-    "english": "UNKNOWN"
+    "example": "只衼 (qí zhī)",
+    "extraexample": "神只 (shén qí)",
+    "english": "A Buddhist robe or garment, An earth spirit or deity. Simplified form of the classical character 衹"
   },
   {
     "rank": "97",
@@ -4729,9 +4729,9 @@
     "rank": "475",
     "char": "吃",
     "pinyin": "jí",
-    "example": "UNKNOWN",
-    "extraexample": "UNKNOWN",
-    "english": "UNKNOWN"
+    "example": "口吃 (kǒu jí)",
+    "extraexample": "蹇吃 (jiǎn jí)",
+    "english": "to stutter, stammer, or speak with difficulty."
   },
   {
     "rank": "476",
@@ -79904,18 +79904,26 @@
   {
     "rank": "9306",
     "char": "鍟",
-    "pinyin": "shēng",
-    "example": "UNKNOWN",
-    "extraexample": "UNKNOWN",
-    "english": "UNKNOWN"
+    "pinyin": "shēng / xīng",
+    "example": "鐵器久經風雨，表面易生鍟(Tiěqì jiǔ jīng fēngyǔ, biǎomiàn yì shēng xīng)",
+    "extraexample": "明代神機營參將高鍟，為朝廷成仁取義 (Míngdài Shénjīyíng cānjiàng Gāo Xīng, wèi cháotíng chéngrén-qǔyì)",
+    "english": "rust, verdigris, or tarnish on metal, specifically iron rust.  Also a proper name."
+  },
+  {
+    "rank": "9307",
+    "char": "鎍",
+    "pinyin": "suǒ",
+    "example": "以鎍縛之 (yǐ suǒ fú zhī)",
+    "extraexample": "",
+    "english": "chain, wire, or iron rope (archaic)"
   },
   {
     "rank": "9307",
     "char": "鎍",
     "pinyin": "sè",
-    "example": "鎍 (sè)",
-    "extraexample": "鎍 (sè)",
-    "english": "UNKNOWN"
+    "example": "",
+    "extraexample": "",
+    "english": "chain, wire, or iron rope (archaic)"
   },
   {
     "rank": "9308",
@@ -79929,9 +79937,9 @@
     "rank": "9309",
     "char": "鏿",
     "pinyin": "chēng",
-    "example": "UNKNOWN",
-    "extraexample": "UNKNOWN",
-    "english": "UNKNOWN"
+    "example": "鏿然 (chēng rán)",
+    "extraexample": "鏿鏗 (chēng kēng)",
+    "english": "clang; clanking sound of metal"
   },
   {
     "rank": "9310",

@@ -26,8 +26,10 @@ import traceback
 # ── DeepSeek API configuration ──────────────────────────────────────────────
 #DEEPSEEK_API_KEY = ""          # resolved at runtime from --api-key, api_key file, or env
 DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1"
-DEEPSEEK_MODEL    = "deepseek-v4-pro"
-
+DEEPSEEK_MODEL       = "deepseek-chat"
+DEEPSEEK_PRO_MODEL   = "deepseek-v4-pro"
+DEEPSEEK_MAX_TOKENS  = 1024
+DEEPSEEK_PRO_TOKENS  = 4096
 # ── Processing defaults ─────────────────────────────────────────────────────
 SCRIPT_DIR  = os.path.dirname(os.path.abspath(__file__))
 API_KEY_FILE = os.path.join(SCRIPT_DIR, "api_key")
@@ -59,21 +61,25 @@ def build_user_prompt(char: str, pinyin: str) -> str:
 
 # ── API call ────────────────────────────────────────────────────────────────
 
-def call_deepseek(char: str, pinyin: str,  DEEPSEEK_API_KEY: str) -> dict | None:
+def call_deepseek(char: str, pinyin: str, api_key: str,
+                  model: str = DEEPSEEK_MODEL,
+                  max_tokens: int = DEEPSEEK_MAX_TOKENS) -> dict | None:
     """Call DeepSeek API and return parsed result dict, or None on failure."""
     headers = {
-        "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
     }
+    print(f"\nmodel {model} max_tokens {max_tokens} ")
+
 
     payload = {
-        "model": DEEPSEEK_MODEL,
+        "model": model,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": build_user_prompt(char, pinyin)},
         ],
         "temperature": 0.3,
-        "max_tokens": 2048,
+        "max_tokens": max_tokens,
         "response_format": {"type": "json_object"},
     }
 
@@ -89,7 +95,9 @@ def call_deepseek(char: str, pinyin: str,  DEEPSEEK_API_KEY: str) -> dict | None
             if resp.status_code == 200:
                 body = resp.json()
                 content = body["choices"][0]["message"]["content"]
-                print(f"Content {content} body {body}")
+                print(f"resp {resp}")
+                print(f"content {content}")
+                
                 parsed = json.loads(content)
                 return parsed
 
@@ -113,6 +121,37 @@ def call_deepseek(char: str, pinyin: str,  DEEPSEEK_API_KEY: str) -> dict | None
                 return None
 
     return None
+
+
+def _result_has_unknown(api_result: dict) -> bool:
+    """Check whether any field in the API result contains UNKNOWN."""
+    for field in ("english", "example", "extraexample"):
+        value = api_result.get(field, "")
+        if isinstance(value, str) and "UNKNOWN" in value.upper():
+            return True
+    return False
+
+
+def call_deepseek_with_fallback(char: str, pinyin: str, api_key: str) -> dict | None:
+    """Call DeepSeek with the flash model first; if any field comes back
+    as UNKNOWN, retry once with the pro model and doubled token budget."""
+    result = call_deepseek(char, pinyin, api_key)
+    if result is None:
+        return None
+
+    if _result_has_unknown(result):
+        print(f"  UNKNOWN detected, retrying with {DEEPSEEK_PRO_MODEL} "
+              f"(max_tokens={DEEPSEEK_PRO_TOKENS})...", file=sys.stderr)
+        retry = call_deepseek(char, pinyin, api_key,
+                              model=DEEPSEEK_PRO_MODEL,
+                              max_tokens=DEEPSEEK_PRO_TOKENS)
+        if retry is not None:
+            return retry
+        # Pro model also failed — fall through to return original UNKNOWN result
+        print(f"  Pro-model retry failed; keeping original UNKNOWN result.",
+              file=sys.stderr)
+
+    return result
 
 
 # ── Bracket normalization ──────────────────────────────────────────────────
@@ -350,7 +389,7 @@ def main():
         print(f"[{idx}/{len(todo)}] rank={rank} char={char} pinyin={pinyin}",
               end="", file=sys.stderr, flush=True)
 
-        api_result = call_deepseek(char, pinyin, DEEPSEEK_API_KEY)
+        api_result = call_deepseek_with_fallback(char, pinyin, DEEPSEEK_API_KEY)
         
         if api_result is None:
             print(f"\nFATAL: failed to process entry rank={rank} char={char} pinyin={pinyin}", file=sys.stderr)
