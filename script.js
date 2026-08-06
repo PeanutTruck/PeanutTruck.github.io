@@ -185,14 +185,18 @@ function toggleGridPause() {
     if (!gridQueueActive) return;
     gridQueuePaused = !gridQueuePaused;
     var btn = document.getElementById('btn-pause-grid');
+    var pbtn = document.getElementById('btn-speak-grid');
+	
     if (gridQueuePaused) {
         speechSynthesis.pause();
         btn.classList.add('active');
         btn.title = 'Resume';
+        pbtn.classList.remove('active');
     } else {
         speechSynthesis.resume();
         btn.classList.remove('active');
         btn.title = 'Pause';
+        pbtn.classList.add('active');
     }
 }
 
@@ -205,6 +209,9 @@ function stopGrid() {
     pauseBtn.classList.remove('active');
     pauseBtn.innerHTML = SVG_PAUSE;
     pauseBtn.title = 'Pause';
+
+    var pbtn = document.getElementById('btn-speak-grid');
+    pbtn.classList.remove('active');
 }
 
 // ── TTS: Read all characters in the grid ───────────────────────────────────
@@ -262,6 +269,12 @@ function speakGrid() {
         pauseBtn.classList.remove('active');
         pauseBtn.innerHTML = SVG_PAUSE;
         pauseBtn.title = 'Pause';
+
+        var btn = document.getElementById('btn-speak-grid');
+        btn.classList.add('active');
+        btn.title = 'Play';
+
+
         playQueue(queue, 0, gridQueueGeneration);
     } catch (e) {
         console.error('speakGrid exception:', e);
@@ -285,19 +298,14 @@ function renderTable(page) {
     var gridCharSet = new Set(gridChars);
 
     // All entries (from full dataset) for the characters on this page.
-    // Using the full characters array ensures all readings are shown
-    // even when the user has an active search filter.
     var tableEntries = characters.filter(function(item) {
         return gridCharSet.has(item.char);
     });
 
-    // ── Table head ──────────────────────────────────────────────────────
-    var thead = document.querySelector('#characters-table thead');
-    thead.innerHTML = '<tr><th>#</th><th>字</th><th>Pinyin</th><th>Example</th><th class="col-eng">English</th><th class="col-audio"></th></tr>';
+    // Build HTML strings before DOM touch
+    var theadHTML = '<tr><th>#</th><th>字</th><th>Pinyin</th><th>Example</th><th class="col-eng">English</th><th class="col-audio"></th></tr>';
 
-    // ── Table body ──────────────────────────────────────────────────────
-    var tbody = document.querySelector('#characters-table tbody');
-    var rows = tableEntries.map(function(item) {
+    var rowsHTML = tableEntries.map(function(item) {
         var engCell = '<td class="col-eng">' + escapeHtml(item.english || '') + '</td>';
         var exampleHtml = escapeHtml(item.example || '');
         if (item.extraexample) {
@@ -319,41 +327,51 @@ function renderTable(page) {
             ' onclick="speakRow(\'' + charEsc + '\', \'' + exEsc + '\', \'' + exxEsc + '\')">🔊</button></td>' +
             '</tr>';
     }).join('');
-    tbody.innerHTML = rows;
 
-    // ── Pagination state ────────────────────────────────────────────────
-    document.querySelector('.prev').disabled = (page === 1);
-    document.querySelector('.next').disabled = (page === lastPage);
-
-    // ── Page info ───────────────────────────────────────────────────────
-    var showing = tableEntries.length > 0
-        ? ((page - 1) * gridCharsPerPage + 1) + '–' + end
-        : '0–0';
-    document.getElementById('infospan').textContent =
-        'Showing ' + showing + ' of ' + totalUnique + ' characters' +
-        (searchQuery ? ' (filtered from ' + getUniqueChars(characters).length + ')' : '');
-
-    // ── Character grid ──────────────────────────────────────────────────
-    var charGrid = document.getElementById('cbare');
-    charGrid.innerHTML = gridChars
+    var gridHTML = gridChars
         .map(function(c) { return '<div class="char-cell">' + escapeHtml(c) + '</div>'; })
         .join('');
 
-    // ── Subtitle — rank range ───────────────────────────────────────────
+    var infoText = tableEntries.length > 0
+        ? ((page - 1) * gridCharsPerPage + 1) + '–' + end
+        : '0–0';
+    infoText = 'Showing ' + infoText + ' of ' + totalUnique + ' characters' +
+        (searchQuery ? ' (filtered from ' + getUniqueChars(characters).length + ')' : '');
+
+    var subText = '';
     if (tableEntries.length > 0) {
         var ranks = tableEntries.map(function(e) { return parseInt(e.rank, 10); });
         var minRank = Math.min.apply(null, ranks);
         var maxRank = Math.max.apply(null, ranks);
-        document.getElementById('header-sub').textContent =
-            'Frequency ranks ' + minRank + '–' + maxRank +
+        subText = 'Frequency ranks ' + minRank + '–' + maxRank +
             ' · ' + tableEntries.length + ' readings for ' + gridChars.length + ' characters';
     }
 
-    // ── URL state ───────────────────────────────────────────────────────
-    var params = new URLSearchParams(window.location.search);
-    params.set('page', page);
-    if (showEng) params.set('eng', '1'); else params.delete('eng');
-    window.history.replaceState({}, '', window.location.pathname + '?' + params.toString());
+    // ── Crossfade: fade out → update DOM → fade in ─────────────────────
+    var charGrid = document.getElementById('cbare');
+    var tbody = document.querySelector('#characters-table tbody');
+    charGrid.style.opacity = '0';
+    tbody.style.opacity = '0';
+
+    setTimeout(function() {
+        document.querySelector('#characters-table thead').innerHTML = theadHTML;
+        tbody.innerHTML = rowsHTML;
+        charGrid.innerHTML = gridHTML;
+        document.getElementById('infospan').textContent = infoText;
+        if (subText) document.getElementById('header-sub').textContent = subText;
+
+        document.querySelector('.prev').disabled = (page === 1);
+        document.querySelector('.next').disabled = (page === lastPage);
+
+        charGrid.style.opacity = '1';
+        tbody.style.opacity = '1';
+
+        // URL state
+        var params = new URLSearchParams(window.location.search);
+        params.set('page', page);
+        if (showEng) params.set('eng', '1'); else params.delete('eng');
+        window.history.replaceState({}, '', window.location.pathname + '?' + params.toString());
+    }, 120);
 }
 
 // ── Pagination ─────────────────────────────────────────────────────────────

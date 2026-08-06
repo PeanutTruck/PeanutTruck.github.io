@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chinese Character Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -60,10 +63,10 @@
 
         <!-- Pagination -->
         <div class="pagination">
-            <button onclick="jumpToPage(1)">First</button>
-            <button class="prev" onclick="changePage(-1)">← Prev</button>
-            <button class="next" onclick="changePage(1)">Next →</button>
-            <button onclick="jumpToPage(-1)">Last</button>
+            <button onclick="jumpToPage(1)" title="First page">&#x27E8;&#x27E8;</button>
+            <button class="prev" onclick="changePage(-1)">&#x2190; Prev</button>
+            <button class="next" onclick="changePage(1)">Next &#x2192;</button>
+            <button onclick="jumpToPage(-1)" title="Last page">&#x27E9;&#x27E9;</button>
 
             <span class="pagination-spacer"></span>
 
