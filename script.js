@@ -5,7 +5,7 @@
 var characters = [];           // full dataset
 var filteredCharacters = [];   // subset after search filter
 var searchQuery = '';
-const rowsPerPage = 10;
+const gridCharsPerPage = 8;
 let currentPage = 1;
 var lastPage = 0;
 var showEng = true;
@@ -55,6 +55,20 @@ function toggleBtnState(id) {
     return !cur;
 }
 
+// ── Unique characters helper ───────────────────────────────────────────────
+
+function getUniqueChars(data) {
+    var seen = new Set();
+    var result = [];
+    data.forEach(function(item) {
+        if (!seen.has(item.char)) {
+            seen.add(item.char);
+            result.push(item.char);
+        }
+    });
+    return result;
+}
+
 // ── Apply search filter ────────────────────────────────────────────────────
 
 function applySearch() {
@@ -74,7 +88,8 @@ function applySearch() {
         info.textContent = filteredCharacters.length + ' match' +
             (filteredCharacters.length !== 1 ? 'es' : '');
     }
-    lastPage = Math.max(1, Math.ceil(filteredCharacters.length / rowsPerPage));
+    var uniqueCount = getUniqueChars(filteredCharacters).length;
+    lastPage = Math.max(1, Math.ceil(uniqueCount / gridCharsPerPage));
     currentPage = 1;
     renderTable(currentPage);
 }
@@ -237,9 +252,25 @@ function speakGrid() {
 // ── Render table ───────────────────────────────────────────────────────────
 
 function renderTable(page) {
-    var start = (page - 1) * rowsPerPage;
-    var end = Math.min(start + rowsPerPage, filteredCharacters.length);
-    var pagechars = filteredCharacters.slice(start, end);
+    // Paginate by unique characters (8 per page)
+    var uniqueChars = getUniqueChars(filteredCharacters);
+    var totalUnique = uniqueChars.length;
+    lastPage = Math.max(1, Math.ceil(totalUnique / gridCharsPerPage));
+    if (page > lastPage) page = lastPage;
+    if (page < 1) page = 1;
+    currentPage = page;
+
+    var start = (page - 1) * gridCharsPerPage;
+    var end = Math.min(start + gridCharsPerPage, totalUnique);
+    var gridChars = uniqueChars.slice(start, end);
+    var gridCharSet = new Set(gridChars);
+
+    // All entries (from full dataset) for the characters on this page.
+    // Using the full characters array ensures all readings are shown
+    // even when the user has an active search filter.
+    var tableEntries = characters.filter(function(item) {
+        return gridCharSet.has(item.char);
+    });
 
     // ── Table head ──────────────────────────────────────────────────────
     var thead = document.querySelector('#characters-table thead');
@@ -247,7 +278,7 @@ function renderTable(page) {
 
     // ── Table body ──────────────────────────────────────────────────────
     var tbody = document.querySelector('#characters-table tbody');
-    var rows = pagechars.map(function(item) {
+    var rows = tableEntries.map(function(item) {
         var engCell = '<td class="col-eng">' + escapeHtml(item.english || '') + '</td>';
         var exampleHtml = escapeHtml(item.example || '');
         if (item.extraexample) {
@@ -276,29 +307,27 @@ function renderTable(page) {
     document.querySelector('.next').disabled = (page === lastPage);
 
     // ── Page info ───────────────────────────────────────────────────────
-    var total = filteredCharacters.length;
-    var showing = pagechars.length > 0
-        ? ((page - 1) * rowsPerPage + 1) + '–' + end
+    var showing = tableEntries.length > 0
+        ? ((page - 1) * gridCharsPerPage + 1) + '–' + end
         : '0–0';
     document.getElementById('infospan').textContent =
-        'Showing ' + showing + ' of ' + total +
-        (searchQuery ? ' (filtered from ' + characters.length + ')' : '');
+        'Showing ' + showing + ' of ' + totalUnique + ' characters' +
+        (searchQuery ? ' (filtered from ' + getUniqueChars(characters).length + ')' : '');
 
     // ── Character grid ──────────────────────────────────────────────────
     var charGrid = document.getElementById('cbare');
-    var seen = new Set();
-    pagechars.forEach(function(item) { seen.add(item.char); });
-    charGrid.innerHTML = Array.from(seen)
+    charGrid.innerHTML = gridChars
         .map(function(c) { return '<div class="char-cell">' + escapeHtml(c) + '</div>'; })
         .join('');
 
     // ── Subtitle — rank range ───────────────────────────────────────────
-    if (pagechars.length > 0) {
-        var minRank = pagechars[0].rank;
-        var maxRank = pagechars[pagechars.length - 1].rank;
+    if (tableEntries.length > 0) {
+        var ranks = tableEntries.map(function(e) { return parseInt(e.rank, 10); });
+        var minRank = Math.min.apply(null, ranks);
+        var maxRank = Math.max.apply(null, ranks);
         document.getElementById('header-sub').textContent =
             'Frequency ranks ' + minRank + '–' + maxRank +
-            ' · ' + total + ' entries';
+            ' · ' + tableEntries.length + ' readings for ' + gridChars.length + ' characters';
     }
 
     // ── URL state ───────────────────────────────────────────────────────
@@ -338,7 +367,8 @@ function initFromData(data, sourceLabel) {
     characters = data;
     dataSourceLabel = sourceLabel;
     filteredCharacters = data;
-    lastPage = Math.max(1, Math.ceil(data.length / rowsPerPage));
+    var uniqueCount = getUniqueChars(data).length;
+    lastPage = Math.max(1, Math.ceil(uniqueCount / gridCharsPerPage));
 
     var params = new URLSearchParams(window.location.search);
     var page = parseInt(params.get('page'));
