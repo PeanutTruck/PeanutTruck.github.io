@@ -115,6 +115,57 @@ def call_deepseek(char: str, pinyin: str,  DEEPSEEK_API_KEY: str) -> dict | None
     return None
 
 
+# ── Bracket normalization ──────────────────────────────────────────────────
+
+def normalize_pinyin_brackets(text: str) -> str:
+    """Replace Chinese fullwidth brackets （） with ASCII () in a string.
+
+    The data.json example / extraexample fields annotate pinyin in brackets.
+    Some entries use Chinese brackets （U+FF08 / U+FF09） instead of ASCII
+    (U+0028 / U+0029).  This normalizes them for consistency.
+    """
+    if not text:
+        return text
+    return text.replace("\uff08", "(").replace("\uff09", ")")
+
+
+def normalize_entry_brackets(entry: dict) -> dict:
+    """Normalize brackets in example and extraexample fields of a single entry.
+
+    Mutates the entry in-place and also returns it for convenience.
+    """
+    for field in ("example", "extraexample"):
+        if field in entry and entry[field]:
+            entry[field] = normalize_pinyin_brackets(entry[field])
+    return entry
+
+
+def normalize_brackets_in_file(path: str) -> int:
+    """Load a data.json file, normalize brackets in every entry's example and
+    extraexample fields, and write the file back in-place.
+
+    Returns the number of entries that were modified.
+    """
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    changed = 0
+    for entry in data:
+        for field in ("example", "extraexample"):
+            if field not in entry:
+                continue
+            original = entry[field]
+            normalized = normalize_pinyin_brackets(original)
+            if normalized != original:
+                entry[field] = normalized
+                changed += 1
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    return changed
+
+
 # ── Helpers ─────────────────────────────────────────────────────────────────
 
 def build_result(entry: dict, english: str, example: str, example_pinyin: str, extraexample: str) -> dict:
@@ -123,8 +174,8 @@ def build_result(entry: dict, english: str, example: str, example_pinyin: str, e
         "rank": entry["rank"],
         "char": entry["char"],
         "pinyin": entry["pinyin"],
-        "example": example,
-        "extraexample": extraexample,
+        "example": normalize_pinyin_brackets(example),
+        "extraexample": normalize_pinyin_brackets(extraexample),
         "english": english,
     }
     # Only include example_pinyin if non-empty (matches original format)
@@ -199,8 +250,24 @@ def main():
     parser.add_argument(
         "--api-key", help="API key"
     )
+    parser.add_argument(
+        "--normalize-brackets", metavar="FILE",
+        help="Normalize Chinese brackets （） → () in example/extraexample fields "
+             "of an existing data.json file, then exit"
+    )
     
     args = parser.parse_args()
+
+    # ── Normalize-brackets standalone mode ─────────────────────────────
+    if args.normalize_brackets:
+        path = args.normalize_brackets
+        if not os.path.exists(path):
+            print(f"ERROR: file not found: {path}", file=sys.stderr)
+            sys.exit(1)
+        print(f"Normalizing brackets in {path} ...", file=sys.stderr)
+        changed = normalize_brackets_in_file(path)
+        print(f"Done.  {changed} entries modified.", file=sys.stderr)
+        return
 
     # ── Resolve API key ─────────────────────────────────────────────────
     api_key = args.api_key

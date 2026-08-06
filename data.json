@@ -43,7 +43,7 @@
     "rank": "4",
     "char": "不",
     "pinyin": "bù",
-    "example": "不喜欢 （bù xǐ huān）",
+    "example": "不喜欢 (bù xǐ huān)",
     "extraexample": "不好 (bù hǎo)",
     "english": "negation, no"
   },
@@ -107,32 +107,32 @@
     "rank": "9",
     "char": "我",
     "pinyin": "wǒ",
-    "example": "我们 （wǒ men）",
-    "extraexample": "我的书 （wǒ de shū）",
+    "example": "我们 (wǒ men)",
+    "extraexample": "我的书 (wǒ de shū)",
     "english": "I, me"
   },
   {
     "rank": "10",
     "char": "他",
     "pinyin": "tā",
-    "example": "他们 （tā men）",
-    "extraexample": "他的书 （tā de shū）",
+    "example": "他们 (tā men)",
+    "extraexample": "他的书 (tā de shū)",
     "english": "he, him"
   },
   {
     "rank": "11",
     "char": "这",
     "pinyin": "zhè",
-    "example": "这个 （zhè ge）",
-    "extraexample": "这里 （zhè lǐ）",
+    "example": "这个 (zhè ge)",
+    "extraexample": "这里 (zhè lǐ)",
     "english": "this"
   },
   {
     "rank": "11",
     "char": "这",
     "pinyin": "zhèi",
-    "example": "这个 （zhèi ge）",
-    "extraexample": "这些 （zhèi xiē）",
+    "example": "这个 (zhèi ge)",
+    "extraexample": "这些 (zhèi xiē)",
     "english": "this"
   },
   {
@@ -147,8 +147,8 @@
     "rank": "13",
     "char": "们",
     "pinyin": "men",
-    "example": "我们 （wǒ men）",
-    "extraexample": "同学们 （tóng xué men）",
+    "example": "我们 (wǒ men)",
+    "extraexample": "同学们 (tóng xué men)",
     "english": "plural marker for pronouns and nouns referring to people"
   },
   {
@@ -451,8 +451,8 @@
     "rank": "38",
     "char": "那",
     "pinyin": "nèi",
-    "example": "那个 （nèi ge）",
-    "extraexample": "那些人 （nèi xiē rén）",
+    "example": "那个 (nèi ge)",
+    "extraexample": "那些人 (nèi xiē rén)",
     "english": "that (colloquial variant of 那 nà)"
   },
   {
@@ -555,8 +555,8 @@
     "rank": "45",
     "char": "年",
     "pinyin": "nián",
-    "example": "新年 （xīn nián）",
-    "extraexample": "去年 （qù nián）",
+    "example": "新年 (xīn nián)",
+    "extraexample": "去年 (qù nián)",
     "english": "year"
   },
   {
@@ -707,8 +707,8 @@
     "rank": "59",
     "char": "成",
     "pinyin": "chèng",
-    "example": "一成 （yī chèng）",
-    "extraexample": "十成 （shí chèng）",
+    "example": "一成 (yī chèng)",
+    "extraexample": "十成 (shí chèng)",
     "english": "a Chinese unit of weight equal to 50 kg"
   },
   {
@@ -753,8 +753,8 @@
     "rank": "63",
     "char": "么",
     "pinyin": "yāo",
-    "example": "么么 （yāo yāo）",
-    "extraexample": "么点 （yāo diǎn）",
+    "example": "么么 (yāo yāo)",
+    "extraexample": "么点 (yāo diǎn)",
     "english": "one (variant of 一)"
   },
   {
@@ -793,8 +793,8 @@
     "rank": "68",
     "char": "都",
     "pinyin": "dōu",
-    "example": "都 （dōu）",
-    "extraexample": "大家都 （dà jiā dōu）",
+    "example": "都 (dōu)",
+    "extraexample": "大家都 (dà jiā dōu)",
     "english": "all, both"
   },
   {
@@ -1265,8 +1265,8 @@
     "rank": "111",
     "char": "机",
     "pinyin": "jī",
-    "example": "机会 （jī huì）",
-    "extraexample": "飞机 （fēi jī）",
+    "example": "机会 (jī huì)",
+    "extraexample": "飞机 (fēi jī)",
     "english": "machine; opportunity; crucial point"
   },
   {
@@ -1545,8 +1545,8 @@
     "rank": "142",
     "char": "物",
     "pinyin": "wù",
-    "example": "动物 （dòng wù）",
-    "extraexample": "食物 （shí wù）",
+    "example": "动物 (dòng wù)",
+    "extraexample": "食物 (shí wù)",
     "english": "thing, object, matter"
   },
   {
@@ -1569,8 +1569,8 @@
     "rank": "144",
     "char": "应",
     "pinyin": "yìng",
-    "example": "答应 （dā yìng）",
-    "extraexample": "反应 （fǎn yìng）",
+    "example": "答应 (dā yìng)",
+    "extraexample": "反应 (fǎn yìng)",
     "english": "to respond; to answer; to comply with"
   },
   {
@@ -1721,8 +1721,8 @@
     "rank": "159",
     "char": "产",
     "pinyin": "chǎn",
-    "example": "生产 （shēng chǎn）",
-    "extraexample": "产品 （chǎn pǐn）",
+    "example": "生产 (shēng chǎn)",
+    "extraexample": "产品 (chǎn pǐn)",
     "english": "to give birth; to produce; product"
   },
   {
@@ -1777,8 +1777,8 @@
     "rank": "166",
     "char": "加",
     "pinyin": "jiā",
-    "example": "增加 （zēng jiā）",
-    "extraexample": "加法 （jiā fǎ）",
+    "example": "增加 (zēng jiā)",
+    "extraexample": "加法 (jiā fǎ)",
     "english": "to add; plus; increase"
   },
   {
@@ -2529,8 +2529,8 @@
     "rank": "240",
     "char": "太",
     "pinyin": "tài",
-    "example": "太（tài）",
-    "extraexample": "太阳（tài yáng）",
+    "example": "太(tài)",
+    "extraexample": "太阳(tài yáng)",
     "english": "too, excessively; extremely; highest; greatest"
   },
   {
@@ -2545,8 +2545,8 @@
     "rank": "241",
     "char": "量",
     "pinyin": "liàng",
-    "example": "数量 （shù liàng）",
-    "extraexample": "大量 （dà liàng）",
+    "example": "数量 (shù liàng)",
+    "extraexample": "大量 (dà liàng)",
     "english": "capacity; quantity; amount; volume"
   },
   {
@@ -2681,8 +2681,8 @@
     "rank": "258",
     "char": "命",
     "pinyin": "mìng",
-    "example": "生命 （shēng mìng）",
-    "extraexample": "命运 （mìng yùn）",
+    "example": "生命 (shēng mìng)",
+    "extraexample": "命运 (mìng yùn)",
     "english": "life; fate; order; command"
   },
   {
@@ -3217,8 +3217,8 @@
     "rank": "318",
     "char": "张",
     "pinyin": "zhāng",
-    "example": "张开 （zhāng kāi）",
-    "extraexample": "纸张 （zhǐ zhāng）",
+    "example": "张开 (zhāng kāi)",
+    "extraexample": "纸张 (zhǐ zhāng)",
     "english": "to open up; to spread; sheet (of paper); classifier for flat objects"
   },
   {
@@ -3921,8 +3921,8 @@
     "rank": "392",
     "char": "罗",
     "pinyin": "luō",
-    "example": "啰嗦 （luō suō）",
-    "extraexample": "罗唣 （luō zào）",
+    "example": "啰嗦 (luō suō)",
+    "extraexample": "罗唣 (luō zào)",
     "english": "used in 啰嗦 (luōsuo), meaning verbose or troublesome"
   },
   {
@@ -3953,8 +3953,8 @@
     "rank": "395",
     "char": "击",
     "pinyin": "jī",
-    "example": "打击 （dǎ jī）",
-    "extraexample": "击球 （jī qiú）",
+    "example": "打击 (dǎ jī)",
+    "extraexample": "击球 (jī qiú)",
     "english": "to hit, strike, attack"
   },
   {
@@ -4105,8 +4105,8 @@
     "rank": "412",
     "char": "华",
     "pinyin": "huá",
-    "example": "中华 （Zhōng huá）",
-    "extraexample": "华丽 （huá lì）",
+    "example": "中华 (Zhōng huá)",
+    "extraexample": "华丽 (huá lì)",
     "english": "splendid, prosperous, Chinese"
   },
   {
@@ -4553,8 +4553,8 @@
     "rank": "459",
     "char": "查",
     "pinyin": "zhā",
-    "example": "查（Zhā）",
-    "extraexample": "查慎行（Zhā Shènxíng）",
+    "example": "查(Zhā)",
+    "extraexample": "查慎行(Zhā Shènxíng)",
     "english": "surname Zha"
   },
   {
@@ -5177,8 +5177,8 @@
     "rank": "524",
     "char": "致",
     "pinyin": "zhì",
-    "example": "致敬 （zhì jìng）",
-    "extraexample": "导致 （dǎo zhì）",
+    "example": "致敬 (zhì jìng)",
+    "extraexample": "导致 (dǎo zhì)",
     "english": "to send; to deliver; to cause; to achieve; meticulous; fine"
   },
   {
@@ -5585,8 +5585,8 @@
     "rank": "569",
     "char": "批",
     "pinyin": "pī",
-    "example": "批评 （pī píng）",
-    "extraexample": "一批 （yī pī）",
+    "example": "批评 (pī píng)",
+    "extraexample": "一批 (yī pī)",
     "english": "to criticize; to comment on; batch; group"
   },
   {
@@ -5809,8 +5809,8 @@
     "rank": "594",
     "char": "友",
     "pinyin": "yǒu",
-    "example": "朋友 （péng yǒu）",
-    "extraexample": "友好 （yǒu hǎo）",
+    "example": "朋友 (péng yǒu)",
+    "extraexample": "友好 (yǒu hǎo)",
     "english": "friend"
   },
   {
@@ -5993,8 +5993,8 @@
     "rank": "615",
     "char": "脸",
     "pinyin": "liǎn",
-    "example": "脸 （liǎn）",
-    "extraexample": "洗脸 （xǐ liǎn）",
+    "example": "脸 (liǎn)",
+    "extraexample": "洗脸 (xǐ liǎn)",
     "english": "face; front part of the head"
   },
   {
@@ -6113,8 +6113,8 @@
     "rank": "626",
     "char": "甚",
     "pinyin": "shèn",
-    "example": "甚至 （shèn zhì）",
-    "extraexample": "甚好 （shèn hǎo）",
+    "example": "甚至 (shèn zhì)",
+    "extraexample": "甚好 (shèn hǎo)",
     "english": "very, extremely; more than"
   },
   {
@@ -6369,16 +6369,16 @@
     "rank": "652",
     "char": "哪",
     "pinyin": "na",
-    "example": "哪吒 （Né zhā）",
-    "extraexample": "哪吒闹海 （Né zhā nào hǎi）",
+    "example": "哪吒 (Né zhā)",
+    "extraexample": "哪吒闹海 (Né zhā nào hǎi)",
     "english": "Used in the word '哪吒' (Nezha), a mythological figure."
   },
   {
     "rank": "652",
     "char": "哪",
     "pinyin": "něi",
-    "example": "哪个 （něi gè）",
-    "extraexample": "哪些 （něi xiē）",
+    "example": "哪个 (něi gè)",
+    "extraexample": "哪些 (něi xiē)",
     "english": "which (interrogative, used before a classifier or numeral-classifier compound)"
   },
   {
@@ -6825,8 +6825,8 @@
     "rank": "702",
     "char": "冲",
     "pinyin": "chōng",
-    "example": "冲突 （chōng tū）",
-    "extraexample": "冲刺 （chōng cì）",
+    "example": "冲突 (chōng tū)",
+    "extraexample": "冲刺 (chōng cì)",
     "english": "to rush; to dash against; to rinse; to develop (film)"
   },
   {
@@ -6849,8 +6849,8 @@
     "rank": "704",
     "char": "略",
     "pinyin": "luè",
-    "example": "略 （luè）",
-    "extraexample": "大略 （dà luè）",
+    "example": "略 (luè)",
+    "extraexample": "大略 (dà luè)",
     "english": "brief, summary; slightly, a little; to omit, to leave out"
   },
   {
@@ -7001,8 +7001,8 @@
     "rank": "720",
     "char": "担",
     "pinyin": "dàn",
-    "example": "重担 （zhòng dàn）",
-    "extraexample": "一担米 （yī dàn mǐ）",
+    "example": "重担 (zhòng dàn)",
+    "extraexample": "一担米 (yī dàn mǐ)",
     "english": "a load; burden; unit of weight equal to 50 kg"
   },
   {
@@ -7129,8 +7129,8 @@
     "rank": "732",
     "char": "差",
     "pinyin": "cī",
-    "example": "参差 （cēn cī）",
-    "extraexample": "差互 （cī hù）",
+    "example": "参差 (cēn cī)",
+    "extraexample": "差互 (cī hù)",
     "english": "uneven; irregular; difference"
   },
   {
@@ -7201,8 +7201,8 @@
     "rank": "739",
     "char": "征",
     "pinyin": "zhēng",
-    "example": "长征 （cháng zhēng）",
-    "extraexample": "征途 （zhēng tú）",
+    "example": "长征 (cháng zhēng)",
+    "extraexample": "征途 (zhēng tú)",
     "english": "to go on a journey; to levy (troops); to conquer; sign; evidence"
   },
   {
@@ -7337,40 +7337,40 @@
     "rank": "753",
     "char": "啊",
     "pinyin": "ā",
-    "example": "啊 （ā）",
-    "extraexample": "啊呀 （ā yā）",
+    "example": "啊 (ā)",
+    "extraexample": "啊呀 (ā yā)",
     "english": "An interjection expressing surprise, admiration, or realization."
   },
   {
     "rank": "753",
     "char": "啊",
     "pinyin": "á",
-    "example": "啊？你说什么？（á？ nǐ shuō shénme?）",
-    "extraexample": "啊，原来如此。（á, yuánlái rúcǐ.）",
+    "example": "啊？你说什么？(á？ nǐ shuō shénme?)",
+    "extraexample": "啊，原来如此。(á, yuánlái rúcǐ.)",
     "english": "An interjection expressing surprise or doubt."
   },
   {
     "rank": "753",
     "char": "啊",
     "pinyin": "ǎ",
-    "example": "啊？你说什么？（ǎ？ nǐ shuō shénme?）",
-    "extraexample": "啊，真的吗？（ǎ, zhēn de ma?）",
+    "example": "啊？你说什么？(ǎ？ nǐ shuō shénme?)",
+    "extraexample": "啊，真的吗？(ǎ, zhēn de ma?)",
     "english": "An interjection expressing surprise or doubt."
   },
   {
     "rank": "753",
     "char": "啊",
     "pinyin": "à",
-    "example": "啊！真美（à！zhēn měi）",
-    "extraexample": "啊，原来如此（à，yuán lái rú cǐ）",
+    "example": "啊！真美(à！zhēn měi)",
+    "extraexample": "啊，原来如此(à，yuán lái rú cǐ)",
     "english": "An interjection expressing surprise, admiration, or realization."
   },
   {
     "rank": "753",
     "char": "啊",
     "pinyin": "a",
-    "example": "啊 （a）",
-    "extraexample": "啊呀 （a yā）",
+    "example": "啊 (a)",
+    "extraexample": "啊呀 (a yā)",
     "english": "An interjection expressing surprise, admiration, or realization."
   },
   {
@@ -7697,8 +7697,8 @@
     "rank": "790",
     "char": "脚",
     "pinyin": "jiǎo",
-    "example": "脚 （jiǎo）",
-    "extraexample": "脚步 （jiǎo bù）",
+    "example": "脚 (jiǎo)",
+    "extraexample": "脚步 (jiǎo bù)",
     "english": "foot; leg (of an animal or object); base"
   },
   {
@@ -8265,16 +8265,16 @@
     "rank": "854",
     "char": "误",
     "pinyin": "wù",
-    "example": "错误 （cuò wù）",
-    "extraexample": "误解 （wù jiě）",
+    "example": "错误 (cuò wù)",
+    "extraexample": "误解 (wù jiě)",
     "english": "mistake, error; to miss, to delay; to mislead"
   },
   {
     "rank": "855",
     "char": "湾",
     "pinyin": "wān",
-    "example": "海湾 （hǎi wān）",
-    "extraexample": "台湾 （Tái wān）",
+    "example": "海湾 (hǎi wān)",
+    "extraexample": "台湾 (Tái wān)",
     "english": "a bend in a river; a bay; to anchor"
   },
   {
@@ -8441,8 +8441,8 @@
     "rank": "873",
     "char": "贵",
     "pinyin": "guì",
-    "example": "贵 （guì)",
-    "extraexample": "很贵 （hěn guì）",
+    "example": "贵 (guì)",
+    "extraexample": "很贵 (hěn guì)",
     "english": "expensive; valuable; noble; your (honorific)"
   },
   {
@@ -8545,8 +8545,8 @@
     "rank": "886",
     "char": "亦",
     "pinyin": "yì",
-    "example": "亦 （yì）",
-    "extraexample": "不亦乐乎 （bù yì lè hū）",
+    "example": "亦 (yì)",
+    "extraexample": "不亦乐乎 (bù yì lè hū)",
     "english": "also, too, as well"
   },
   {
@@ -8673,8 +8673,8 @@
     "rank": "901",
     "char": "虑",
     "pinyin": "lv4",
-    "example": "考虑 （kǎo lǜ）",
-    "extraexample": "忧虑 （yōu lǜ）",
+    "example": "考虑 (kǎo lǜ)",
+    "extraexample": "忧虑 (yōu lǜ)",
     "english": "to consider, to think over"
   },
   {
@@ -9313,8 +9313,8 @@
     "rank": "974",
     "char": "卖",
     "pinyin": "mài",
-    "example": "卖 （mài）",
-    "extraexample": "卖东西 （mài dōng xi）",
+    "example": "卖 (mài)",
+    "extraexample": "卖东西 (mài dōng xi)",
     "english": "to sell"
   },
   {
@@ -9497,8 +9497,8 @@
     "rank": "993",
     "char": "荣",
     "pinyin": "róng",
-    "example": "光荣 （guāng róng）",
-    "extraexample": "荣誉 （róng yù）",
+    "example": "光荣 (guāng róng)",
+    "extraexample": "荣誉 (róng yù)",
     "english": "glory; honor; flourishing"
   },
   {
@@ -9713,8 +9713,8 @@
     "rank": "1019",
     "char": "宁",
     "pinyin": "níng",
-    "example": "宁静 （níng jìng）",
-    "extraexample": "安宁 （ān níng）",
+    "example": "宁静 (níng jìng)",
+    "extraexample": "安宁 (ān níng)",
     "english": "peaceful, tranquil; to prefer"
   },
   {
@@ -10009,8 +10009,8 @@
     "rank": "1052",
     "char": "盖",
     "pinyin": "gě",
-    "example": "盖（Gě）",
-    "extraexample": "盖姓（Gě xìng）",
+    "example": "盖(Gě)",
+    "extraexample": "盖姓(Gě xìng)",
     "english": "surname Ge"
   },
   {
@@ -10193,8 +10193,8 @@
     "rank": "1072",
     "char": "玩",
     "pinyin": "wàn",
-    "example": "玩 （wán）",
-    "extraexample": "玩游戏 （wán yóu xì）",
+    "example": "玩 (wán)",
+    "extraexample": "玩游戏 (wán yóu xì)",
     "english": "to play; to have fun; to enjoy oneself"
   },
   {
@@ -10713,8 +10713,8 @@
     "rank": "1129",
     "char": "杰",
     "pinyin": "jié",
-    "example": "杰出 （jié chū）",
-    "extraexample": "杰作 （jié zuò）",
+    "example": "杰出 (jié chū)",
+    "extraexample": "杰作 (jié zuò)",
     "english": "outstanding, prominent, hero"
   },
   {
@@ -10873,8 +10873,8 @@
     "rank": "1145",
     "char": "圆",
     "pinyin": "yuán",
-    "example": "圆形 （yuán xíng）",
-    "extraexample": "圆桌 （yuán zhuō）",
+    "example": "圆形 (yuán xíng)",
+    "extraexample": "圆桌 (yuán zhuō)",
     "english": "circle; round; circular; spherical; complete; yuan (currency)"
   },
   {
@@ -10905,8 +10905,8 @@
     "rank": "1149",
     "char": "姓",
     "pinyin": "xìng",
-    "example": "姓 （xìng）",
-    "extraexample": "姓氏 （xìng shì）",
+    "example": "姓 (xìng)",
+    "extraexample": "姓氏 (xìng shì)",
     "english": "surname, family name"
   },
   {
@@ -11089,8 +11089,8 @@
     "rank": "1172",
     "char": "蒋",
     "pinyin": "jiǎng",
-    "example": "蒋 （Jiǎng）",
-    "extraexample": "蒋介石 （Jiǎng Jièshí）",
+    "example": "蒋 (Jiǎng)",
+    "extraexample": "蒋介石 (Jiǎng Jièshí)",
     "english": "surname Jiang"
   },
   {
@@ -11353,8 +11353,8 @@
     "rank": "1202",
     "char": "距",
     "pinyin": "jù",
-    "example": "距离 （jù lí）",
-    "extraexample": "距今 （jù jīn）",
+    "example": "距离 (jù lí)",
+    "extraexample": "距今 (jù jīn)",
     "english": "distance; apart; be separated by"
   },
   {
@@ -11409,8 +11409,8 @@
     "rank": "1209",
     "char": "敬",
     "pinyin": "jìng",
-    "example": "尊敬 （zūn jìng）",
-    "extraexample": "敬礼 （jìng lǐ）",
+    "example": "尊敬 (zūn jìng)",
+    "extraexample": "敬礼 (jìng lǐ)",
     "english": "respect, venerate"
   },
   {
@@ -11801,8 +11801,8 @@
     "rank": "1255",
     "char": "仙",
     "pinyin": "xiān",
-    "example": "神仙 （shén xiān）",
-    "extraexample": "仙人 （xiān rén）",
+    "example": "神仙 (shén xiān)",
+    "extraexample": "仙人 (xiān rén)",
     "english": "immortal; celestial being; fairy"
   },
   {
@@ -12145,8 +12145,8 @@
     "rank": "1295",
     "char": "恨",
     "pinyin": "hèn",
-    "example": "仇恨 （chóu hèn）",
-    "extraexample": "恨意 （hèn yì）",
+    "example": "仇恨 (chóu hèn)",
+    "extraexample": "恨意 (hèn yì)",
     "english": "to hate; hatred"
   },
   {
@@ -12377,8 +12377,8 @@
     "rank": "1322",
     "char": "忠",
     "pinyin": "zhōng",
-    "example": "忠诚 （zhōng chéng）",
-    "extraexample": "忠告 （zhōng gào）",
+    "example": "忠诚 (zhōng chéng)",
+    "extraexample": "忠告 (zhōng gào)",
     "english": "loyal, devoted, faithful"
   },
   {
@@ -12505,8 +12505,8 @@
     "rank": "1334",
     "char": "孤",
     "pinyin": "gū",
-    "example": "孤独 （gū dú）",
-    "extraexample": "孤儿 （gū ér）",
+    "example": "孤独 (gū dú)",
+    "extraexample": "孤儿 (gū ér)",
     "english": "orphan; solitary; isolated"
   },
   {
@@ -12649,8 +12649,8 @@
     "rank": "1351",
     "char": "腿",
     "pinyin": "tuǐ",
-    "example": "腿 （tuǐ）",
-    "extraexample": "大腿 （dà tuǐ）",
+    "example": "腿 (tuǐ)",
+    "extraexample": "大腿 (dà tuǐ)",
     "english": "leg"
   },
   {
@@ -13097,8 +13097,8 @@
     "rank": "1400",
     "char": "隆",
     "pinyin": "lóng",
-    "example": "隆重 （lóng zhòng）",
-    "extraexample": "兴隆 （xīng lóng）",
+    "example": "隆重 (lóng zhòng)",
+    "extraexample": "兴隆 (xīng lóng)",
     "english": "grand, prosperous; sound of thunder"
   },
   {
@@ -13241,8 +13241,8 @@
     "rank": "1414",
     "char": "粗",
     "pinyin": "cū",
-    "example": "粗糙 （cū cāo）",
-    "extraexample": "粗心 （cū xīn）",
+    "example": "粗糙 (cū cāo)",
+    "extraexample": "粗心 (cū xīn)",
     "english": "coarse, rough, thick"
   },
   {
@@ -13329,8 +13329,8 @@
     "rank": "1425",
     "char": "综",
     "pinyin": "zōng",
-    "example": "综合 （zōng hé）",
-    "extraexample": "综述 （zōng shù）",
+    "example": "综合 (zōng hé)",
+    "extraexample": "综述 (zōng shù)",
     "english": "to sum up; overall; comprehensive"
   },
   {
@@ -13489,8 +13489,8 @@
     "rank": "1440",
     "char": "迪",
     "pinyin": "dí",
-    "example": "启迪（qǐ dí）",
-    "extraexample": "迪拜（Dí bài）",
+    "example": "启迪(qǐ dí)",
+    "extraexample": "迪拜(Dí bài)",
     "english": "to enlighten; to guide; a phonetic character used in transliterations"
   },
   {
@@ -13561,8 +13561,8 @@
     "rank": "1448",
     "char": "颗",
     "pinyin": "kē",
-    "example": "一颗 （yī kē）",
-    "extraexample": "一颗心 （yī kē xīn）",
+    "example": "一颗 (yī kē)",
+    "extraexample": "一颗心 (yī kē xīn)",
     "english": "classifier for small round objects (e.g., pearls, grains, teeth)"
   },
   {
@@ -13809,8 +13809,8 @@
     "rank": "1477",
     "char": "辈",
     "pinyin": "bèi",
-    "example": "长辈 （zhǎng bèi）",
-    "extraexample": "晚辈 （wǎn bèi）",
+    "example": "长辈 (zhǎng bèi)",
+    "extraexample": "晚辈 (wǎn bèi)",
     "english": "generation; class of people; lifetime"
   },
   {
@@ -13969,8 +13969,8 @@
     "rank": "1496",
     "char": "箭",
     "pinyin": "jiàn",
-    "example": "箭（jiàn）",
-    "extraexample": "射箭（shè jiàn）",
+    "example": "箭(jiàn)",
+    "extraexample": "射箭(shè jiàn)",
     "english": "arrow"
   },
   {
@@ -14073,8 +14073,8 @@
     "rank": "1508",
     "char": "愤",
     "pinyin": "fèn",
-    "example": "愤怒 （fèn nù）",
-    "extraexample": "气愤 （qì fèn）",
+    "example": "愤怒 (fèn nù)",
+    "extraexample": "气愤 (qì fèn)",
     "english": "anger, indignation"
   },
   {
@@ -14313,8 +14313,8 @@
     "rank": "1536",
     "char": "仇",
     "pinyin": "qíu",
-    "example": "仇 （qiú）",
-    "extraexample": "仇姓 （qiú xìng）",
+    "example": "仇 (qiú)",
+    "extraexample": "仇姓 (qiú xìng)",
     "english": "surname"
   },
   {
@@ -14521,8 +14521,8 @@
     "rank": "1560",
     "char": "颇",
     "pinyin": "pō",
-    "example": "颇 （pō）",
-    "extraexample": "颇为 （pō wéi）",
+    "example": "颇 (pō)",
+    "extraexample": "颇为 (pō wéi)",
     "english": "quite, rather; somewhat; oblique"
   },
   {
@@ -14665,8 +14665,8 @@
     "rank": "1574",
     "char": "俩",
     "pinyin": "liǎ",
-    "example": "俩（liǎ）",
-    "extraexample": "咱俩（zán liǎ）",
+    "example": "俩(liǎ)",
+    "extraexample": "咱俩(zán liǎ)",
     "english": "two (used in informal contexts, often for people)"
   },
   {
@@ -14705,8 +14705,8 @@
     "rank": "1578",
     "char": "践",
     "pinyin": "jiàn",
-    "example": "实践 （shí jiàn）",
-    "extraexample": "践约 （jiàn yuē）",
+    "example": "实践 (shí jiàn)",
+    "extraexample": "践约 (jiàn yuē)",
     "english": "to tread on; to fulfill; to carry out"
   },
   {
@@ -15033,8 +15033,8 @@
     "rank": "1616",
     "char": "惧",
     "pinyin": "jù",
-    "example": "恐惧 （kǒng jù）",
-    "extraexample": "惧怕 （jù pà）",
+    "example": "恐惧 (kǒng jù)",
+    "extraexample": "惧怕 (jù pà)",
     "english": "fear; dread"
   },
   {
@@ -15113,8 +15113,8 @@
     "rank": "1626",
     "char": "廷",
     "pinyin": "tíng",
-    "example": "朝廷 （cháo tíng）",
-    "extraexample": "宫廷 （gōng tíng）",
+    "example": "朝廷 (cháo tíng)",
+    "extraexample": "宫廷 (gōng tíng)",
     "english": "court of a feudal ruler; royal court"
   },
   {
@@ -15161,8 +15161,8 @@
     "rank": "1632",
     "char": "慰",
     "pinyin": "wèi",
-    "example": "安慰 （ān wèi）",
-    "extraexample": "慰问 （wèi wèn）",
+    "example": "安慰 (ān wèi)",
+    "extraexample": "慰问 (wèi wèn)",
     "english": "to comfort, to console"
   },
   {
@@ -15257,8 +15257,8 @@
     "rank": "1642",
     "char": "涌",
     "pinyin": "yǒng",
-    "example": "涌现 （yǒng xiàn）",
-    "extraexample": "泪如泉涌 （lèi rú quán yǒng）",
+    "example": "涌现 (yǒng xiàn)",
+    "extraexample": "泪如泉涌 (lèi rú quán yǒng)",
     "english": "to surge, to well up, to gush"
   },
   {
@@ -15481,8 +15481,8 @@
     "rank": "1669",
     "char": "聪",
     "pinyin": "cōng",
-    "example": "聪明 （cōng míng）",
-    "extraexample": "聪慧 （cōng huì）",
+    "example": "聪明 (cōng míng)",
+    "extraexample": "聪慧 (cōng huì)",
     "english": "intelligent; clever; bright"
   },
   {
@@ -15881,8 +15881,8 @@
     "rank": "1714",
     "char": "粒",
     "pinyin": "lì",
-    "example": "颗粒 （kē lì）",
-    "extraexample": "一粒米 （yī lì mǐ）",
+    "example": "颗粒 (kē lì)",
+    "extraexample": "一粒米 (yī lì mǐ)",
     "english": "grain; granule; particle"
   },
   {
@@ -16489,8 +16489,8 @@
     "rank": "1781",
     "char": "兹",
     "pinyin": "zī",
-    "example": "兹有（zī yǒu）",
-    "extraexample": "兹定于（zī dìng yú）",
+    "example": "兹有(zī yǒu)",
+    "extraexample": "兹定于(zī dìng yú)",
     "english": "this; now; here"
   },
   {
@@ -16721,8 +16721,8 @@
     "rank": "1803",
     "char": "涨",
     "pinyin": "zhàng",
-    "example": "膨胀（péng zhàng）",
-    "extraexample": "热胀冷缩（rè zhàng lěng suō）",
+    "example": "膨胀(péng zhàng)",
+    "extraexample": "热胀冷缩(rè zhàng lěng suō)",
     "english": "to swell; to expand"
   },
   {
@@ -16809,8 +16809,8 @@
     "rank": "1813",
     "char": "郭",
     "pinyin": "guō",
-    "example": "郭（guō）",
-    "extraexample": "城郭（chéng guō）",
+    "example": "郭(guō)",
+    "extraexample": "城郭(chéng guō)",
     "english": "outer city wall; surname Guo"
   },
   {
@@ -17193,8 +17193,8 @@
     "rank": "1858",
     "char": "宅",
     "pinyin": "zhái",
-    "example": "住宅 （zhù zhái）",
-    "extraexample": "宅子 （zhái zi）",
+    "example": "住宅 (zhù zhái)",
+    "extraexample": "宅子 (zhái zi)",
     "english": "residence, house, home"
   },
   {
@@ -17585,16 +17585,16 @@
     "rank": "1901",
     "char": "丑",
     "pinyin": "chǒu",
-    "example": "丑陋 （chǒu lòu）",
-    "extraexample": "丑角 （chǒu jué）",
+    "example": "丑陋 (chǒu lòu)",
+    "extraexample": "丑角 (chǒu jué)",
     "english": "ugly; shameful; clown; second earthly branch"
   },
   {
     "rank": "1902",
     "char": "劣",
     "pinyin": "liè",
-    "example": "恶劣 （è liè）",
-    "extraexample": "劣质 （liè zhì）",
+    "example": "恶劣 (è liè)",
+    "extraexample": "劣质 (liè zhì)",
     "english": "inferior, bad, of low quality"
   },
   {
@@ -17681,8 +17681,8 @@
     "rank": "1911",
     "char": "饿",
     "pinyin": "è",
-    "example": "饿了（è le）",
-    "extraexample": "饥饿（jī è）",
+    "example": "饿了(è le)",
+    "extraexample": "饥饿(jī è)",
     "english": "hungry"
   },
   {
@@ -17937,16 +17937,16 @@
     "rank": "1938",
     "char": "痕",
     "pinyin": "hén",
-    "example": "伤痕 （shāng hén）",
-    "extraexample": "痕迹 （hén jì）",
+    "example": "伤痕 (shāng hén)",
+    "extraexample": "痕迹 (hén jì)",
     "english": "scar; mark; trace"
   },
   {
     "rank": "1939",
     "char": "碗",
     "pinyin": "wǎn",
-    "example": "碗 （wǎn）",
-    "extraexample": "饭碗 （fàn wǎn）",
+    "example": "碗 (wǎn)",
+    "extraexample": "饭碗 (fàn wǎn)",
     "english": "bowl"
   },
   {
@@ -18105,8 +18105,8 @@
     "rank": "1954",
     "char": "皱",
     "pinyin": "zhòu",
-    "example": "皱纹 （zhòu wén）",
-    "extraexample": "皱眉 （zhòu méi）",
+    "example": "皱纹 (zhòu wén)",
+    "extraexample": "皱眉 (zhòu méi)",
     "english": "to wrinkle; a wrinkle; crease"
   },
   {
@@ -18217,8 +18217,8 @@
     "rank": "1966",
     "char": "哼",
     "pinyin": "hng",
-    "example": "哼 （hng）",
-    "extraexample": "哼一声 （hng yī shēng）",
+    "example": "哼 (hng)",
+    "extraexample": "哼一声 (hng yī shēng)",
     "english": "A snort of disapproval or contempt; to hum or groan"
   },
   {
@@ -18401,8 +18401,8 @@
     "rank": "1988",
     "char": "喂",
     "pinyin": "wèi",
-    "example": "喂 （wèi）",
-    "extraexample": "喂你好 （wèi nǐ hǎo）",
+    "example": "喂 (wèi)",
+    "extraexample": "喂你好 (wèi nǐ hǎo)",
     "english": "hello (used when answering the phone)"
   },
   {
@@ -18473,8 +18473,8 @@
     "rank": "1995",
     "char": "悦",
     "pinyin": "yuè",
-    "example": "喜悦 （xǐ yuè）",
-    "extraexample": "悦耳 （yuè ěr）",
+    "example": "喜悦 (xǐ yuè)",
+    "extraexample": "悦耳 (yuè ěr)",
     "english": "happy, pleased, delighted"
   },
   {
@@ -18945,24 +18945,24 @@
     "rank": "2042",
     "char": "嗯",
     "pinyin": "ēn",
-    "example": "嗯 （ēn）",
-    "extraexample": "嗯嗯 （ēn ēn）",
+    "example": "嗯 (ēn)",
+    "extraexample": "嗯嗯 (ēn ēn)",
     "english": "a sound expressing agreement or acknowledgment"
   },
   {
     "rank": "2042",
     "char": "嗯",
     "pinyin": "ng",
-    "example": "嗯 （ng）",
-    "extraexample": "嗯，好吧 （ng, hǎo ba）",
+    "example": "嗯 (ng)",
+    "extraexample": "嗯，好吧 (ng, hǎo ba)",
     "english": "Interjection expressing agreement, acknowledgment, or hesitation."
   },
   {
     "rank": "2042",
     "char": "嗯",
     "pinyin": "èn",
-    "example": "嗯 （èn）",
-    "extraexample": "嗯嗯 （èn èn）",
+    "example": "嗯 (èn)",
+    "extraexample": "嗯嗯 (èn èn)",
     "english": "used to express agreement or acknowledgment"
   },
   {
@@ -19129,8 +19129,8 @@
     "rank": "2061",
     "char": "铭",
     "pinyin": "míng",
-    "example": "铭记 （míng jì）",
-    "extraexample": "铭文 （míng wén）",
+    "example": "铭记 (míng jì)",
+    "extraexample": "铭文 (míng wén)",
     "english": "inscribe; engrave; motto"
   },
   {
@@ -19401,8 +19401,8 @@
     "rank": "2092",
     "char": "朴",
     "pinyin": "pǔ",
-    "example": "朴素 （pǔ sù）",
-    "extraexample": "朴实 （pǔ shí）",
+    "example": "朴素 (pǔ sù)",
+    "extraexample": "朴实 (pǔ shí)",
     "english": "simple, plain, unadorned"
   },
   {
@@ -19841,8 +19841,8 @@
     "rank": "2142",
     "char": "嫂",
     "pinyin": "sǎo",
-    "example": "嫂子 （sǎo zi）",
-    "extraexample": "大嫂 （dà sǎo）",
+    "example": "嫂子 (sǎo zi)",
+    "extraexample": "大嫂 (dà sǎo)",
     "english": "sister-in-law (elder brother's wife)"
   },
   {
@@ -19865,8 +19865,8 @@
     "rank": "2145",
     "char": "谭",
     "pinyin": "tán",
-    "example": "谭（tán）",
-    "extraexample": "谭天（tán tiān）",
+    "example": "谭(tán)",
+    "extraexample": "谭天(tán tiān)",
     "english": "surname; talk, chat"
   },
   {
@@ -19889,8 +19889,8 @@
     "rank": "2148",
     "char": "庸",
     "pinyin": "yōng",
-    "example": "平庸 （píng yōng）",
-    "extraexample": "庸俗 （yōng sú）",
+    "example": "平庸 (píng yōng)",
+    "extraexample": "庸俗 (yōng sú)",
     "english": "commonplace, mediocre; to employ"
   },
   {
@@ -19913,8 +19913,8 @@
     "rank": "2151",
     "char": "吼",
     "pinyin": "hǒu",
-    "example": "怒吼 （nù hǒu）",
-    "extraexample": "吼叫 （hǒu jiào）",
+    "example": "怒吼 (nù hǒu)",
+    "extraexample": "吼叫 (hǒu jiào)",
     "english": "to roar, to shout"
   },
   {
@@ -20105,8 +20105,8 @@
     "rank": "2173",
     "char": "饥",
     "pinyin": "jī",
-    "example": "饥饿 （jī è）",
-    "extraexample": "饥荒 （jī huāng）",
+    "example": "饥饿 (jī è)",
+    "extraexample": "饥荒 (jī huāng)",
     "english": "hungry; famine"
   },
   {
@@ -20137,8 +20137,8 @@
     "rank": "2176",
     "char": "虹",
     "pinyin": "jiàng",
-    "example": "虹彩 （jiàng cǎi）",
-    "extraexample": "出虹了 （chū jiàng le）",
+    "example": "虹彩 (jiàng cǎi)",
+    "extraexample": "出虹了 (chū jiàng le)",
     "english": "a rainbow (used in 虹 jiàng, same as hóng but in colloquial speech for 虹彩)"
   },
   {
@@ -20265,16 +20265,16 @@
     "rank": "2191",
     "char": "怔",
     "pinyin": "zhēng",
-    "example": "怔怔（zhēng zhēng）",
-    "extraexample": "怔住（zhēng zhù）",
+    "example": "怔怔(zhēng zhēng)",
+    "extraexample": "怔住(zhēng zhù)",
     "english": "to stare blankly; to be in a daze"
   },
   {
     "rank": "2192",
     "char": "渊",
     "pinyin": "yuān",
-    "example": "深渊 （shēn yuān）",
-    "extraexample": "渊博 （yuān bó）",
+    "example": "深渊 (shēn yuān)",
+    "extraexample": "渊博 (yuān bó)",
     "english": "deep pool; abyss; profound"
   },
   {
@@ -20337,8 +20337,8 @@
     "rank": "2198",
     "char": "旺",
     "pinyin": "wàng",
-    "example": "兴旺 （xīng wàng）",
-    "extraexample": "旺盛 （wàng shèng）",
+    "example": "兴旺 (xīng wàng)",
+    "extraexample": "旺盛 (wàng shèng)",
     "english": "prosperous, flourishing"
   },
   {
@@ -20553,8 +20553,8 @@
     "rank": "2223",
     "char": "脾",
     "pinyin": "pí",
-    "example": "脾气 （pí qi）",
-    "extraexample": "脾胃 （pí wèi）",
+    "example": "脾气 (pí qi)",
+    "extraexample": "脾胃 (pí wèi)",
     "english": "spleen; temper"
   },
   {
@@ -20961,8 +20961,8 @@
     "rank": "2267",
     "char": "钉",
     "pinyin": "dīng",
-    "example": "钉子 （dīng zi）",
-    "extraexample": "钉书机 （dīng shū jī）",
+    "example": "钉子 (dīng zi)",
+    "extraexample": "钉书机 (dīng shū jī)",
     "english": "nail; to nail"
   },
   {
@@ -21001,8 +21001,8 @@
     "rank": "2271",
     "char": "叠",
     "pinyin": "dié",
-    "example": "重叠 （chóng dié）",
-    "extraexample": "叠被子 （dié bèi zi）",
+    "example": "重叠 (chóng dié)",
+    "extraexample": "叠被子 (dié bèi zi)",
     "english": "to pile up; to fold; to repeat"
   },
   {
@@ -21401,8 +21401,8 @@
     "rank": "2320",
     "char": "惶",
     "pinyin": "huáng",
-    "example": "惶恐 （huáng kǒng）",
-    "extraexample": "惶惶不安 （huáng huáng bù ān）",
+    "example": "惶恐 (huáng kǒng)",
+    "extraexample": "惶惶不安 (huáng huáng bù ān)",
     "english": "fearful; anxious; terrified"
   },
   {
@@ -21481,16 +21481,16 @@
     "rank": "2328",
     "char": "衔",
     "pinyin": "xián",
-    "example": "衔着 （xián zhe）",
-    "extraexample": "军衔 （jūn xián）",
+    "example": "衔着 (xián zhe)",
+    "extraexample": "军衔 (jūn xián)",
     "english": "to hold in the mouth; to bear; to harbor; rank; title"
   },
   {
     "rank": "2329",
     "char": "倦",
     "pinyin": "juàn",
-    "example": "疲倦 （pí juàn）",
-    "extraexample": "厌倦 （yàn juàn）",
+    "example": "疲倦 (pí juàn)",
+    "extraexample": "厌倦 (yàn juàn)",
     "english": "tired, weary"
   },
   {
@@ -21649,8 +21649,8 @@
     "rank": "2347",
     "char": "噢",
     "pinyin": "ō",
-    "example": "噢 （ō）",
-    "extraexample": "噢，原来如此 （ō, yuán lái rú cǐ）",
+    "example": "噢 (ō)",
+    "extraexample": "噢，原来如此 (ō, yuán lái rú cǐ)",
     "english": "interjection expressing surprise or understanding"
   },
   {
@@ -21793,8 +21793,8 @@
     "rank": "2364",
     "char": "兔",
     "pinyin": "tù",
-    "example": "兔子 （tù zi）",
-    "extraexample": "白兔 （bái tù）",
+    "example": "兔子 (tù zi)",
+    "extraexample": "白兔 (bái tù)",
     "english": "rabbit, hare"
   },
   {
@@ -21889,8 +21889,8 @@
     "rank": "2373",
     "char": "咳",
     "pinyin": "hāi",
-    "example": "咳 （hāi）",
-    "extraexample": "咳！真美 （hāi! zhēn měi）",
+    "example": "咳 (hāi)",
+    "extraexample": "咳！真美 (hāi! zhēn měi)",
     "english": "used in interjection expressing surprise or admiration"
   },
   {
@@ -22001,8 +22001,8 @@
     "rank": "2386",
     "char": "螺",
     "pinyin": "luó",
-    "example": "螺丝 （luó sī）",
-    "extraexample": "海螺 （hǎi luó）",
+    "example": "螺丝 (luó sī)",
+    "extraexample": "海螺 (hǎi luó)",
     "english": "spiral shell; snail; whorl"
   },
   {
@@ -22169,8 +22169,8 @@
     "rank": "2407",
     "char": "厄",
     "pinyin": "è",
-    "example": "厄运 （è yùn）",
-    "extraexample": "厄尔尼诺 （è ěr ní nuò）",
+    "example": "厄运 (è yùn)",
+    "extraexample": "厄尔尼诺 (è ěr ní nuò)",
     "english": "disaster; difficulty; adversity"
   },
   {
@@ -22225,8 +22225,8 @@
     "rank": "2414",
     "char": "颂",
     "pinyin": "sòng",
-    "example": "歌颂 （gē sòng）",
-    "extraexample": "颂扬 （sòng yáng）",
+    "example": "歌颂 (gē sòng)",
+    "extraexample": "颂扬 (sòng yáng)",
     "english": "to praise, to eulogize; a eulogy, ode"
   },
   {
@@ -22241,8 +22241,8 @@
     "rank": "2416",
     "char": "谐",
     "pinyin": "xié",
-    "example": "和谐 （hé xié）",
-    "extraexample": "谐音 （xié yīn）",
+    "example": "和谐 (hé xié)",
+    "extraexample": "谐音 (xié yīn)",
     "english": "harmonious, in agreement"
   },
   {
@@ -22329,8 +22329,8 @@
     "rank": "2427",
     "char": "稽",
     "pinyin": "jī",
-    "example": "稽查 （jī chá）",
-    "extraexample": "稽留 （jī liú）",
+    "example": "稽查 (jī chá)",
+    "extraexample": "稽留 (jī liú)",
     "english": "to examine, to check; to delay, to procrastinate"
   },
   {
@@ -22593,8 +22593,8 @@
     "rank": "2455",
     "char": "椎",
     "pinyin": "zhuī",
-    "example": "脊椎 （jǐ zhuī）",
-    "extraexample": "椎骨 （zhuī gǔ）",
+    "example": "脊椎 (jǐ zhuī)",
+    "extraexample": "椎骨 (zhuī gǔ)",
     "english": "vertebra; spine"
   },
   {
@@ -22745,8 +22745,8 @@
     "rank": "2473",
     "char": "阎",
     "pinyin": "yán",
-    "example": "阎王 （Yán wáng）",
-    "extraexample": "阎罗 （Yán luó）",
+    "example": "阎王 (Yán wáng)",
+    "extraexample": "阎罗 (Yán luó)",
     "english": "gate of a lane; surname Yan"
   },
   {
@@ -22761,8 +22761,8 @@
     "rank": "2475",
     "char": "虏",
     "pinyin": "lǔ",
-    "example": "俘虏 （fú lǔ）",
-    "extraexample": "虏获 （lǔ huò）",
+    "example": "俘虏 (fú lǔ)",
+    "extraexample": "虏获 (lǔ huò)",
     "english": "captive, prisoner; to capture"
   },
   {
@@ -22841,8 +22841,8 @@
     "rank": "2482",
     "char": "株",
     "pinyin": "zhū",
-    "example": "植株 （zhí zhū）",
-    "extraexample": "一株树 （yī zhū shù）",
+    "example": "植株 (zhí zhū)",
+    "extraexample": "一株树 (yī zhū shù)",
     "english": "plant; tree trunk; measure word for plants"
   },
   {
@@ -23081,8 +23081,8 @@
     "rank": "2510",
     "char": "鄙",
     "pinyin": "bǐ",
-    "example": "鄙视 （bǐ shì）",
-    "extraexample": "卑鄙 （bēi bǐ）",
+    "example": "鄙视 (bǐ shì)",
+    "extraexample": "卑鄙 (bēi bǐ)",
     "english": "low, mean, vulgar; to despise; my (humble)"
   },
   {
@@ -23297,8 +23297,8 @@
     "rank": "2533",
     "char": "詹",
     "pinyin": "zhān",
-    "example": "詹 （zhān）",
-    "extraexample": "詹言 （zhān yán）",
+    "example": "詹 (zhān)",
+    "extraexample": "詹言 (zhān yán)",
     "english": "surname; to talk garrulously"
   },
   {
@@ -23721,8 +23721,8 @@
     "rank": "2581",
     "char": "腕",
     "pinyin": "wàn",
-    "example": "手腕 （shǒu wàn）",
-    "extraexample": "腕表 （wàn biǎo）",
+    "example": "手腕 (shǒu wàn)",
+    "extraexample": "腕表 (wàn biǎo)",
     "english": "wrist"
   },
   {
@@ -23849,8 +23849,8 @@
     "rank": "2596",
     "char": "辜",
     "pinyin": "gū",
-    "example": "无辜 （wú gū）",
-    "extraexample": "辜负 （gū fù）",
+    "example": "无辜 (wú gū)",
+    "extraexample": "辜负 (gū fù)",
     "english": "crime; guilt; to wrong"
   },
   {
@@ -23961,8 +23961,8 @@
     "rank": "2609",
     "char": "泌",
     "pinyin": "mì",
-    "example": "分泌 （fēn mì）",
-    "extraexample": "泌尿 （mì niào）",
+    "example": "分泌 (fēn mì)",
+    "extraexample": "泌尿 (mì niào)",
     "english": "to secrete"
   },
   {
@@ -24025,8 +24025,8 @@
     "rank": "2616",
     "char": "枢",
     "pinyin": "shū",
-    "example": "中枢 （zhōng shū）",
-    "extraexample": "枢纽 （shū niǔ）",
+    "example": "中枢 (zhōng shū)",
+    "extraexample": "枢纽 (shū niǔ)",
     "english": "pivot; hinge; central point"
   },
   {
@@ -24193,16 +24193,16 @@
     "rank": "2635",
     "char": "绸",
     "pinyin": "chóu",
-    "example": "丝绸 （sī chóu）",
-    "extraexample": "绸缎 （chóu duàn）",
+    "example": "丝绸 (sī chóu)",
+    "extraexample": "绸缎 (chóu duàn)",
     "english": "silk fabric; silk cloth"
   },
   {
     "rank": "2636",
     "char": "屿",
     "pinyin": "yǔ",
-    "example": "岛屿 （dǎo yǔ）",
-    "extraexample": "屿岛 （yǔ dǎo）",
+    "example": "岛屿 (dǎo yǔ)",
+    "extraexample": "屿岛 (yǔ dǎo)",
     "english": "islet, small island"
   },
   {
@@ -24281,8 +24281,8 @@
     "rank": "2646",
     "char": "痒",
     "pinyin": "yǎng",
-    "example": "痒 （yǎng）",
-    "extraexample": "抓痒 （zhuā yǎng）",
+    "example": "痒 (yǎng)",
+    "extraexample": "抓痒 (zhuā yǎng)",
     "english": "itch; tickle"
   },
   {
@@ -24393,8 +24393,8 @@
     "rank": "2660",
     "char": "陋",
     "pinyin": "lòu",
-    "example": "丑陋 （chǒu lòu）",
-    "extraexample": "陋习 （lòu xí）",
+    "example": "丑陋 (chǒu lòu)",
+    "extraexample": "陋习 (lòu xí)",
     "english": "plain, ugly, narrow, vulgar"
   },
   {
@@ -24465,8 +24465,8 @@
     "rank": "2668",
     "char": "莹",
     "pinyin": "yíng",
-    "example": "晶莹 （jīng yíng）",
-    "extraexample": "莹白 （yíng bái）",
+    "example": "晶莹 (jīng yíng)",
+    "extraexample": "莹白 (yíng bái)",
     "english": "luster of gems; crystal clear"
   },
   {
@@ -24489,8 +24489,8 @@
     "rank": "2670",
     "char": "狡",
     "pinyin": "jiǎo",
-    "example": "狡猾 （jiǎo huá）",
-    "extraexample": "狡辩 （jiǎo biàn）",
+    "example": "狡猾 (jiǎo huá)",
+    "extraexample": "狡辩 (jiǎo biàn)",
     "english": "crafty, sly, cunning"
   },
   {
@@ -24537,8 +24537,8 @@
     "rank": "2676",
     "char": "缅",
     "pinyin": "miǎn",
-    "example": "缅怀 （miǎn huái）",
-    "extraexample": "缅甸 （Miǎn diàn）",
+    "example": "缅怀 (miǎn huái)",
+    "extraexample": "缅甸 (Miǎn diàn)",
     "english": "remote, distant; to remember; Myanmar (abbr.)"
   },
   {
@@ -24649,8 +24649,8 @@
     "rank": "2689",
     "char": "懈",
     "pinyin": "xiè",
-    "example": "松懈 （sōng xiè）",
-    "extraexample": "不懈努力 （bú xiè nǔ lì）",
+    "example": "松懈 (sōng xiè)",
+    "extraexample": "不懈努力 (bú xiè nǔ lì)",
     "english": "lax, negligent, slack"
   },
   {
@@ -24761,8 +24761,8 @@
     "rank": "2702",
     "char": "烁",
     "pinyin": "shuò",
-    "example": "闪烁 （shǎn shuò）",
-    "extraexample": "烁烁 （shuò shuò）",
+    "example": "闪烁 (shǎn shuò)",
+    "extraexample": "烁烁 (shuò shuò)",
     "english": "to shine; to glitter"
   },
   {
@@ -24857,8 +24857,8 @@
     "rank": "2712",
     "char": "桐",
     "pinyin": "tóng",
-    "example": "梧桐 （wú tóng）",
-    "extraexample": "桐油 （tóng yóu）",
+    "example": "梧桐 (wú tóng)",
+    "extraexample": "桐油 (tóng yóu)",
     "english": "a tree, especially the paulownia or tung tree"
   },
   {
@@ -24881,8 +24881,8 @@
     "rank": "2715",
     "char": "泻",
     "pinyin": "xiè",
-    "example": "腹泻 （fù xiè）",
-    "extraexample": "泻药 （xiè yào）",
+    "example": "腹泻 (fù xiè)",
+    "extraexample": "泻药 (xiè yào)",
     "english": "to purge; to have diarrhea; to flow swiftly"
   },
   {
@@ -25105,8 +25105,8 @@
     "rank": "2740",
     "char": "碳",
     "pinyin": "tàn",
-    "example": "碳 （tàn）",
-    "extraexample": "二氧化碳 （èr yǎng huà tàn）",
+    "example": "碳 (tàn)",
+    "extraexample": "二氧化碳 (èr yǎng huà tàn)",
     "english": "carbon (chemical element)"
   },
   {
@@ -25201,8 +25201,8 @@
     "rank": "2749",
     "char": "俺",
     "pinyin": "ǎn",
-    "example": "俺们 （ǎn men）",
-    "extraexample": "俺家 （ǎn jiā）",
+    "example": "俺们 (ǎn men)",
+    "extraexample": "俺家 (ǎn jiā)",
     "english": "I, me (used in northern dialects, often by males)"
   },
   {
@@ -25225,8 +25225,8 @@
     "rank": "2752",
     "char": "麟",
     "pinyin": "lín",
-    "example": "麒麟 （qí lín）",
-    "extraexample": "麟趾 （lín zhǐ）",
+    "example": "麒麟 (qí lín)",
+    "extraexample": "麟趾 (lín zhǐ)",
     "english": "mythical unicorn-like creature; symbol of good fortune"
   },
   {
@@ -25257,16 +25257,16 @@
     "rank": "2756",
     "char": "澄",
     "pinyin": "chéng",
-    "example": "澄清 （chéng qīng）",
-    "extraexample": "澄澈 （chéng chè）",
+    "example": "澄清 (chéng qīng)",
+    "extraexample": "澄澈 (chéng chè)",
     "english": "clear, limpid (of water); to clarify"
   },
   {
     "rank": "2756",
     "char": "澄",
     "pinyin": "dèng",
-    "example": "澄清（dèng qīng）",
-    "extraexample": "澄沙（dèng shā）",
+    "example": "澄清(dèng qīng)",
+    "extraexample": "澄沙(dèng shā)",
     "english": "to clarify (a liquid); to settle; to make clear"
   },
   {
@@ -25305,8 +25305,8 @@
     "rank": "2759",
     "char": "涡",
     "pinyin": "wō",
-    "example": "漩涡 （xuán wō）",
-    "extraexample": "涡流 （wō liú）",
+    "example": "漩涡 (xuán wō)",
+    "extraexample": "涡流 (wō liú)",
     "english": "whirlpool, eddy"
   },
   {
@@ -25321,8 +25321,8 @@
     "rank": "2761",
     "char": "暇",
     "pinyin": "xiá",
-    "example": "闲暇 （xián xiá）",
-    "extraexample": "无暇 （wú xiá）",
+    "example": "闲暇 (xián xiá)",
+    "extraexample": "无暇 (wú xiá)",
     "english": "leisure, free time"
   },
   {
@@ -26009,8 +26009,8 @@
     "rank": "2838",
     "char": "嘟",
     "pinyin": "dū",
-    "example": "嘟嘟（dū dū）",
-    "extraexample": "喇叭嘟嘟响（lǎ ba dū dū xiǎng）",
+    "example": "嘟嘟(dū dū)",
+    "extraexample": "喇叭嘟嘟响(lǎ ba dū dū xiǎng)",
     "english": "toot; honk; sound of a horn or whistle"
   },
   {
@@ -26209,8 +26209,8 @@
     "rank": "2860",
     "char": "喔",
     "pinyin": "ō",
-    "example": "喔（ō）",
-    "extraexample": "喔，原来如此（ō, yuán lái rú cǐ）",
+    "example": "喔(ō)",
+    "extraexample": "喔，原来如此(ō, yuán lái rú cǐ)",
     "english": "interjection expressing surprise or understanding"
   },
   {
@@ -26377,8 +26377,8 @@
     "rank": "2877",
     "char": "娅",
     "pinyin": "yà",
-    "example": "娅 （yà）",
-    "extraexample": "娅姹 （yà chà）",
+    "example": "娅 (yà)",
+    "extraexample": "娅姹 (yà chà)",
     "english": "used in female names; elegant"
   },
   {
@@ -26393,8 +26393,8 @@
     "rank": "2879",
     "char": "萌",
     "pinyin": "méng",
-    "example": "萌芽 （méng yá）",
-    "extraexample": "萌发 （méng fā）",
+    "example": "萌芽 (méng yá)",
+    "extraexample": "萌发 (méng fā)",
     "english": "to sprout, to bud; cute, adorable"
   },
   {
@@ -26481,8 +26481,8 @@
     "rank": "2888",
     "char": "蚂",
     "pinyin": "mǎ",
-    "example": "蚂蚁 （mǎ yǐ）",
-    "extraexample": "蚂蜂 （mǎ fēng）",
+    "example": "蚂蚁 (mǎ yǐ)",
+    "extraexample": "蚂蜂 (mǎ fēng)",
     "english": "ant"
   },
   {
@@ -26553,16 +26553,16 @@
     "rank": "2894",
     "char": "缕",
     "pinyin": "lǔ:",
-    "example": "一缕 （yī lǚ）",
-    "extraexample": "千丝万缕 （qiān sī wàn lǚ）",
+    "example": "一缕 (yī lǚ)",
+    "extraexample": "千丝万缕 (qiān sī wàn lǚ)",
     "english": "a thread; detailed; in detail"
   },
   {
     "rank": "2894",
     "char": "缕",
     "pinyin": "lv3",
-    "example": "一缕 （yī lǚ）",
-    "extraexample": "千丝万缕 （qiān sī wàn lǚ）",
+    "example": "一缕 (yī lǚ)",
+    "extraexample": "千丝万缕 (qiān sī wàn lǚ)",
     "english": "thread; strand; wisp; detailed"
   },
   {
@@ -26609,8 +26609,8 @@
     "rank": "2899",
     "char": "呐",
     "pinyin": "ne",
-    "example": "呐 （ne）",
-    "extraexample": "你呐 （nǐ ne）",
+    "example": "呐 (ne)",
+    "extraexample": "你呐 (nǐ ne)",
     "english": "sentence-final particle, used to soften the tone or indicate continuation"
   },
   {
@@ -26713,8 +26713,8 @@
     "rank": "2911",
     "char": "廓",
     "pinyin": "kuò",
-    "example": "轮廓 （lún kuò）",
-    "extraexample": "廓清 （kuò qīng）",
+    "example": "轮廓 (lún kuò)",
+    "extraexample": "廓清 (kuò qīng)",
     "english": "outline, boundary; wide, extensive"
   },
   {
@@ -26753,8 +26753,8 @@
     "rank": "2916",
     "char": "矫",
     "pinyin": "jiǎo",
-    "example": "矫正 （jiǎo zhèng）",
-    "extraexample": "矫健 （jiǎo jiàn）",
+    "example": "矫正 (jiǎo zhèng)",
+    "extraexample": "矫健 (jiǎo jiàn)",
     "english": "to correct, to rectify; strong, brave"
   },
   {
@@ -26769,8 +26769,8 @@
     "rank": "2918",
     "char": "枉",
     "pinyin": "wǎng",
-    "example": "冤枉 （yuān wǎng）",
-    "extraexample": "枉费心机 （wǎng fèi xīn jī）",
+    "example": "冤枉 (yuān wǎng)",
+    "extraexample": "枉费心机 (wǎng fèi xīn jī)",
     "english": "to twist; crooked; in vain; unjustly"
   },
   {
@@ -26873,8 +26873,8 @@
     "rank": "2930",
     "char": "绰",
     "pinyin": "chāo",
-    "example": "绰起（chāo qǐ）",
-    "extraexample": "绰枪（chāo qiāng）",
+    "example": "绰起(chāo qǐ)",
+    "extraexample": "绰枪(chāo qiāng)",
     "english": "to grab; to take hold of"
   },
   {
@@ -27185,8 +27185,8 @@
     "rank": "2964",
     "char": "蝴",
     "pinyin": "hú",
-    "example": "蝴蝶 （hú dié）",
-    "extraexample": "蝴蝶结 （hú dié jié）",
+    "example": "蝴蝶 (hú dié)",
+    "extraexample": "蝴蝶结 (hú dié jié)",
     "english": "butterfly"
   },
   {
@@ -27337,8 +27337,8 @@
     "rank": "2982",
     "char": "嚣",
     "pinyin": "xiāo",
-    "example": "喧嚣 （xuān xiāo）",
-    "extraexample": "叫嚣 （jiào xiāo）",
+    "example": "喧嚣 (xuān xiāo)",
+    "extraexample": "叫嚣 (jiào xiāo)",
     "english": "clamor, noise, to make noise"
   },
   {
@@ -27369,8 +27369,8 @@
     "rank": "2985",
     "char": "浊",
     "pinyin": "zhuó",
-    "example": "浑浊 （hún zhuó）",
-    "extraexample": "浊水 （zhuó shuǐ）",
+    "example": "浑浊 (hún zhuó)",
+    "extraexample": "浊水 (zhuó shuǐ)",
     "english": "muddy, turbid; impure, corrupt"
   },
   {
@@ -27441,8 +27441,8 @@
     "rank": "2992",
     "char": "翘",
     "pinyin": "qiào",
-    "example": "翘起 （qiào qǐ）",
-    "extraexample": "翘尾巴 （qiào wěi ba）",
+    "example": "翘起 (qiào qǐ)",
+    "extraexample": "翘尾巴 (qiào wěi ba)",
     "english": "to stick up; to raise; to become warped"
   },
   {
@@ -27681,8 +27681,8 @@
     "rank": "3019",
     "char": "睦",
     "pinyin": "mù",
-    "example": "和睦 （hé mù）",
-    "extraexample": "睦邻 （mù lín）",
+    "example": "和睦 (hé mù)",
+    "extraexample": "睦邻 (mù lín)",
     "english": "harmonious; peaceful; friendly"
   },
   {
@@ -27905,8 +27905,8 @@
     "rank": "3046",
     "char": "峙",
     "pinyin": "zhì",
-    "example": "对峙 （duì zhì）",
-    "extraexample": "峙立 （zhì lì）",
+    "example": "对峙 (duì zhì)",
+    "extraexample": "峙立 (zhì lì)",
     "english": "to stand erect; to tower"
   },
   {
@@ -27969,8 +27969,8 @@
     "rank": "3054",
     "char": "朕",
     "pinyin": "zhèn",
-    "example": "朕 （zhèn）",
-    "extraexample": "朕意已决 （zhèn yì yǐ jué）",
+    "example": "朕 (zhèn)",
+    "extraexample": "朕意已决 (zhèn yì yǐ jué)",
     "english": "I, the emperor (used by the sovereign in imperial China)"
   },
   {
@@ -28217,8 +28217,8 @@
     "rank": "3080",
     "char": "咦",
     "pinyin": "yí",
-    "example": "咦 （yí）",
-    "extraexample": "咦？你怎么来了？ （yí? nǐ zěnme lái le?）",
+    "example": "咦 (yí)",
+    "extraexample": "咦？你怎么来了？ (yí? nǐ zěnme lái le?)",
     "english": "exclamation of surprise"
   },
   {
@@ -28537,8 +28537,8 @@
     "rank": "3118",
     "char": "糙",
     "pinyin": "cāo",
-    "example": "粗糙 （cū cāo）",
-    "extraexample": "糙米 （cāo mǐ）",
+    "example": "粗糙 (cū cāo)",
+    "extraexample": "糙米 (cāo mǐ)",
     "english": "rough, coarse, unrefined"
   },
   {
@@ -28585,8 +28585,8 @@
     "rank": "3123",
     "char": "祀",
     "pinyin": "sì",
-    "example": "祭祀 （jì sì）",
-    "extraexample": "祀天 （sì tiān）",
+    "example": "祭祀 (jì sì)",
+    "extraexample": "祀天 (sì tiān)",
     "english": "to sacrifice; to offer sacrifices to gods or ancestors"
   },
   {
@@ -28753,8 +28753,8 @@
     "rank": "3144",
     "char": "忒",
     "pinyin": "tè",
-    "example": "忒（tè）",
-    "extraexample": "忒煞（tè shà）",
+    "example": "忒(tè)",
+    "extraexample": "忒煞(tè shà)",
     "english": "error; mistake; too; very"
   },
   {
@@ -28849,8 +28849,8 @@
     "rank": "3155",
     "char": "畸",
     "pinyin": "jī",
-    "example": "畸形 （jī xíng）",
-    "extraexample": "畸变 （jī biàn）",
+    "example": "畸形 (jī xíng)",
+    "extraexample": "畸变 (jī biàn)",
     "english": "irregular, abnormal, deformed"
   },
   {
@@ -29009,16 +29009,16 @@
     "rank": "3173",
     "char": "呃",
     "pinyin": "è",
-    "example": "呃逆（è nì）",
-    "extraexample": "呃了一声（è le yī shēng）",
+    "example": "呃逆(è nì)",
+    "extraexample": "呃了一声(è le yī shēng)",
     "english": "a sound of hesitation or surprise; er..."
   },
   {
     "rank": "3173",
     "char": "呃",
     "pinyin": "e",
-    "example": "呃 （e）",
-    "extraexample": "呃了一声 （e le yi sheng）",
+    "example": "呃 (e)",
+    "extraexample": "呃了一声 (e le yi sheng)",
     "english": "a sound of hesitation or surprise; er..."
   },
   {
@@ -29089,8 +29089,8 @@
     "rank": "3180",
     "char": "佟",
     "pinyin": "tóng",
-    "example": "佟 （tóng）",
-    "extraexample": "佟姓 （tóng xìng）",
+    "example": "佟 (tóng)",
+    "extraexample": "佟姓 (tóng xìng)",
     "english": "a surname"
   },
   {
@@ -29265,8 +29265,8 @@
     "rank": "3200",
     "char": "妞",
     "pinyin": "nīu",
-    "example": "妞妞 （niū niū）",
-    "extraexample": "小妞 （xiǎo niū）",
+    "example": "妞妞 (niū niū)",
+    "extraexample": "小妞 (xiǎo niū)",
     "english": "girl; young woman"
   },
   {
@@ -29281,8 +29281,8 @@
     "rank": "3202",
     "char": "唔",
     "pinyin": "én",
-    "example": "唔（én）",
-    "extraexample": "唔（én）",
+    "example": "唔(én)",
+    "extraexample": "唔(én)",
     "english": "UNKNOWN"
   },
   {
@@ -29297,8 +29297,8 @@
     "rank": "3204",
     "char": "鲤",
     "pinyin": "lǐ",
-    "example": "鲤鱼 （lǐ yú）",
-    "extraexample": "锦鲤 （jǐn lǐ）",
+    "example": "鲤鱼 (lǐ yú)",
+    "extraexample": "锦鲤 (jǐn lǐ)",
     "english": "carp"
   },
   {
@@ -29329,8 +29329,8 @@
     "rank": "3208",
     "char": "辙",
     "pinyin": "chè",
-    "example": "辙（chè）",
-    "extraexample": "辙退（chè tuì）",
+    "example": "辙(chè)",
+    "extraexample": "辙退(chè tuì)",
     "english": "to remove; to clear away"
   },
   {
@@ -29433,8 +29433,8 @@
     "rank": "3218",
     "char": "涤",
     "pinyin": "dí",
-    "example": "洗涤 （xǐ dí）",
-    "extraexample": "涤荡 （dí dàng）",
+    "example": "洗涤 (xǐ dí)",
+    "extraexample": "涤荡 (dí dàng)",
     "english": "to wash, to cleanse"
   },
   {
@@ -29561,8 +29561,8 @@
     "rank": "3233",
     "char": "苇",
     "pinyin": "wěi",
-    "example": "芦苇 （lú wěi）",
-    "extraexample": "苇席 （wěi xí）",
+    "example": "芦苇 (lú wěi)",
+    "extraexample": "苇席 (wěi xí)",
     "english": "reed, a type of aquatic plant"
   },
   {
@@ -29689,8 +29689,8 @@
     "rank": "3248",
     "char": "拽",
     "pinyin": "yè",
-    "example": "拽（yè）",
-    "extraexample": "拽杖（yè zhàng）",
+    "example": "拽(yè)",
+    "extraexample": "拽杖(yè zhàng)",
     "english": "to drag, to pull"
   },
   {
@@ -29761,8 +29761,8 @@
     "rank": "3253",
     "char": "谤",
     "pinyin": "bàng",
-    "example": "诽谤 （fěi bàng）",
-    "extraexample": "谤言 （bàng yán）",
+    "example": "诽谤 (fěi bàng)",
+    "extraexample": "谤言 (bàng yán)",
     "english": "to slander; to defame; to libel"
   },
   {
@@ -29793,8 +29793,8 @@
     "rank": "3257",
     "char": "倪",
     "pinyin": "ní",
-    "example": "倪 （ní）",
-    "extraexample": "倪匡 （ní kuāng）",
+    "example": "倪 (ní)",
+    "extraexample": "倪匡 (ní kuāng)",
     "english": "a surname; also used in transliteration"
   },
   {
@@ -30113,16 +30113,16 @@
     "rank": "3294",
     "char": "嗨",
     "pinyin": "hāi",
-    "example": "嗨 （hāi）",
-    "extraexample": "嗨哟 （hāi yō）",
+    "example": "嗨 (hāi)",
+    "extraexample": "嗨哟 (hāi yō)",
     "english": "hey; hi (used to attract attention or express surprise)"
   },
   {
     "rank": "3294",
     "char": "嗨",
     "pinyin": "hēi",
-    "example": "嗨 （hēi）",
-    "extraexample": "嗨，你好 （hēi, nǐ hǎo）",
+    "example": "嗨 (hēi)",
+    "extraexample": "嗨，你好 (hēi, nǐ hǎo)",
     "english": "an interjection used to call attention or express surprise"
   },
   {
@@ -30273,8 +30273,8 @@
     "rank": "3309",
     "char": "沌",
     "pinyin": "dùn",
-    "example": "混沌 （hùn dùn）",
-    "extraexample": "沌沌 （dùn dùn）",
+    "example": "混沌 (hùn dùn)",
+    "extraexample": "沌沌 (dùn dùn)",
     "english": "chaotic, confused; name of a river"
   },
   {
@@ -30289,8 +30289,8 @@
     "rank": "3311",
     "char": "喳",
     "pinyin": "chā",
-    "example": "喳喳 （chā chā）",
-    "extraexample": "喳喳声 （chā chā shēng）",
+    "example": "喳喳 (chā chā)",
+    "extraexample": "喳喳声 (chā chā shēng)",
     "english": "low voice; whisper; used in 喳喳 (chāchā) for whispering sound"
   },
   {
@@ -30385,8 +30385,8 @@
     "rank": "3322",
     "char": "躇",
     "pinyin": "chú",
-    "example": "踌躇 （chóu chú）",
-    "extraexample": "躇步 （chú bù）",
+    "example": "踌躇 (chóu chú)",
+    "extraexample": "躇步 (chú bù)",
     "english": "to hesitate, to be undecided"
   },
   {
@@ -30633,8 +30633,8 @@
     "rank": "3350",
     "char": "挛",
     "pinyin": "luán",
-    "example": "痉挛 （jìng luán）",
-    "extraexample": "挛缩 （luán suō）",
+    "example": "痉挛 (jìng luán)",
+    "extraexample": "挛缩 (luán suō)",
     "english": "to curl up; to contract; cramped"
   },
   {
@@ -30681,8 +30681,8 @@
     "rank": "3356",
     "char": "梧",
     "pinyin": "wú",
-    "example": "梧桐 （wú tóng）",
-    "extraexample": "碧梧 （bì wú）",
+    "example": "梧桐 (wú tóng)",
+    "extraexample": "碧梧 (bì wú)",
     "english": "Chinese parasol tree (Firmiana simplex)"
   },
   {
@@ -31553,8 +31553,8 @@
     "rank": "3457",
     "char": "狞",
     "pinyin": "níng",
-    "example": "狰狞 （zhēng níng）",
-    "extraexample": "狞笑 （níng xiào）",
+    "example": "狰狞 (zhēng níng)",
+    "extraexample": "狞笑 (níng xiào)",
     "english": "fierce, ferocious (of facial expression)"
   },
   {
@@ -31569,8 +31569,8 @@
     "rank": "3459",
     "char": "骼",
     "pinyin": "gé",
-    "example": "骨骼 （gǔ gé）",
-    "extraexample": "骼髅 （gé lóu）",
+    "example": "骨骼 (gǔ gé)",
+    "extraexample": "骼髅 (gé lóu)",
     "english": "skeleton; bone structure"
   },
   {
@@ -31641,8 +31641,8 @@
     "rank": "3467",
     "char": "蛟",
     "pinyin": "jiāo",
-    "example": "蛟龙 （jiāo lóng）",
-    "extraexample": "蛟螭 （jiāo chī）",
+    "example": "蛟龙 (jiāo lóng)",
+    "extraexample": "蛟螭 (jiāo chī)",
     "english": "a mythical dragon-like creature; flood dragon"
   },
   {
@@ -32153,8 +32153,8 @@
     "rank": "3527",
     "char": "疙",
     "pinyin": "gē",
-    "example": "疙瘩 （gē da）",
-    "extraexample": "疙疤 （gē bā）",
+    "example": "疙瘩 (gē da)",
+    "extraexample": "疙疤 (gē bā)",
     "english": "a lump or bump on the skin; a knot or swelling"
   },
   {
@@ -32441,8 +32441,8 @@
     "rank": "3559",
     "char": "俨",
     "pinyin": "yǎn",
-    "example": "俨然 （yǎn rán）",
-    "extraexample": "俨如 （yǎn rú）",
+    "example": "俨然 (yǎn rán)",
+    "extraexample": "俨如 (yǎn rú)",
     "english": "solemn, majestic, dignified"
   },
   {
@@ -32977,8 +32977,8 @@
     "rank": "3621",
     "char": "狙",
     "pinyin": "jū",
-    "example": "狙击 （jū jī）",
-    "extraexample": "狙击手 （jū jī shǒu）",
+    "example": "狙击 (jū jī)",
+    "extraexample": "狙击手 (jū jī shǒu)",
     "english": "to ambush; to lie in wait; sniper"
   },
   {
@@ -33057,8 +33057,8 @@
     "rank": "3629",
     "char": "拗",
     "pinyin": "nìu",
-    "example": "执拗 （zhí nìu）",
-    "extraexample": "拗脾气 （nìu pí qi）",
+    "example": "执拗 (zhí nìu)",
+    "extraexample": "拗脾气 (nìu pí qi)",
     "english": "stubborn, obstinate"
   },
   {
@@ -33329,8 +33329,8 @@
     "rank": "3662",
     "char": "笈",
     "pinyin": "jí",
-    "example": "笈（jí）",
-    "extraexample": "负笈（fù jí）",
+    "example": "笈(jí)",
+    "extraexample": "负笈(fù jí)",
     "english": "a book or document; a bamboo case for books"
   },
   {
@@ -33449,8 +33449,8 @@
     "rank": "3677",
     "char": "悻",
     "pinyin": "xìng",
-    "example": "悻悻（xìng xìng）",
-    "extraexample": "悻然（xìng rán）",
+    "example": "悻悻(xìng xìng)",
+    "extraexample": "悻然(xìng rán)",
     "english": "anger, resentment"
   },
   {
@@ -33497,8 +33497,8 @@
     "rank": "3683",
     "char": "诠",
     "pinyin": "quán",
-    "example": "诠释（quán shì）",
-    "extraexample": "诠注（quán zhù）",
+    "example": "诠释(quán shì)",
+    "extraexample": "诠注(quán zhù)",
     "english": "to explain, to comment"
   },
   {
@@ -33649,8 +33649,8 @@
     "rank": "3701",
     "char": "氟",
     "pinyin": "fú",
-    "example": "氟气 （fú qì）",
-    "extraexample": "氟化物 （fú huà wù）",
+    "example": "氟气 (fú qì)",
+    "extraexample": "氟化物 (fú huà wù)",
     "english": "fluorine (chemical element)"
   },
   {
@@ -33665,8 +33665,8 @@
     "rank": "3703",
     "char": "叼",
     "pinyin": "diāo",
-    "example": "叼着（diāo zhe）",
-    "extraexample": "叼烟（diāo yān）",
+    "example": "叼着(diāo zhe)",
+    "extraexample": "叼烟(diāo yān)",
     "english": "to hold in the mouth"
   },
   {
@@ -33713,8 +33713,8 @@
     "rank": "3707",
     "char": "蹭",
     "pinyin": "cèng",
-    "example": "蹭破（cèng pò）",
-    "extraexample": "蹭饭（cèng fàn）",
+    "example": "蹭破(cèng pò)",
+    "extraexample": "蹭饭(cèng fàn)",
     "english": "to rub against; to scrape; to dawdle"
   },
   {
@@ -33961,8 +33961,8 @@
     "rank": "3736",
     "char": "衹",
     "pinyin": "tǐ",
-    "example": "衹（tǐ）",
-    "extraexample": "衹（tǐ）",
+    "example": "衹(tǐ)",
+    "extraexample": "衹(tǐ)",
     "english": "UNKNOWN"
   },
   {
@@ -34281,8 +34281,8 @@
     "rank": "3772",
     "char": "汞",
     "pinyin": "gǒng",
-    "example": "汞 （gǒng）",
-    "extraexample": "水银 （shuǐ yín）",
+    "example": "汞 (gǒng)",
+    "extraexample": "水银 (shuǐ yín)",
     "english": "mercury (chemical element)"
   },
   {
@@ -34305,8 +34305,8 @@
     "rank": "3775",
     "char": "巅",
     "pinyin": "diān",
-    "example": "巅峰 （diān fēng）",
-    "extraexample": "山巅 （shān diān）",
+    "example": "巅峰 (diān fēng)",
+    "extraexample": "山巅 (shān diān)",
     "english": "summit, peak, top"
   },
   {
@@ -34433,8 +34433,8 @@
     "rank": "3791",
     "char": "摒",
     "pinyin": "bìng",
-    "example": "摒弃 （bìng qì）",
-    "extraexample": "摒除 （bìng chú）",
+    "example": "摒弃 (bìng qì)",
+    "extraexample": "摒除 (bìng chú)",
     "english": "to discard, to get rid of"
   },
   {
@@ -34689,8 +34689,8 @@
     "rank": "3823",
     "char": "懵",
     "pinyin": "měng",
-    "example": "懵懂 （měng dǒng）",
-    "extraexample": "懵然 （měng rán）",
+    "example": "懵懂 (měng dǒng)",
+    "extraexample": "懵然 (měng rán)",
     "english": "confused; muddled; ignorant"
   },
   {
@@ -34737,8 +34737,8 @@
     "rank": "3829",
     "char": "蝙",
     "pinyin": "biān",
-    "example": "蝙蝠 （biān fú）",
-    "extraexample": "蝙蝠侠 （biān fú xiá）",
+    "example": "蝙蝠 (biān fú)",
+    "extraexample": "蝙蝠侠 (biān fú xiá)",
     "english": "bat (animal)"
   },
   {
@@ -34785,8 +34785,8 @@
     "rank": "3835",
     "char": "骥",
     "pinyin": "jì",
-    "example": "骥（jì）",
-    "extraexample": "老骥伏枥（lǎo jì fú lì）",
+    "example": "骥(jì)",
+    "extraexample": "老骥伏枥(lǎo jì fú lì)",
     "english": "a fine horse; steed"
   },
   {
@@ -34833,8 +34833,8 @@
     "rank": "3840",
     "char": "秸",
     "pinyin": "jiē",
-    "example": "秸秆 （jiē gǎn）",
-    "extraexample": "麦秸 （mài jiē）",
+    "example": "秸秆 (jiē gǎn)",
+    "extraexample": "麦秸 (mài jiē)",
     "english": "straw; stalk of grain"
   },
   {
@@ -34857,8 +34857,8 @@
     "rank": "3843",
     "char": "鑫",
     "pinyin": "xīn",
-    "example": "鑫鑫 （xīn xīn）",
-    "extraexample": "鑫源 （xīn yuán）",
+    "example": "鑫鑫 (xīn xīn)",
+    "extraexample": "鑫源 (xīn yuán)",
     "english": "prosperity; wealth (used in names or business names)"
   },
   {
@@ -35041,8 +35041,8 @@
     "rank": "3864",
     "char": "箓",
     "pinyin": "lù",
-    "example": "符箓 （fú lù）",
-    "extraexample": "箓图 （lù tú）",
+    "example": "符箓 (fú lù)",
+    "extraexample": "箓图 (lù tú)",
     "english": "a book or record, especially a Taoist register or talisman"
   },
   {
@@ -35073,8 +35073,8 @@
     "rank": "3868",
     "char": "呸",
     "pinyin": "pēi",
-    "example": "呸 （pēi）",
-    "extraexample": "呸，胡说 （pēi, hú shuō）",
+    "example": "呸 (pēi)",
+    "extraexample": "呸，胡说 (pēi, hú shuō)",
     "english": "An interjection expressing contempt or disgust; pah!"
   },
   {
@@ -35217,8 +35217,8 @@
     "rank": "3884",
     "char": "踊",
     "pinyin": "yǒng",
-    "example": "踊る （おどる）",
-    "extraexample": "踊り子 （おどりこ）",
+    "example": "踊る (おどる)",
+    "extraexample": "踊り子 (おどりこ)",
     "english": "to leap; to jump; to dance"
   },
   {
@@ -35241,8 +35241,8 @@
     "rank": "3887",
     "char": "稷",
     "pinyin": "jì",
-    "example": "稷（jì）",
-    "extraexample": "社稷（shè jì）",
+    "example": "稷(jì)",
+    "extraexample": "社稷(shè jì)",
     "english": "millet; god of grains"
   },
   {
@@ -35505,8 +35505,8 @@
     "rank": "3919",
     "char": "翟",
     "pinyin": "zhái",
-    "example": "翟 （zhái）",
-    "extraexample": "翟姓 （zhái xìng）",
+    "example": "翟 (zhái)",
+    "extraexample": "翟姓 (zhái xìng)",
     "english": "surname Zhai"
   },
   {
@@ -35657,8 +35657,8 @@
     "rank": "3936",
     "char": "泞",
     "pinyin": "nìng",
-    "example": "泥泞 （ní nìng）",
-    "extraexample": "泞路 （nìng lù）",
+    "example": "泥泞 (ní nìng)",
+    "extraexample": "泞路 (nìng lù)",
     "english": "muddy, slushy"
   },
   {
@@ -35897,8 +35897,8 @@
     "rank": "3964",
     "char": "唷",
     "pinyin": "yō",
-    "example": "唷（yō），你来了！",
-    "extraexample": "唷唷（yō yō）",
+    "example": "唷(yō)，你来了！",
+    "extraexample": "唷唷(yō yō)",
     "english": "interjection expressing surprise or calling attention"
   },
   {
@@ -35977,8 +35977,8 @@
     "rank": "3973",
     "char": "靳",
     "pinyin": "jìn",
-    "example": "靳（jìn）",
-    "extraexample": "靳固（jìn gù）",
+    "example": "靳(jìn)",
+    "extraexample": "靳固(jìn gù)",
     "english": "a surname; also refers to a type of tight-fitting garment"
   },
   {
@@ -36017,8 +36017,8 @@
     "rank": "3978",
     "char": "诙",
     "pinyin": "huī",
-    "example": "诙谐 （huī xié）",
-    "extraexample": "诙谐幽默 （huī xié yōu mò）",
+    "example": "诙谐 (huī xié)",
+    "extraexample": "诙谐幽默 (huī xié yōu mò)",
     "english": "humorous, witty"
   },
   {
@@ -36313,8 +36313,8 @@
     "rank": "4012",
     "char": "篓",
     "pinyin": "lǒu",
-    "example": "竹篓 （zhú lǒu）",
-    "extraexample": "背篓 （bēi lǒu）",
+    "example": "竹篓 (zhú lǒu)",
+    "extraexample": "背篓 (bēi lǒu)",
     "english": "basket"
   },
   {
@@ -36401,8 +36401,8 @@
     "rank": "4023",
     "char": "镁",
     "pinyin": "měi",
-    "example": "镁 （měi）",
-    "extraexample": "镁合金 （měi hé jīn）",
+    "example": "镁 (měi)",
+    "extraexample": "镁合金 (měi hé jīn)",
     "english": "magnesium (Mg), a metallic element"
   },
   {
@@ -36601,8 +36601,8 @@
     "rank": "4047",
     "char": "狰",
     "pinyin": "zhēng",
-    "example": "狰狞 （zhēng níng）",
-    "extraexample": "面目狰狞 （miàn mù zhēng níng）",
+    "example": "狰狞 (zhēng níng)",
+    "extraexample": "面目狰狞 (miàn mù zhēng níng)",
     "english": "fierce, ferocious (used in compound words)"
   },
   {
@@ -36745,8 +36745,8 @@
     "rank": "4062",
     "char": "梆",
     "pinyin": "bāng",
-    "example": "梆子 （bāng zi）",
-    "extraexample": "梆梆 （bāng bāng）",
+    "example": "梆子 (bāng zi)",
+    "extraexample": "梆梆 (bāng bāng)",
     "english": "a wooden clapper used as a sound-making device; also used in place names"
   },
   {
@@ -37105,8 +37105,8 @@
     "rank": "4104",
     "char": "嗷",
     "pinyin": "áo",
-    "example": "嗷嗷（áo áo）",
-    "extraexample": "嗷叫（áo jiào）",
+    "example": "嗷嗷(áo áo)",
+    "extraexample": "嗷叫(áo jiào)",
     "english": "sound of crying or shouting; roar"
   },
   {
@@ -37345,8 +37345,8 @@
     "rank": "4133",
     "char": "徨",
     "pinyin": "huáng",
-    "example": "彷徨（páng huáng）",
-    "extraexample": "徨徨（huáng huáng）",
+    "example": "彷徨(páng huáng)",
+    "extraexample": "徨徨(huáng huáng)",
     "english": "to wander; to roam; anxious"
   },
   {
@@ -37409,8 +37409,8 @@
     "rank": "4141",
     "char": "嗬",
     "pinyin": "hē",
-    "example": "嗬（hē）",
-    "extraexample": "嗬哟（hē yō）",
+    "example": "嗬(hē)",
+    "extraexample": "嗬哟(hē yō)",
     "english": "an interjection expressing surprise or admiration"
   },
   {
@@ -37457,8 +37457,8 @@
     "rank": "4146",
     "char": "蛐",
     "pinyin": "qū",
-    "example": "蛐蛐 （qū qu）",
-    "extraexample": "斗蛐蛐 （dòu qū qu）",
+    "example": "蛐蛐 (qū qu)",
+    "extraexample": "斗蛐蛐 (dòu qū qu)",
     "english": "cricket (insect)"
   },
   {
@@ -37897,8 +37897,8 @@
     "rank": "4197",
     "char": "椿",
     "pinyin": "chūn",
-    "example": "香椿 （xiāng chūn）",
-    "extraexample": "椿树 （chūn shù）",
+    "example": "香椿 (xiāng chūn)",
+    "extraexample": "椿树 (chūn shù)",
     "english": "Chinese toon, a deciduous tree with edible leaves"
   },
   {
@@ -38065,8 +38065,8 @@
     "rank": "4217",
     "char": "镭",
     "pinyin": "léi",
-    "example": "镭射 （léi shè）",
-    "extraexample": "镭元素 （léi yuán sù）",
+    "example": "镭射 (léi shè)",
+    "extraexample": "镭元素 (léi yuán sù)",
     "english": "radium (chemical element)"
   },
   {
@@ -38169,8 +38169,8 @@
     "rank": "4228",
     "char": "阖",
     "pinyin": "hé",
-    "example": "阖家（hé jiā）",
-    "extraexample": "阖眼（hé yǎn）",
+    "example": "阖家(hé jiā)",
+    "extraexample": "阖眼(hé yǎn)",
     "english": "close; shut; whole; entire"
   },
   {
@@ -38585,8 +38585,8 @@
     "rank": "4273",
     "char": "锏",
     "pinyin": "jiǎn",
-    "example": "锏（jiǎn）",
-    "extraexample": "撒手锏（sā shǒu jiǎn）",
+    "example": "锏(jiǎn)",
+    "extraexample": "撒手锏(sā shǒu jiǎn)",
     "english": "a weapon; a mace (used in ancient China)"
   },
   {
@@ -38937,8 +38937,8 @@
     "rank": "4315",
     "char": "皙",
     "pinyin": "xī",
-    "example": "白皙 （bái xī）",
-    "extraexample": "皙肤 （xī fū）",
+    "example": "白皙 (bái xī)",
+    "extraexample": "皙肤 (xī fū)",
     "english": "fair-skinned; white"
   },
   {
@@ -39201,8 +39201,8 @@
     "rank": "4348",
     "char": "鹑",
     "pinyin": "chún",
-    "example": "鹑衣（chún yī）",
-    "extraexample": "鹑居（chún jū）",
+    "example": "鹑衣(chún yī)",
+    "extraexample": "鹑居(chún jū)",
     "english": "quail (bird)"
   },
   {
@@ -39521,8 +39521,8 @@
     "rank": "4387",
     "char": "衢",
     "pinyin": "qú",
-    "example": "通衢（tōng qú）",
-    "extraexample": "衢道（qú dào）",
+    "example": "通衢(tōng qú)",
+    "extraexample": "衢道(qú dào)",
     "english": "a thoroughfare; a crossroads; a road leading in four directions"
   },
   {
@@ -40105,8 +40105,8 @@
     "rank": "4454",
     "char": "伲",
     "pinyin": "nì",
-    "example": "伲（nì）",
-    "extraexample": "伲俚（nì lǐ）",
+    "example": "伲(nì)",
+    "extraexample": "伲俚(nì lǐ)",
     "english": "we; us (dialectal)"
   },
   {
@@ -40249,8 +40249,8 @@
     "rank": "4471",
     "char": "唰",
     "pinyin": "shuā",
-    "example": "唰唰（shuā shuā）",
-    "extraexample": "唰的一声（shuā de yī shēng）",
+    "example": "唰唰(shuā shuā)",
+    "extraexample": "唰的一声(shuā de yī shēng)",
     "english": "onomatopoeia for a swishing or rustling sound"
   },
   {
@@ -40305,16 +40305,16 @@
     "rank": "4478",
     "char": "峋",
     "pinyin": "xún",
-    "example": "嶙峋 （lín xún）",
-    "extraexample": "峋山 （xún shān）",
+    "example": "嶙峋 (lín xún)",
+    "extraexample": "峋山 (xún shān)",
     "english": "steep; lofty (used in place names)"
   },
   {
     "rank": "4479",
     "char": "袂",
     "pinyin": "mèi",
-    "example": "联袂 （lián mèi）",
-    "extraexample": "分袂 （fēn mèi）",
+    "example": "联袂 (lián mèi)",
+    "extraexample": "分袂 (fēn mèi)",
     "english": "sleeve"
   },
   {
@@ -40545,16 +40545,16 @@
     "rank": "4507",
     "char": "芪",
     "pinyin": "qí",
-    "example": "黄芪（huáng qí）",
-    "extraexample": "芪归（qí guī）",
+    "example": "黄芪(huáng qí)",
+    "extraexample": "芪归(qí guī)",
     "english": "a type of medicinal herb, Astragalus membranaceus"
   },
   {
     "rank": "4508",
     "char": "觯",
     "pinyin": "zhì",
-    "example": "觯（zhì）",
-    "extraexample": "举觯（jǔ zhì）",
+    "example": "觯(zhì)",
+    "extraexample": "举觯(jǔ zhì)",
     "english": "ancient Chinese drinking vessel"
   },
   {
@@ -40665,8 +40665,8 @@
     "rank": "4522",
     "char": "滓",
     "pinyin": "zǐ",
-    "example": "渣滓 （zhā zǐ）",
-    "extraexample": "滓秽 （zǐ huì）",
+    "example": "渣滓 (zhā zǐ)",
+    "extraexample": "滓秽 (zǐ huì)",
     "english": "sediment; dregs; lees"
   },
   {
@@ -40897,8 +40897,8 @@
     "rank": "4546",
     "char": "咣",
     "pinyin": "guāng",
-    "example": "咣当 （guāng dāng）",
-    "extraexample": "咣的一声 （guāng de yī shēng）",
+    "example": "咣当 (guāng dāng)",
+    "extraexample": "咣的一声 (guāng de yī shēng)",
     "english": "Onomatopoeia for a loud crashing or banging sound"
   },
   {
@@ -41001,8 +41001,8 @@
     "rank": "4558",
     "char": "镳",
     "pinyin": "biāo",
-    "example": "镳（biāo）",
-    "extraexample": "分道扬镳（fēn dào yáng biāo）",
+    "example": "镳(biāo)",
+    "extraexample": "分道扬镳(fēn dào yáng biāo)",
     "english": "bit of a bridle; ride together"
   },
   {
@@ -41361,8 +41361,8 @@
     "rank": "4597",
     "char": "蜴",
     "pinyin": "yì",
-    "example": "蜥蜴 （xī yì）",
-    "extraexample": "蜴蜥 （yì xī）",
+    "example": "蜥蜴 (xī yì)",
+    "extraexample": "蜴蜥 (yì xī)",
     "english": "lizard; used in 蜥蜴 (xī yì) for lizard"
   },
   {
@@ -41409,8 +41409,8 @@
     "rank": "4603",
     "char": "囿",
     "pinyin": "yòu",
-    "example": "囿于（yòu yú）",
-    "extraexample": "鹿囿（lù yòu）",
+    "example": "囿于(yòu yú)",
+    "extraexample": "鹿囿(lù yòu)",
     "english": "enclosure; park; limited"
   },
   {
@@ -42057,8 +42057,8 @@
     "rank": "4678",
     "char": "鹗",
     "pinyin": "è",
-    "example": "鹗（è）",
-    "extraexample": "鹗鸟（è niǎo）",
+    "example": "鹗(è)",
+    "extraexample": "鹗鸟(è niǎo)",
     "english": "osprey; fish hawk"
   },
   {
@@ -42241,16 +42241,16 @@
     "rank": "4700",
     "char": "馏",
     "pinyin": "lìu",
-    "example": "蒸馏 （zhēng liú）",
-    "extraexample": "馏饭 （liú fàn）",
+    "example": "蒸馏 (zhēng liú)",
+    "extraexample": "馏饭 (liú fàn)",
     "english": "to steam, to distill"
   },
   {
     "rank": "4700",
     "char": "馏",
     "pinyin": "líu",
-    "example": "蒸馏 （zhēng liú)",
-    "extraexample": "馏饭 （liú fàn）",
+    "example": "蒸馏 (zhēng liú)",
+    "extraexample": "馏饭 (liú fàn)",
     "english": "to steam, to distill"
   },
   {
@@ -42353,8 +42353,8 @@
     "rank": "4712",
     "char": "恽",
     "pinyin": "yùn",
-    "example": "恽 （yùn）",
-    "extraexample": "恽寿平 （yùn shòu píng）",
+    "example": "恽 (yùn)",
+    "extraexample": "恽寿平 (yùn shòu píng)",
     "english": "surname; also used in ancient names"
   },
   {
@@ -42641,8 +42641,8 @@
     "rank": "4746",
     "char": "嵘",
     "pinyin": "róng",
-    "example": "峥嵘 （zhēng róng）",
-    "extraexample": "嵘峭 （róng qiào）",
+    "example": "峥嵘 (zhēng róng)",
+    "extraexample": "嵘峭 (róng qiào)",
     "english": "high and steep; lofty"
   },
   {
@@ -42785,16 +42785,16 @@
     "rank": "4764",
     "char": "楂",
     "pinyin": "chá",
-    "example": "山楂 （shān zhā）",
-    "extraexample": "楂梨 （zhā lí）",
+    "example": "山楂 (shān zhā)",
+    "extraexample": "楂梨 (zhā lí)",
     "english": "a kind of tree mentioned in ancient texts; also used in 'hawthorn'"
   },
   {
     "rank": "4764",
     "char": "楂",
     "pinyin": "zhā",
-    "example": "山楂 （shān zhā）",
-    "extraexample": "山楂糕 （shān zhā gāo）",
+    "example": "山楂 (shān zhā)",
+    "extraexample": "山楂糕 (shān zhā gāo)",
     "english": "hawthorn; a type of fruit tree"
   },
   {
@@ -42953,8 +42953,8 @@
     "rank": "4783",
     "char": "钴",
     "pinyin": "gǔ",
-    "example": "钴 （gǔ）",
-    "extraexample": "钴矿 （gǔ kuàng）",
+    "example": "钴 (gǔ)",
+    "extraexample": "钴矿 (gǔ kuàng)",
     "english": "cobalt (Co), a metallic element"
   },
   {
@@ -42993,8 +42993,8 @@
     "rank": "4787",
     "char": "铱",
     "pinyin": "yī",
-    "example": "铱金（yī jīn）",
-    "extraexample": "铱星（yī xīng）",
+    "example": "铱金(yī jīn)",
+    "extraexample": "铱星(yī xīng)",
     "english": "iridium (chemical element)"
   },
   {
@@ -43137,8 +43137,8 @@
     "rank": "4802",
     "char": "趄",
     "pinyin": "jū",
-    "example": "趄趄（jū jū）",
-    "extraexample": "趄步不前（jū bù bù qián）",
+    "example": "趄趄(jū jū)",
+    "extraexample": "趄步不前(jū bù bù qián)",
     "english": "to hesitate; to be unable to advance"
   },
   {
@@ -43289,8 +43289,8 @@
     "rank": "4819",
     "char": "谲",
     "pinyin": "jué",
-    "example": "诡谲（guǐ jué）",
-    "extraexample": "谲诈（jué zhà）",
+    "example": "诡谲(guǐ jué)",
+    "extraexample": "谲诈(jué zhà)",
     "english": "cunning; crafty; deceitful"
   },
   {
@@ -43385,8 +43385,8 @@
     "rank": "4831",
     "char": "绌",
     "pinyin": "chù",
-    "example": "绌于（chù yú）",
-    "extraexample": "相形见绌（xiāng xíng jiàn chù）",
+    "example": "绌于(chù yú)",
+    "extraexample": "相形见绌(xiāng xíng jiàn chù)",
     "english": "insufficient; deficient"
   },
   {
@@ -43417,8 +43417,8 @@
     "rank": "4835",
     "char": "薮",
     "pinyin": "sǒu",
-    "example": "薮泽（sǒu zé）",
-    "extraexample": "渊薮（yuān sǒu）",
+    "example": "薮泽(sǒu zé)",
+    "extraexample": "渊薮(yuān sǒu)",
     "english": "a marsh; a gathering place; a den"
   },
   {
@@ -43593,8 +43593,8 @@
     "rank": "4856",
     "char": "礴",
     "pinyin": "bó",
-    "example": "磅礴 （páng bó）",
-    "extraexample": "气势磅礴 （qì shì páng bó）",
+    "example": "磅礴 (páng bó)",
+    "extraexample": "气势磅礴 (qì shì páng bó)",
     "english": "to fill; to spread; used in compound words"
   },
   {
@@ -43609,8 +43609,8 @@
     "rank": "4858",
     "char": "蝈",
     "pinyin": "guō",
-    "example": "蝈蝈 （guō guō）",
-    "extraexample": "蝈蝈儿 （guō guor）",
+    "example": "蝈蝈 (guō guō)",
+    "extraexample": "蝈蝈儿 (guō guor)",
     "english": "a type of insect, katydid or long-horned grasshopper"
   },
   {
@@ -43905,8 +43905,8 @@
     "rank": "4894",
     "char": "阋",
     "pinyin": "xì",
-    "example": "阋墙（xì qiáng）",
-    "extraexample": "兄弟阋于墙（xiōng dì xì yú qiáng）",
+    "example": "阋墙(xì qiáng)",
+    "extraexample": "兄弟阋于墙(xiōng dì xì yú qiáng)",
     "english": "to quarrel; to dispute"
   },
   {
@@ -44113,8 +44113,8 @@
     "rank": "4919",
     "char": "俣",
     "pinyin": "yǔ",
-    "example": "俣俣（yǔ yǔ）",
-    "extraexample": "俣然（yǔ rán）",
+    "example": "俣俣(yǔ yǔ)",
+    "extraexample": "俣然(yǔ rán)",
     "english": "UNKNOWN"
   },
   {
@@ -44209,8 +44209,8 @@
     "rank": "4929",
     "char": "阕",
     "pinyin": "què",
-    "example": "一阕（yī què）",
-    "extraexample": "上阕（shàng què）",
+    "example": "一阕(yī què)",
+    "extraexample": "上阕(shàng què)",
     "english": "a measure word for songs or poems; to stop, to end"
   },
   {
@@ -44265,8 +44265,8 @@
     "rank": "4936",
     "char": "舸",
     "pinyin": "gě",
-    "example": "舸舰（gě jiàn）",
-    "extraexample": "百舸争流（bǎi gě zhēng liú）",
+    "example": "舸舰(gě jiàn)",
+    "extraexample": "百舸争流(bǎi gě zhēng liú)",
     "english": "a large boat; a vessel"
   },
   {
@@ -44569,8 +44569,8 @@
     "rank": "4972",
     "char": "赜",
     "pinyin": "zé",
-    "example": "赜（zé）",
-    "extraexample": "探赜索隐（tàn zé suǒ yǐn）",
+    "example": "赜(zé)",
+    "extraexample": "探赜索隐(tàn zé suǒ yǐn)",
     "english": "UNKNOWN"
   },
   {
@@ -44729,8 +44729,8 @@
     "rank": "4990",
     "char": "溴",
     "pinyin": "xìu",
-    "example": "溴 （xiù）",
-    "extraexample": "溴水 （xiù shuǐ）",
+    "example": "溴 (xiù)",
+    "extraexample": "溴水 (xiù shuǐ)",
     "english": "bromine (a chemical element)"
   },
   {
@@ -44961,8 +44961,8 @@
     "rank": "5017",
     "char": "螫",
     "pinyin": "zhē",
-    "example": "螫人 （zhē rén）",
-    "extraexample": "被蜂螫了 （bèi fēng zhē le）",
+    "example": "螫人 (zhē rén)",
+    "extraexample": "被蜂螫了 (bèi fēng zhē le)",
     "english": "to sting (of bees, scorpions, etc.)"
   },
   {
@@ -44985,8 +44985,8 @@
     "rank": "5020",
     "char": "遑",
     "pinyin": "huáng",
-    "example": "不遑（bù huáng）",
-    "extraexample": "遑遑（huáng huáng）",
+    "example": "不遑(bù huáng)",
+    "extraexample": "遑遑(huáng huáng)",
     "english": "leisure; free time"
   },
   {
@@ -45217,8 +45217,8 @@
     "rank": "5047",
     "char": "荥",
     "pinyin": "xíng",
-    "example": "荥阳 （Xíng yáng）",
-    "extraexample": "荥经 （Xíng jīng）",
+    "example": "荥阳 (Xíng yáng)",
+    "extraexample": "荥经 (Xíng jīng)",
     "english": "a place name, used in 荥阳 (Xingyang)"
   },
   {
@@ -45313,8 +45313,8 @@
     "rank": "5057",
     "char": "缛",
     "pinyin": "rù",
-    "example": "繁缛 （fán rù）",
-    "extraexample": "缛礼 （rù lǐ）",
+    "example": "繁缛 (fán rù)",
+    "extraexample": "缛礼 (rù lǐ)",
     "english": "ornate, elaborate, flowery (of writing)"
   },
   {
@@ -45649,8 +45649,8 @@
     "rank": "5096",
     "char": "戬",
     "pinyin": "jiǎn",
-    "example": "戬谷（jiǎn gǔ）",
-    "extraexample": "戬福（jiǎn fú）",
+    "example": "戬谷(jiǎn gǔ)",
+    "extraexample": "戬福(jiǎn fú)",
     "english": "to cut off; to trim; also used in names"
   },
   {
@@ -46889,8 +46889,8 @@
     "rank": "5244",
     "char": "圜",
     "pinyin": "huán",
-    "example": "圜丘 （huán qiū）",
-    "extraexample": "圜流 （huán liú）",
+    "example": "圜丘 (huán qiū)",
+    "extraexample": "圜流 (huán liú)",
     "english": "to circle; to surround; also used as a variant of 環"
   },
   {
@@ -47009,8 +47009,8 @@
     "rank": "5257",
     "char": "逖",
     "pinyin": "tì",
-    "example": "逖听（tì tīng）",
-    "extraexample": "逖远（tì yuǎn）",
+    "example": "逖听(tì tīng)",
+    "extraexample": "逖远(tì yuǎn)",
     "english": "far, distant"
   },
   {
@@ -47105,8 +47105,8 @@
     "rank": "5268",
     "char": "踅",
     "pinyin": "chì",
-    "example": "踅踅（chì chì）",
-    "extraexample": "踅行（chì xíng）",
+    "example": "踅踅(chì chì)",
+    "extraexample": "踅行(chì xíng)",
     "english": "UNKNOWN"
   },
   {
@@ -47329,8 +47329,8 @@
     "rank": "5294",
     "char": "腭",
     "pinyin": "è",
-    "example": "腭裂 （è liè）",
-    "extraexample": "上腭 （shàng è）",
+    "example": "腭裂 (è liè)",
+    "extraexample": "上腭 (shàng è)",
     "english": "palate, roof of the mouth"
   },
   {
@@ -47617,8 +47617,8 @@
     "rank": "5328",
     "char": "缶",
     "pinyin": "fǒu",
-    "example": "缶 （fǒu）",
-    "extraexample": "击缶 （jī fǒu）",
+    "example": "缶 (fǒu)",
+    "extraexample": "击缶 (jī fǒu)",
     "english": "an earthenware jar or pot"
   },
   {
@@ -47713,8 +47713,8 @@
     "rank": "5339",
     "char": "蠲",
     "pinyin": "juān",
-    "example": "蠲免 （juān miǎn）",
-    "extraexample": "蠲除 （juān chú）",
+    "example": "蠲免 (juān miǎn)",
+    "extraexample": "蠲除 (juān chú)",
     "english": "to remove, to eliminate; a kind of tax exemption"
   },
   {
@@ -49097,8 +49097,8 @@
     "rank": "5507",
     "char": "钺",
     "pinyin": "yuè",
-    "example": "钺 （yuè）",
-    "extraexample": "斧钺 （fǔ yuè）",
+    "example": "钺 (yuè)",
+    "extraexample": "斧钺 (fǔ yuè)",
     "english": "a battle-axe used in ancient China"
   },
   {
@@ -49129,8 +49129,8 @@
     "rank": "5509",
     "char": "螭",
     "pinyin": "chī",
-    "example": "螭龙（chī lóng）",
-    "extraexample": "螭吻（chī wěn）",
+    "example": "螭龙(chī lóng)",
+    "extraexample": "螭吻(chī wěn)",
     "english": "a mythical hornless dragon often used in Chinese ornamentation"
   },
   {
@@ -49241,8 +49241,8 @@
     "rank": "5523",
     "char": "蝼",
     "pinyin": "lóu",
-    "example": "蝼蛄 （lóu gū）",
-    "extraexample": "蝼蚁 （lóu yǐ）",
+    "example": "蝼蛄 (lóu gū)",
+    "extraexample": "蝼蚁 (lóu yǐ)",
     "english": "mole cricket; a type of insect"
   },
   {
@@ -49257,8 +49257,8 @@
     "rank": "5525",
     "char": "樗",
     "pinyin": "chū",
-    "example": "樗树（chū shù）",
-    "extraexample": "樗栎（chū lì）",
+    "example": "樗树(chū shù)",
+    "extraexample": "樗栎(chū lì)",
     "english": "a tree, the tree of heaven (Ailanthus altissima)"
   },
   {
@@ -49537,8 +49537,8 @@
     "rank": "5557",
     "char": "钅",
     "pinyin": "jīn",
-    "example": "钅（jīn）",
-    "extraexample": "钅（jīn）",
+    "example": "钅(jīn)",
+    "extraexample": "钅(jīn)",
     "english": "gold (metal); ancient Chinese unit of weight"
   },
   {
@@ -49737,8 +49737,8 @@
     "rank": "5581",
     "char": "菔",
     "pinyin": "fú",
-    "example": "萝卜（luó bo）",
-    "extraexample": "菔子（fú zǐ）",
+    "example": "萝卜(luó bo)",
+    "extraexample": "菔子(fú zǐ)",
     "english": "radish; turnip"
   },
   {
@@ -49849,8 +49849,8 @@
     "rank": "5594",
     "char": "滟",
     "pinyin": "yàn",
-    "example": "滟滟（yàn yàn）",
-    "extraexample": "滟潋（yàn liàn）",
+    "example": "滟滟(yàn yàn)",
+    "extraexample": "滟潋(yàn liàn)",
     "english": "overflowing; rippling (of water)"
   },
   {
@@ -49881,8 +49881,8 @@
     "rank": "5598",
     "char": "聃",
     "pinyin": "dān",
-    "example": "聃 （dān）",
-    "extraexample": "聃 （dān）",
+    "example": "聃 (dān)",
+    "extraexample": "聃 (dān)",
     "english": "UNKNOWN"
   },
   {
@@ -49993,8 +49993,8 @@
     "rank": "5611",
     "char": "躅",
     "pinyin": "zhú",
-    "example": "躅躅（zhú zhú）",
-    "extraexample": "踯躅（zhí zhú）",
+    "example": "躅躅(zhú zhú)",
+    "extraexample": "踯躅(zhí zhú)",
     "english": "to walk slowly; to hesitate"
   },
   {
@@ -50129,8 +50129,8 @@
     "rank": "5626",
     "char": "钋",
     "pinyin": "pō",
-    "example": "钋（pō）",
-    "extraexample": "钋元素（pō yuán sù）",
+    "example": "钋(pō)",
+    "extraexample": "钋元素(pō yuán sù)",
     "english": "polonium (chemical element)"
   },
   {
@@ -50233,8 +50233,8 @@
     "rank": "5639",
     "char": "罴",
     "pinyin": "pí",
-    "example": "罴 （pí）",
-    "extraexample": "熊罴 （xióng pí）",
+    "example": "罴 (pí)",
+    "extraexample": "熊罴 (xióng pí)",
     "english": "brown bear"
   },
   {
@@ -50265,8 +50265,8 @@
     "rank": "5643",
     "char": "啉",
     "pinyin": "lín",
-    "example": "啉（lín）",
-    "extraexample": "啉啉（lín lín）",
+    "example": "啉(lín)",
+    "extraexample": "啉啉(lín lín)",
     "english": "UNKNOWN"
   },
   {
@@ -50369,8 +50369,8 @@
     "rank": "5655",
     "char": "嘞",
     "pinyin": "lei",
-    "example": "嘞（lei）",
-    "extraexample": "嘞（lei）",
+    "example": "嘞(lei)",
+    "extraexample": "嘞(lei)",
     "english": "UNKNOWN"
   },
   {
@@ -50457,8 +50457,8 @@
     "rank": "5665",
     "char": "骱",
     "pinyin": "jiè",
-    "example": "骱（jiè）",
-    "extraexample": "骱（jiè）",
+    "example": "骱(jiè)",
+    "extraexample": "骱(jiè)",
     "english": "UNKNOWN"
   },
   {
@@ -50505,8 +50505,8 @@
     "rank": "5670",
     "char": "嘏",
     "pinyin": "jiǎ",
-    "example": "嘏 （jiǎ）",
-    "extraexample": "嘏 （jiǎ）",
+    "example": "嘏 (jiǎ)",
+    "extraexample": "嘏 (jiǎ)",
     "english": "UNKNOWN"
   },
   {
@@ -50857,8 +50857,8 @@
     "rank": "5709",
     "char": "铍",
     "pinyin": "pí",
-    "example": "铍（pí）",
-    "extraexample": "铍铜（pí tóng）",
+    "example": "铍(pí)",
+    "extraexample": "铍铜(pí tóng)",
     "english": "beryllium (chemical element)"
   },
   {
@@ -50881,8 +50881,8 @@
     "rank": "5712",
     "char": "肷",
     "pinyin": "qiǎn",
-    "example": "肷 （qiǎn）",
-    "extraexample": "肷部 （qiǎn bù）",
+    "example": "肷 (qiǎn)",
+    "extraexample": "肷部 (qiǎn bù)",
     "english": "UNKNOWN"
   },
   {
@@ -51057,8 +51057,8 @@
     "rank": "5732",
     "char": "裉",
     "pinyin": "kèn",
-    "example": "裉（kèn）",
-    "extraexample": "裉（kèn）",
+    "example": "裉(kèn)",
+    "extraexample": "裉(kèn)",
     "english": "UNKNOWN"
   },
   {
@@ -51081,8 +51081,8 @@
     "rank": "5735",
     "char": "葭",
     "pinyin": "jiā",
-    "example": "葭莩（jiā fú）",
-    "extraexample": "蒹葭（jiān jiā）",
+    "example": "葭莩(jiā fú)",
+    "extraexample": "蒹葭(jiān jiā)",
     "english": "reed, young shoot of a reed"
   },
   {
@@ -51137,8 +51137,8 @@
     "rank": "5742",
     "char": "钌",
     "pinyin": "liǎo",
-    "example": "钌 （liǎo）",
-    "extraexample": "钌元素 （liǎo yuán sù）",
+    "example": "钌 (liǎo)",
+    "extraexample": "钌元素 (liǎo yuán sù)",
     "english": "a metallic element, ruthenium"
   },
   {
@@ -51177,8 +51177,8 @@
     "rank": "5747",
     "char": "锗",
     "pinyin": "zhě",
-    "example": "锗石（zhě shí）",
-    "extraexample": "锗元素（zhě yuán sù）",
+    "example": "锗石(zhě shí)",
+    "extraexample": "锗元素(zhě yuán sù)",
     "english": "germanium (chemical element)"
   },
   {
@@ -51385,8 +51385,8 @@
     "rank": "5773",
     "char": "疴",
     "pinyin": "kē",
-    "example": "沉疴（chén kē）",
-    "extraexample": "疴疾（kē jí）",
+    "example": "沉疴(chén kē)",
+    "extraexample": "疴疾(kē jí)",
     "english": "illness; disease"
   },
   {
@@ -51449,8 +51449,8 @@
     "rank": "5781",
     "char": "呒",
     "pinyin": "fǔ",
-    "example": "呒（fǔ）",
-    "extraexample": "呒啥（fǔ shá）",
+    "example": "呒(fǔ)",
+    "extraexample": "呒啥(fǔ shá)",
     "english": "UNKNOWN"
   },
   {
@@ -51529,8 +51529,8 @@
     "rank": "5790",
     "char": "眦",
     "pinyin": "zì",
-    "example": "眦裂（zì liè）",
-    "extraexample": "目眦尽裂（mù zì jìn liè）",
+    "example": "眦裂(zì liè)",
+    "extraexample": "目眦尽裂(mù zì jìn liè)",
     "english": "corner of the eye; to stare angrily"
   },
   {
@@ -51753,8 +51753,8 @@
     "rank": "5817",
     "char": "炅",
     "pinyin": "guì",
-    "example": "炅（guì）",
-    "extraexample": "炅姓（guì xìng）",
+    "example": "炅(guì)",
+    "extraexample": "炅姓(guì xìng)",
     "english": "surname; also used in ancient personal names"
   },
   {
@@ -51769,8 +51769,8 @@
     "rank": "5819",
     "char": "泶",
     "pinyin": "xué",
-    "example": "泶（xué）",
-    "extraexample": "泶水（xué shuǐ）",
+    "example": "泶(xué)",
+    "extraexample": "泶水(xué shuǐ)",
     "english": "UNKNOWN"
   },
   {
@@ -51833,8 +51833,8 @@
     "rank": "5827",
     "char": "捩",
     "pinyin": "liè",
-    "example": "捩转（liè zhuǎn）",
-    "extraexample": "捩手（liè shǒu）",
+    "example": "捩转(liè zhuǎn)",
+    "extraexample": "捩手(liè shǒu)",
     "english": "to twist, to wrench"
   },
   {
@@ -51905,8 +51905,8 @@
     "rank": "5836",
     "char": "鹾",
     "pinyin": "cuó",
-    "example": "鹾 （cuó）",
-    "extraexample": "鹾水 （cuó shuǐ）",
+    "example": "鹾 (cuó)",
+    "extraexample": "鹾水 (cuó shuǐ)",
     "english": "salt; salty"
   },
   {
@@ -51921,8 +51921,8 @@
     "rank": "5838",
     "char": "犸",
     "pinyin": "mǎ",
-    "example": "猛犸 （měng mǎ）",
-    "extraexample": "猛犸象 （měng mǎ xiàng）",
+    "example": "猛犸 (měng mǎ)",
+    "extraexample": "猛犸象 (měng mǎ xiàng)",
     "english": "part of 'mammoth'"
   },
   {
@@ -52057,8 +52057,8 @@
     "rank": "5852",
     "char": "嚯",
     "pinyin": "huò",
-    "example": "嚯（huò），真厉害！",
-    "extraexample": "嚯嚯（huò huò），好大！",
+    "example": "嚯(huò)，真厉害！",
+    "extraexample": "嚯嚯(huò huò)，好大！",
     "english": "an interjection expressing surprise or admiration"
   },
   {
@@ -52225,8 +52225,8 @@
     "rank": "5873",
     "char": "沆",
     "pinyin": "hàng",
-    "example": "沆瀣（hàng xiè）",
-    "extraexample": "沆茫（hàng máng）",
+    "example": "沆瀣(hàng xiè)",
+    "extraexample": "沆茫(hàng máng)",
     "english": "vast expanse of water"
   },
   {
@@ -52257,8 +52257,8 @@
     "rank": "5877",
     "char": "篯",
     "pinyin": "jiān",
-    "example": "篯（jiān）",
-    "extraexample": "篯（jiān）",
+    "example": "篯(jiān)",
+    "extraexample": "篯(jiān)",
     "english": "UNKNOWN"
   },
   {
@@ -52361,8 +52361,8 @@
     "rank": "5890",
     "char": "箪",
     "pinyin": "dān",
-    "example": "箪食（dān shí）",
-    "extraexample": "箪瓢（dān piáo）",
+    "example": "箪食(dān shí)",
+    "extraexample": "箪瓢(dān piáo)",
     "english": "a bamboo container for cooked rice"
   },
   {
@@ -52537,8 +52537,8 @@
     "rank": "5910",
     "char": "钇",
     "pinyin": "yǐ",
-    "example": "钇（yǐ）",
-    "extraexample": "氧化钇（yǎng huà yǐ）",
+    "example": "钇(yǐ)",
+    "extraexample": "氧化钇(yǎng huà yǐ)",
     "english": "yttrium (Y), a metallic element"
   },
   {
@@ -52745,8 +52745,8 @@
     "rank": "5934",
     "char": "浼",
     "pinyin": "měi",
-    "example": "浼人（měi rén）",
-    "extraexample": "央浼（yāng měi）",
+    "example": "浼人(měi rén)",
+    "extraexample": "央浼(yāng měi)",
     "english": "to request, to entreat"
   },
   {
@@ -52785,8 +52785,8 @@
     "rank": "5939",
     "char": "钫",
     "pinyin": "fāng",
-    "example": "钫（fāng）",
-    "extraexample": "钫元素（fāng yuán sù）",
+    "example": "钫(fāng)",
+    "extraexample": "钫元素(fāng yuán sù)",
     "english": "Francium (chemical element)"
   },
   {
@@ -52881,8 +52881,8 @@
     "rank": "5951",
     "char": "铒",
     "pinyin": "ěr",
-    "example": "铒 （ěr）",
-    "extraexample": "氧化铒 （yǎng huà ěr）",
+    "example": "铒 (ěr)",
+    "extraexample": "氧化铒 (yǎng huà ěr)",
     "english": "erbium (Er), a rare earth element"
   },
   {
@@ -52929,8 +52929,8 @@
     "rank": "5956",
     "char": "遄",
     "pinyin": "chuán",
-    "example": "遄往（chuán wǎng）",
-    "extraexample": "遄行（chuán xíng）",
+    "example": "遄往(chuán wǎng)",
+    "extraexample": "遄行(chuán xíng)",
     "english": "rapidly; quickly; hurry"
   },
   {
@@ -53017,8 +53017,8 @@
     "rank": "5967",
     "char": "锱",
     "pinyin": "zī",
-    "example": "锱铢（zī zhū）",
-    "extraexample": "锱铢必较（zī zhū bì jiào）",
+    "example": "锱铢(zī zhū)",
+    "extraexample": "锱铢必较(zī zhū bì jiào)",
     "english": "an ancient unit of weight, equal to 1/4 of a liang (tael)"
   },
   {
@@ -53033,8 +53033,8 @@
     "rank": "5969",
     "char": "葚",
     "pinyin": "rèn",
-    "example": "桑葚（sāng rèn）",
-    "extraexample": "葚子（rèn zi）",
+    "example": "桑葚(sāng rèn)",
+    "extraexample": "葚子(rèn zi)",
     "english": "UNKNOWN"
   },
   {
@@ -53161,8 +53161,8 @@
     "rank": "5983",
     "char": "逄",
     "pinyin": "páng",
-    "example": "逄（páng）",
-    "extraexample": "逄蒙（páng méng）",
+    "example": "逄(páng)",
+    "extraexample": "逄蒙(páng méng)",
     "english": "a surname"
   },
   {
@@ -53209,8 +53209,8 @@
     "rank": "5989",
     "char": "醭",
     "pinyin": "bú",
-    "example": "醭 （bú）",
-    "extraexample": "生醭 （shēng bú）",
+    "example": "醭 (bú)",
+    "extraexample": "生醭 (shēng bú)",
     "english": "mold on the surface of vinegar or soy sauce"
   },
   {
@@ -53313,8 +53313,8 @@
     "rank": "6002",
     "char": "醐",
     "pinyin": "hú",
-    "example": "醍醐（tí hú）",
-    "extraexample": "醍醐味（tí hú wèi）",
+    "example": "醍醐(tí hú)",
+    "extraexample": "醍醐味(tí hú wèi)",
     "english": "A type of fermented milk or cream; also used in '醍醐' (tí hú), meaning the finest cream or essence."
   },
   {
@@ -53337,8 +53337,8 @@
     "rank": "6005",
     "char": "殳",
     "pinyin": "shū",
-    "example": "殳（shū）",
-    "extraexample": "殳书（shū shū）",
+    "example": "殳(shū)",
+    "extraexample": "殳书(shū shū)",
     "english": "an ancient weapon; a surname"
   },
   {
@@ -53369,8 +53369,8 @@
     "rank": "6009",
     "char": "葜",
     "pinyin": "qiā",
-    "example": "菝葜（bá qiā）",
-    "extraexample": "葜草（qiā cǎo）",
+    "example": "菝葜(bá qiā)",
+    "extraexample": "葜草(qiā cǎo)",
     "english": "a type of plant, used in '菝葜' (bá qiā) meaning smilax"
   },
   {
@@ -53417,8 +53417,8 @@
     "rank": "6015",
     "char": "锝",
     "pinyin": "dé",
-    "example": "锝 （dé）",
-    "extraexample": "锝元素 （dé yuán sù）",
+    "example": "锝 (dé)",
+    "extraexample": "锝元素 (dé yuán sù)",
     "english": "technetium (Tc), a radioactive element"
   },
   {
@@ -53529,8 +53529,8 @@
     "rank": "6029",
     "char": "黼",
     "pinyin": "fǔ",
-    "example": "黼黻（fǔ fú）",
-    "extraexample": "黼座（fǔ zuò）",
+    "example": "黼黻(fǔ fú)",
+    "extraexample": "黼座(fǔ zuò)",
     "english": "Embroidered pattern on official robes; ornate"
   },
   {
@@ -53601,8 +53601,8 @@
     "rank": "6037",
     "char": "膂",
     "pinyin": "lv3",
-    "example": "膂力 （lǚ lì）",
-    "extraexample": "膂力过人 （lǚ lì guò rén）",
+    "example": "膂力 (lǚ lì)",
+    "extraexample": "膂力过人 (lǚ lì guò rén)",
     "english": "backbone; strength"
   },
   {
@@ -53689,8 +53689,8 @@
     "rank": "6048",
     "char": "锍",
     "pinyin": "lǐu",
-    "example": "锍 （liǔ）",
-    "extraexample": "锍化物 （liǔ huà wù）",
+    "example": "锍 (liǔ)",
+    "extraexample": "锍化物 (liǔ huà wù)",
     "english": "a type of chemical element, sulfur (archaic)"
   },
   {
@@ -53705,8 +53705,8 @@
     "rank": "6050",
     "char": "哿",
     "pinyin": "gě",
-    "example": "哿矣（gě yǐ）",
-    "extraexample": "哿言（gě yán）",
+    "example": "哿矣(gě yǐ)",
+    "extraexample": "哿言(gě yán)",
     "english": "UNKNOWN"
   },
   {
@@ -53729,8 +53729,8 @@
     "rank": "6053",
     "char": "殍",
     "pinyin": "piǎo",
-    "example": "饿殍（è piǎo）",
-    "extraexample": "殍尸（piǎo shī）",
+    "example": "饿殍(è piǎo)",
+    "extraexample": "殍尸(piǎo shī)",
     "english": "die of starvation; starve to death"
   },
   {
@@ -53793,8 +53793,8 @@
     "rank": "6060",
     "char": "橥",
     "pinyin": "zhū",
-    "example": "橥（zhū）",
-    "extraexample": "木橥（mù zhū）",
+    "example": "橥(zhū)",
+    "extraexample": "木橥(mù zhū)",
     "english": "a wooden stake; a post"
   },
   {
@@ -54201,8 +54201,8 @@
     "rank": "6111",
     "char": "荦",
     "pinyin": "luò",
-    "example": "荦荦（luò luò）",
-    "extraexample": "荦确（luò què）",
+    "example": "荦荦(luò luò)",
+    "extraexample": "荦确(luò què)",
     "english": "a spotted cow; distinct; clear"
   },
   {
@@ -54305,8 +54305,8 @@
     "rank": "6123",
     "char": "翥",
     "pinyin": "zhù",
-    "example": "翥凤（zhù fèng）",
-    "extraexample": "龙翔凤翥（lóng xiáng fèng zhù）",
+    "example": "翥凤(zhù fèng)",
+    "extraexample": "龙翔凤翥(lóng xiáng fèng zhù)",
     "english": "to soar; to fly upward"
   },
   {
@@ -54409,8 +54409,8 @@
     "rank": "6134",
     "char": "菪",
     "pinyin": "dàng",
-    "example": "菪（dàng）",
-    "extraexample": "菪子（dàng zi）",
+    "example": "菪(dàng)",
+    "extraexample": "菪子(dàng zi)",
     "english": "a type of herb, henbane"
   },
   {
@@ -54441,8 +54441,8 @@
     "rank": "6138",
     "char": "觚",
     "pinyin": "gū",
-    "example": "觚 （gū）",
-    "extraexample": "觚棱 （gū léng）",
+    "example": "觚 (gū)",
+    "extraexample": "觚棱 (gū léng)",
     "english": "ancient wine vessel with a horn-shaped body and a handle"
   },
   {
@@ -54497,16 +54497,16 @@
     "rank": "6145",
     "char": "锇",
     "pinyin": "é",
-    "example": "锇 （é）",
-    "extraexample": "锇金 （é jīn）",
+    "example": "锇 (é)",
+    "extraexample": "锇金 (é jīn)",
     "english": "osmium (Os), a hard, brittle, bluish-white transition metal"
   },
   {
     "rank": "6146",
     "char": "锖",
     "pinyin": "qiāng",
-    "example": "锖色 （qiāng sè）",
-    "extraexample": "锖铜 （qiāng tóng）",
+    "example": "锖色 (qiāng sè)",
+    "extraexample": "锖铜 (qiāng tóng)",
     "english": "A type of mineral, often referring to a blue-green ore of copper; also used in names of certain alloys."
   },
   {
@@ -54577,8 +54577,8 @@
     "rank": "6155",
     "char": "尻",
     "pinyin": "kāo",
-    "example": "尻尾 （kāo wěi）",
-    "extraexample": "尻骨 （kāo gǔ）",
+    "example": "尻尾 (kāo wěi)",
+    "extraexample": "尻骨 (kāo gǔ)",
     "english": "buttocks, rump"
   },
   {
@@ -54777,8 +54777,8 @@
     "rank": "6178",
     "char": "铌",
     "pinyin": "ní",
-    "example": "铌（ní）",
-    "extraexample": "铌合金（ní hé jīn）",
+    "example": "铌(ní)",
+    "extraexample": "铌合金(ní hé jīn)",
     "english": "niobium (chemical element)"
   },
   {
@@ -54865,8 +54865,8 @@
     "rank": "6188",
     "char": "钐",
     "pinyin": "shān",
-    "example": "钐（shān）",
-    "extraexample": "钐钴磁铁（shān gǔ cí tiě）",
+    "example": "钐(shān)",
+    "extraexample": "钐钴磁铁(shān gǔ cí tiě)",
     "english": "samarium (chemical element)"
   },
   {
@@ -55041,24 +55041,24 @@
     "rank": "6209",
     "char": "苈",
     "pinyin": "lì",
-    "example": "葶苈 （tíng lì）",
-    "extraexample": "苈子 （lì zǐ）",
+    "example": "葶苈 (tíng lì)",
+    "extraexample": "苈子 (lì zǐ)",
     "english": "a type of plant; see 葶苈 (ting2 li4) – a kind of herb used in traditional Chinese medicine"
   },
   {
     "rank": "6210",
     "char": "缍",
     "pinyin": "duǒ",
-    "example": "缍（duǒ）",
-    "extraexample": "缍（duǒ）",
+    "example": "缍(duǒ)",
+    "extraexample": "缍(duǒ)",
     "english": "UNKNOWN"
   },
   {
     "rank": "6211",
     "char": "歃",
     "pinyin": "shà",
-    "example": "歃血（shà xuè）",
-    "extraexample": "歃血为盟（shà xuè wéi méng）",
+    "example": "歃血(shà xuè)",
+    "extraexample": "歃血为盟(shà xuè wéi méng)",
     "english": "to drink (in an oath); to sip"
   },
   {
@@ -55201,8 +55201,8 @@
     "rank": "6227",
     "char": "舳",
     "pinyin": "zhú",
-    "example": "舳舻（zhú lú）",
-    "extraexample": "舳舻千里（zhú lú qiān lǐ）",
+    "example": "舳舻(zhú lú)",
+    "extraexample": "舳舻千里(zhú lú qiān lǐ)",
     "english": "stern of a ship"
   },
   {
@@ -55345,8 +55345,8 @@
     "rank": "6243",
     "char": "吖",
     "pinyin": "ā",
-    "example": "吖 （ā）",
-    "extraexample": "吖吖 （ā ā）",
+    "example": "吖 (ā)",
+    "extraexample": "吖吖 (ā ā)",
     "english": "an exclamation of surprise or admiration"
   },
   {
@@ -55593,8 +55593,8 @@
     "rank": "6274",
     "char": "螓",
     "pinyin": "qín",
-    "example": "螓首（qín shǒu）",
-    "extraexample": "螓首蛾眉（qín shǒu é méi）",
+    "example": "螓首(qín shǒu)",
+    "extraexample": "螓首蛾眉(qín shǒu é méi)",
     "english": "a type of cicada with a small head"
   },
   {
@@ -55689,8 +55689,8 @@
     "rank": "6285",
     "char": "荑",
     "pinyin": "yí",
-    "example": "芟荑（shān yí）",
-    "extraexample": "荑稗（yí bài）",
+    "example": "芟荑(shān yí)",
+    "extraexample": "荑稗(yí bài)",
     "english": "to remove weeds; to weed"
   },
   {
@@ -55857,8 +55857,8 @@
     "rank": "6306",
     "char": "甏",
     "pinyin": "bèng",
-    "example": "甏 （bèng）",
-    "extraexample": "甏头 （bèng tóu）",
+    "example": "甏 (bèng)",
+    "extraexample": "甏头 (bèng tóu)",
     "english": "a type of earthenware jar or crock"
   },
   {
@@ -55881,8 +55881,8 @@
     "rank": "6309",
     "char": "舴",
     "pinyin": "zé",
-    "example": "舴艋（zé měng）",
-    "extraexample": "舴艋舟（zé měng zhōu）",
+    "example": "舴艋(zé měng)",
+    "extraexample": "舴艋舟(zé měng zhōu)",
     "english": "UNKNOWN"
   },
   {
@@ -56289,16 +56289,16 @@
     "rank": "6358",
     "char": "镝",
     "pinyin": "dī",
-    "example": "镝（dī）",
-    "extraexample": "金属镝（jīn shǔ dī）",
+    "example": "镝(dī)",
+    "extraexample": "金属镝(jīn shǔ dī)",
     "english": "dysprosium (a rare earth element)"
   },
   {
     "rank": "6358",
     "char": "镝",
     "pinyin": "dí",
-    "example": "镝 （dí）",
-    "extraexample": "镝元素 （dí yuán sù）",
+    "example": "镝 (dí)",
+    "extraexample": "镝元素 (dí yuán sù)",
     "english": "dysprosium (a rare earth element)"
   },
   {
@@ -56385,8 +56385,8 @@
     "rank": "6369",
     "char": "潋",
     "pinyin": "liàn",
-    "example": "潋滟（liàn yàn）",
-    "extraexample": "水光潋滟（shuǐ guāng liàn yàn）",
+    "example": "潋滟(liàn yàn)",
+    "extraexample": "水光潋滟(shuǐ guāng liàn yàn)",
     "english": "overflowing; rippling (of water)"
   },
   {
@@ -56641,8 +56641,8 @@
     "rank": "6401",
     "char": "鞬",
     "pinyin": "jiān",
-    "example": "鞬（jiān）",
-    "extraexample": "弓鞬（gōng jiān）",
+    "example": "鞬(jiān)",
+    "extraexample": "弓鞬(gōng jiān)",
     "english": "a leather case for a bow"
   },
   {
@@ -56721,8 +56721,8 @@
     "rank": "6410",
     "char": "钆",
     "pinyin": "gá",
-    "example": "钆（gá）元素",
-    "extraexample": "钆化合物（gá huà hé wù）",
+    "example": "钆(gá)元素",
+    "extraexample": "钆化合物(gá huà hé wù)",
     "english": "gadolinium (Gd), a rare earth element"
   },
   {
@@ -57145,8 +57145,8 @@
     "rank": "6459",
     "char": "郗",
     "pinyin": "xī",
-    "example": "郗鉴 （Xī Jiàn）",
-    "extraexample": "郗氏 （Xī shì）",
+    "example": "郗鉴 (Xī Jiàn)",
+    "extraexample": "郗氏 (Xī shì)",
     "english": "surname"
   },
   {
@@ -57169,8 +57169,8 @@
     "rank": "6462",
     "char": "铈",
     "pinyin": "shì",
-    "example": "铈（shì）",
-    "extraexample": "氧化铈（yǎng huà shì）",
+    "example": "铈(shì)",
+    "extraexample": "氧化铈(yǎng huà shì)",
     "english": "cerium (a metallic element)"
   },
   {
@@ -57385,8 +57385,8 @@
     "rank": "6488",
     "char": "铖",
     "pinyin": "chéng",
-    "example": "铖 （chéng）",
-    "extraexample": "王铖 （Wáng Chéng）",
+    "example": "铖 (chéng)",
+    "extraexample": "王铖 (Wáng Chéng)",
     "english": "a surname; also used in ancient personal names"
   },
   {
@@ -57809,8 +57809,8 @@
     "rank": "6538",
     "char": "踬",
     "pinyin": "zhì",
-    "example": "踬碍（zhì ài）",
-    "extraexample": "颠踬（diān zhì）",
+    "example": "踬碍(zhì ài)",
+    "extraexample": "颠踬(diān zhì)",
     "english": "to stumble; to trip; to be hindered"
   },
   {
@@ -57993,8 +57993,8 @@
     "rank": "6558",
     "char": "哚",
     "pinyin": "duǒ",
-    "example": "哚哚 （duǒ duǒ）",
-    "extraexample": "哚啦 （duǒ lā）",
+    "example": "哚哚 (duǒ duǒ)",
+    "extraexample": "哚啦 (duǒ lā)",
     "english": "used in phonetic transcription, e.g., '哚' in '哚哚' (duǒduǒ) meaning a sound or part of a name"
   },
   {
@@ -58145,8 +58145,8 @@
     "rank": "6577",
     "char": "鍬",
     "pinyin": "qiāo",
-    "example": "鍬 （qiāo）",
-    "extraexample": "鐵鍬 （tiě qiāo）",
+    "example": "鍬 (qiāo)",
+    "extraexample": "鐵鍬 (tiě qiāo)",
     "english": "spade; shovel"
   },
   {
@@ -58249,16 +58249,16 @@
     "rank": "6590",
     "char": "埒",
     "pinyin": "lèi",
-    "example": "埒（lèi）",
-    "extraexample": "埒（lèi）",
+    "example": "埒(lèi)",
+    "extraexample": "埒(lèi)",
     "english": "UNKNOWN"
   },
   {
     "rank": "6590",
     "char": "埒",
     "pinyin": "liè",
-    "example": "埒（liè）",
-    "extraexample": "埒垣（liè yuán）",
+    "example": "埒(liè)",
+    "extraexample": "埒垣(liè yuán)",
     "english": "a low wall; a boundary; equal"
   },
   {
@@ -58465,8 +58465,8 @@
     "rank": "6614",
     "char": "檗",
     "pinyin": "bò",
-    "example": "黄檗 （huáng bò）",
-    "extraexample": "檗木 （bò mù）",
+    "example": "黄檗 (huáng bò)",
+    "extraexample": "檗木 (bò mù)",
     "english": "a type of tree, especially the cork tree or the Amur cork tree"
   },
   {
@@ -58545,8 +58545,8 @@
     "rank": "6624",
     "char": "蒗",
     "pinyin": "làng",
-    "example": "蒗蕖 （Làngqú）",
-    "extraexample": "蒗蕖县 （Làngqú xiàn）",
+    "example": "蒗蕖 (Làngqú)",
+    "extraexample": "蒗蕖县 (Làngqú xiàn)",
     "english": "a place name, used in 蒗蕖 (Làngqú), a county in Yunnan"
   },
   {
@@ -58633,8 +58633,8 @@
     "rank": "6634",
     "char": "菧",
     "pinyin": "dǐ",
-    "example": "菧（dǐ）",
-    "extraexample": "菧草（dǐ cǎo）",
+    "example": "菧(dǐ)",
+    "extraexample": "菧草(dǐ cǎo)",
     "english": "UNKNOWN"
   },
   {
@@ -58825,8 +58825,8 @@
     "rank": "6658",
     "char": "铷",
     "pinyin": "rú",
-    "example": "铷 （rú）",
-    "extraexample": "铷原子 （rú yuán zǐ）",
+    "example": "铷 (rú)",
+    "extraexample": "铷原子 (rú yuán zǐ)",
     "english": "rubidium (chemical element)"
   },
   {
@@ -58945,8 +58945,8 @@
     "rank": "6673",
     "char": "貅",
     "pinyin": "xīu",
-    "example": "貔貅 （pí xīu）",
-    "extraexample": "玉貅 （yù xīu）",
+    "example": "貔貅 (pí xīu)",
+    "extraexample": "玉貅 (yù xīu)",
     "english": "mythical beast, often paired with 貔 (pí) as 貔貅"
   },
   {
@@ -59001,8 +59001,8 @@
     "rank": "6680",
     "char": "柝",
     "pinyin": "tuò",
-    "example": "击柝（jī tuò）",
-    "extraexample": "柝声（tuò shēng）",
+    "example": "击柝(jī tuò)",
+    "extraexample": "柝声(tuò shēng)",
     "english": "watchman's rattle; a clapper used by night watchmen"
   },
   {
@@ -59041,8 +59041,8 @@
     "rank": "6685",
     "char": "綮",
     "pinyin": "qǐ",
-    "example": "綮（qǐ）",
-    "extraexample": "綮戟（qǐ jǐ）",
+    "example": "綮(qǐ)",
+    "extraexample": "綮戟(qǐ jǐ)",
     "english": "official seal; also used in place name"
   },
   {
@@ -59113,8 +59113,8 @@
     "rank": "6695",
     "char": "膩",
     "pinyin": "nì",
-    "example": "油腻 （yóu nì）",
-    "extraexample": "腻烦 （nì fan）",
+    "example": "油腻 (yóu nì)",
+    "extraexample": "腻烦 (nì fan)",
     "english": "greasy; oily;腻烦 (bored; fed up)"
   },
   {
@@ -59129,8 +59129,8 @@
     "rank": "6697",
     "char": "讉",
     "pinyin": "yí",
-    "example": "讉（yí）",
-    "extraexample": "讉（yí）",
+    "example": "讉(yí)",
+    "extraexample": "讉(yí)",
     "english": "UNKNOWN"
   },
   {
@@ -60097,8 +60097,8 @@
     "rank": "6816",
     "char": "轹",
     "pinyin": "lì",
-    "example": "轹（lì）",
-    "extraexample": "轹古（lì gǔ）",
+    "example": "轹(lì)",
+    "extraexample": "轹古(lì gǔ)",
     "english": "to crush; to grind; wheel rut"
   },
   {
@@ -60265,8 +60265,8 @@
     "rank": "6835",
     "char": "祂",
     "pinyin": "tā",
-    "example": "祂（tā）的旨意",
-    "extraexample": "祂（tā）是神",
+    "example": "祂(tā)的旨意",
+    "extraexample": "祂(tā)是神",
     "english": "He (referring to God or a deity)"
   },
   {
@@ -60345,8 +60345,8 @@
     "rank": "6845",
     "char": "禛",
     "pinyin": "zhēn",
-    "example": "禛（zhēn）",
-    "extraexample": "禛祥（zhēn xiáng）",
+    "example": "禛(zhēn)",
+    "extraexample": "禛祥(zhēn xiáng)",
     "english": "UNKNOWN"
   },
   {
@@ -60409,8 +60409,8 @@
     "rank": "6853",
     "char": "眄",
     "pinyin": "miǎn",
-    "example": "眄视（miǎn shì）",
-    "extraexample": "眄睐（miǎn lài）",
+    "example": "眄视(miǎn shì)",
+    "extraexample": "眄睐(miǎn lài)",
     "english": "to look askance; to glance sideways"
   },
   {
@@ -60977,8 +60977,8 @@
     "rank": "6924",
     "char": "赕",
     "pinyin": "dǎn",
-    "example": "赕 （dǎn）",
-    "extraexample": "赕 （dǎn）",
+    "example": "赕 (dǎn)",
+    "extraexample": "赕 (dǎn)",
     "english": "UNKNOWN"
   },
   {
@@ -61041,16 +61041,16 @@
     "rank": "6932",
     "char": "鹡",
     "pinyin": "jí",
-    "example": "鹡鸰 （jí líng）",
-    "extraexample": "鹡原 （jí yuán）",
+    "example": "鹡鸰 (jí líng)",
+    "extraexample": "鹡原 (jí yuán)",
     "english": "a bird, the wagtail"
   },
   {
     "rank": "6934",
     "char": "蠋",
     "pinyin": "zhú",
-    "example": "蠋 （zhú）",
-    "extraexample": "蠋虫 （zhú chóng）",
+    "example": "蠋 (zhú)",
+    "extraexample": "蠋虫 (zhú chóng)",
     "english": "larva of a moth or butterfly; caterpillar"
   },
   {
@@ -61385,8 +61385,8 @@
     "rank": "6975",
     "char": "筴",
     "pinyin": "jiā",
-    "example": "筴（jiā）",
-    "extraexample": "竹筴（zhú jiā）",
+    "example": "筴(jiā)",
+    "extraexample": "竹筴(zhú jiā)",
     "english": "a type of ancient bamboo slip used for writing"
   },
   {
@@ -61481,8 +61481,8 @@
     "rank": "6987",
     "char": "屦",
     "pinyin": "jù",
-    "example": "屦 （jù）",
-    "extraexample": "草屦 （cǎo jù）",
+    "example": "屦 (jù)",
+    "extraexample": "草屦 (cǎo jù)",
     "english": "straw sandals; shoes made of hemp or kudzu"
   },
   {
@@ -61577,8 +61577,8 @@
     "rank": "6998",
     "char": "埏",
     "pinyin": "shān",
-    "example": "埏埴（shān zhí）",
-    "extraexample": "埏泥（shān ní）",
+    "example": "埏埴(shān zhí)",
+    "extraexample": "埏泥(shān ní)",
     "english": "to mix clay with water; to knead"
   },
   {
@@ -61617,8 +61617,8 @@
     "rank": "7002",
     "char": "缻",
     "pinyin": "fǒu",
-    "example": "缻 （fǒu）",
-    "extraexample": "瓦缻 （wǎ fǒu）",
+    "example": "缻 (fǒu)",
+    "extraexample": "瓦缻 (wǎ fǒu)",
     "english": "ancient earthenware vessel"
   },
   {
@@ -61633,7 +61633,7 @@
     "rank": "7004",
     "char": "闆",
     "pinyin": "pǎn",
-    "example": "闆 （pǎn）",
+    "example": "闆 (pǎn)",
     "extraexample": "UNKNOWN",
     "english": "UNKNOWN"
   },
@@ -61849,8 +61849,8 @@
     "rank": "7030",
     "char": "蹅",
     "pinyin": "zhā",
-    "example": "蹅脚（zhā jiǎo）",
-    "extraexample": "蹅泥（zhā ní）",
+    "example": "蹅脚(zhā jiǎo)",
+    "extraexample": "蹅泥(zhā ní)",
     "english": "to step on; to tread"
   },
   {
@@ -62097,8 +62097,8 @@
     "rank": "7062",
     "char": "蕅",
     "pinyin": "ǒu",
-    "example": "蕅 （ǒu）",
-    "extraexample": "蕅粉 （ǒu fěn）",
+    "example": "蕅 (ǒu)",
+    "extraexample": "蕅粉 (ǒu fěn)",
     "english": "lotus root"
   },
   {
@@ -62121,16 +62121,16 @@
     "rank": "7065",
     "char": "笰",
     "pinyin": "fèi",
-    "example": "笰（fèi）",
-    "extraexample": "土笰（tǔ fèi）",
+    "example": "笰(fèi)",
+    "extraexample": "土笰(tǔ fèi)",
     "english": "a bamboo basket used for carrying earth"
   },
   {
     "rank": "7066",
     "char": "籥",
     "pinyin": "yào",
-    "example": "籥（yào）",
-    "extraexample": "吹籥（chuī yào）",
+    "example": "籥(yào)",
+    "extraexample": "吹籥(chuī yào)",
     "english": "ancient Chinese flute-like instrument"
   },
   {
@@ -62361,8 +62361,8 @@
     "rank": "7095",
     "char": "葰",
     "pinyin": "jùn",
-    "example": "葰（jùn）",
-    "extraexample": "葰草（jùn cǎo）",
+    "example": "葰(jùn)",
+    "extraexample": "葰草(jùn cǎo)",
     "english": "a kind of medicinal herb"
   },
   {
@@ -62601,8 +62601,8 @@
     "rank": "7125",
     "char": "榀",
     "pinyin": "pǐn",
-    "example": "一榀 （yī pǐn）",
-    "extraexample": "三榀木 （sān pǐn mù）",
+    "example": "一榀 (yī pǐn)",
+    "extraexample": "三榀木 (sān pǐn mù)",
     "english": "a piece of timber; a classifier for pieces of wood"
   },
   {
@@ -62681,8 +62681,8 @@
     "rank": "7135",
     "char": "釤",
     "pinyin": "shān",
-    "example": "釤（shān）",
-    "extraexample": "釤元素（shān yuán sù）",
+    "example": "釤(shān)",
+    "extraexample": "釤元素(shān yuán sù)",
     "english": "samarium (chemical element)"
   },
   {
@@ -62881,8 +62881,8 @@
     "rank": "7160",
     "char": "坫",
     "pinyin": "diàn",
-    "example": "坫 （diàn）",
-    "extraexample": "反坫 （fǎn diàn）",
+    "example": "坫 (diàn)",
+    "extraexample": "反坫 (fǎn diàn)",
     "english": "a stand for wine cups; a shelf"
   },
   {
@@ -62929,8 +62929,8 @@
     "rank": "7166",
     "char": "镱",
     "pinyin": "yì",
-    "example": "镱（yì）",
-    "extraexample": "镱元素（yì yuán sù）",
+    "example": "镱(yì)",
+    "extraexample": "镱元素(yì yuán sù)",
     "english": "ytterbium (Yb), a metallic element"
   },
   {
@@ -63033,8 +63033,8 @@
     "rank": "7179",
     "char": "眭",
     "pinyin": "suī",
-    "example": "眭（suī）",
-    "extraexample": "眭村（suī cūn）",
+    "example": "眭(suī)",
+    "extraexample": "眭村(suī cūn)",
     "english": "surname; also used in place names"
   },
   {
@@ -63449,8 +63449,8 @@
     "rank": "7232",
     "char": "袉",
     "pinyin": "tuó",
-    "example": "袉（tuó）",
-    "extraexample": "袉（tuó）",
+    "example": "袉(tuó)",
+    "extraexample": "袉(tuó)",
     "english": "UNKNOWN"
   },
   {
@@ -63593,8 +63593,8 @@
     "rank": "7250",
     "char": "茺",
     "pinyin": "chōng",
-    "example": "茺蔚（chōng wèi）",
-    "extraexample": "茺蔚子（chōng wèi zǐ）",
+    "example": "茺蔚(chōng wèi)",
+    "extraexample": "茺蔚子(chōng wèi zǐ)",
     "english": "a type of medicinal herb, motherwort"
   },
   {
@@ -64081,8 +64081,8 @@
     "rank": "7311",
     "char": "葴",
     "pinyin": "qián",
-    "example": "葴（qián）",
-    "extraexample": "葴草（qián cǎo）",
+    "example": "葴(qián)",
+    "extraexample": "葴草(qián cǎo)",
     "english": "UNKNOWN"
   },
   {
@@ -64457,8 +64457,8 @@
     "rank": "7359",
     "char": "袠",
     "pinyin": "zhì",
-    "example": "袠（zhì）",
-    "extraexample": "卷袠（juǎn zhì）",
+    "example": "袠(zhì)",
+    "extraexample": "卷袠(juǎn zhì)",
     "english": "a book cover; a book; to open; to unfold"
   },
   {
@@ -64977,8 +64977,8 @@
     "rank": "7425",
     "char": "硁",
     "pinyin": "kēng",
-    "example": "硁硁然 （kēng kēng rán）",
-    "extraexample": "硁硁之愚 （kēng kēng zhī yú）",
+    "example": "硁硁然 (kēng kēng rán)",
+    "extraexample": "硁硁之愚 (kēng kēng zhī yú)",
     "english": "sound of stones striking; firm, resolute"
   },
   {
@@ -65065,8 +65065,8 @@
     "rank": "7436",
     "char": "挢",
     "pinyin": "jiǎo",
-    "example": "挢舌（jiǎo shé）",
-    "extraexample": "挢枉过正（jiǎo wǎng guò zhèng）",
+    "example": "挢舌(jiǎo shé)",
+    "extraexample": "挢枉过正(jiǎo wǎng guò zhèng)",
     "english": "to raise; to lift; to correct; to rectify"
   },
   {
@@ -65113,8 +65113,8 @@
     "rank": "7442",
     "char": "阛",
     "pinyin": "huán",
-    "example": "阛阓 （huán huì）",
-    "extraexample": "市阛 （shì huán）",
+    "example": "阛阓 (huán huì)",
+    "extraexample": "市阛 (shì huán)",
     "english": "UNKNOWN"
   },
   {
@@ -65137,8 +65137,8 @@
     "rank": "7445",
     "char": "铥",
     "pinyin": "dīu",
-    "example": "铥 （dīu）",
-    "extraexample": "铥元素 （dīu yuán sù）",
+    "example": "铥 (dīu)",
+    "extraexample": "铥元素 (dīu yuán sù)",
     "english": "thulium (Tm), a rare earth element"
   },
   {
@@ -65217,8 +65217,8 @@
     "rank": "7454",
     "char": "糀",
     "pinyin": "huā",
-    "example": "糀（huā）",
-    "extraexample": "糀（huā）",
+    "example": "糀(huā)",
+    "extraexample": "糀(huā)",
     "english": "UNKNOWN"
   },
   {
@@ -65329,8 +65329,8 @@
     "rank": "7467",
     "char": "翫",
     "pinyin": "wàn",
-    "example": "翫赏 （wàn shǎng）",
-    "extraexample": "翫物 （wàn wù）",
+    "example": "翫赏 (wàn shǎng)",
+    "extraexample": "翫物 (wàn wù)",
     "english": "to play; to toy with; to enjoy"
   },
   {
@@ -65481,8 +65481,8 @@
     "rank": "7486",
     "char": "錏",
     "pinyin": "yā",
-    "example": "錏（yā）",
-    "extraexample": "錏（yā）",
+    "example": "錏(yā)",
+    "extraexample": "錏(yā)",
     "english": "UNKNOWN"
   },
   {
@@ -65561,8 +65561,8 @@
     "rank": "7496",
     "char": "稖",
     "pinyin": "bàng",
-    "example": "稖（bàng）",
-    "extraexample": "稖子（bàng zi）",
+    "example": "稖(bàng)",
+    "extraexample": "稖子(bàng zi)",
     "english": "UNKNOWN"
   },
   {
@@ -65665,8 +65665,8 @@
     "rank": "7509",
     "char": "袃",
     "pinyin": "chài",
-    "example": "袃（chài）",
-    "extraexample": "袃（chài）",
+    "example": "袃(chài)",
+    "extraexample": "袃(chài)",
     "english": "UNKNOWN"
   },
   {
@@ -65753,8 +65753,8 @@
     "rank": "7520",
     "char": "錆",
     "pinyin": "qiāng",
-    "example": "錆色 （qiāng sè）",
-    "extraexample": "錆青 （qiāng qīng）",
+    "example": "錆色 (qiāng sè)",
+    "extraexample": "錆青 (qiāng qīng)",
     "english": "UNKNOWN"
   },
   {
@@ -65833,8 +65833,8 @@
     "rank": "7532",
     "char": "睞",
     "pinyin": "lài",
-    "example": "青睐 （qīng lài）",
-    "extraexample": "明眸善睞 （míng móu shàn lài）",
+    "example": "青睐 (qīng lài)",
+    "extraexample": "明眸善睞 (míng móu shàn lài)",
     "english": "to look at; to glance"
   },
   {
@@ -66145,8 +66145,8 @@
     "rank": "7571",
     "char": "酂",
     "pinyin": "zàn",
-    "example": "酂（zàn）",
-    "extraexample": "酂（zàn）",
+    "example": "酂(zàn)",
+    "extraexample": "酂(zàn)",
     "english": "UNKNOWN"
   },
   {
@@ -66161,8 +66161,8 @@
     "rank": "7573",
     "char": "醜",
     "pinyin": "chǒu",
-    "example": "醜陋 （chǒu lòu）",
-    "extraexample": "醜聞 （chǒu wén）",
+    "example": "醜陋 (chǒu lòu)",
+    "extraexample": "醜聞 (chǒu wén)",
     "english": "ugly, disgraceful, shameful"
   },
   {
@@ -66481,8 +66481,8 @@
     "rank": "7614",
     "char": "茝",
     "pinyin": "zhǐ",
-    "example": "茝（zhǐ）",
-    "extraexample": "茝兰（zhǐ lán）",
+    "example": "茝(zhǐ)",
+    "extraexample": "茝兰(zhǐ lán)",
     "english": "a type of fragrant herb; angelica"
   },
   {
@@ -66609,8 +66609,8 @@
     "rank": "7629",
     "char": "笭",
     "pinyin": "líng",
-    "example": "笭（líng）",
-    "extraexample": "笭箭（líng jiàn）",
+    "example": "笭(líng)",
+    "extraexample": "笭箭(líng jiàn)",
     "english": "a bamboo vessel for holding arrows"
   },
   {
@@ -66641,8 +66641,8 @@
     "rank": "7633",
     "char": "胵",
     "pinyin": "zhì",
-    "example": "胵（zhì）",
-    "extraexample": "胵（zhì）",
+    "example": "胵(zhì)",
+    "extraexample": "胵(zhì)",
     "english": "UNKNOWN"
   },
   {
@@ -66729,8 +66729,8 @@
     "rank": "7644",
     "char": "馧",
     "pinyin": "wò",
-    "example": "馧馧（wò wò）",
-    "extraexample": "馧香（wò xiāng）",
+    "example": "馧馧(wò wò)",
+    "extraexample": "馧香(wò xiāng)",
     "english": "UNKNOWN"
   },
   {
@@ -66969,8 +66969,8 @@
     "rank": "7674",
     "char": "觼",
     "pinyin": "jué",
-    "example": "觼（jué）",
-    "extraexample": "觼（jué）",
+    "example": "觼(jué)",
+    "extraexample": "觼(jué)",
     "english": "UNKNOWN"
   },
   {
@@ -66993,8 +66993,8 @@
     "rank": "7677",
     "char": "諝",
     "pinyin": "xū",
-    "example": "諝（xū）",
-    "extraexample": "諝（xū）",
+    "example": "諝(xū)",
+    "extraexample": "諝(xū)",
     "english": "UNKNOWN"
   },
   {
@@ -67265,8 +67265,8 @@
     "rank": "7711",
     "char": "磜",
     "pinyin": "qì",
-    "example": "磜 （qì）",
-    "extraexample": "磜石 （qì shí）",
+    "example": "磜 (qì)",
+    "extraexample": "磜石 (qì shí)",
     "english": "UNKNOWN"
   },
   {
@@ -67281,8 +67281,8 @@
     "rank": "7713",
     "char": "輋",
     "pinyin": "shē",
-    "example": "輋（shē）",
-    "extraexample": "輋下（shē xià）",
+    "example": "輋(shē)",
+    "extraexample": "輋下(shē xià)",
     "english": "a surname; also used in place names"
   },
   {
@@ -67505,8 +67505,8 @@
     "rank": "7741",
     "char": "蝀",
     "pinyin": "dōng",
-    "example": "蝀（dōng）",
-    "extraexample": "蝀（dōng）",
+    "example": "蝀(dōng)",
+    "extraexample": "蝀(dōng)",
     "english": "UNKNOWN"
   },
   {
@@ -67825,8 +67825,8 @@
     "rank": "7780",
     "char": "酾",
     "pinyin": "shāi",
-    "example": "酾酒（shāi jiǔ）",
-    "extraexample": "酾酒临江（shāi jiǔ lín jiāng）",
+    "example": "酾酒(shāi jiǔ)",
+    "extraexample": "酾酒临江(shāi jiǔ lín jiāng)",
     "english": "to strain wine; to filter"
   },
   {
@@ -68025,8 +68025,8 @@
     "rank": "7805",
     "char": "詧",
     "pinyin": "qiè",
-    "example": "詧 （qiè）",
-    "extraexample": "詧 （qiè）",
+    "example": "詧 (qiè)",
+    "extraexample": "詧 (qiè)",
     "english": "UNKNOWN"
   },
   {
@@ -68041,8 +68041,8 @@
     "rank": "7807",
     "char": "踘",
     "pinyin": "jū",
-    "example": "踘（jū）",
-    "extraexample": "踘（jū）",
+    "example": "踘(jū)",
+    "extraexample": "踘(jū)",
     "english": "UNKNOWN"
   },
   {
@@ -68129,8 +68129,8 @@
     "rank": "7818",
     "char": "胊",
     "pinyin": "qú",
-    "example": "胊（qú）",
-    "extraexample": "胊山（qú shān）",
+    "example": "胊(qú)",
+    "extraexample": "胊山(qú shān)",
     "english": "dried meat; also used in place names"
   },
   {
@@ -68153,8 +68153,8 @@
     "rank": "7821",
     "char": "襱",
     "pinyin": "lóng",
-    "example": "襱（lóng）",
-    "extraexample": "襱（lóng）",
+    "example": "襱(lóng)",
+    "extraexample": "襱(lóng)",
     "english": "UNKNOWN"
   },
   {
@@ -68217,8 +68217,8 @@
     "rank": "7829",
     "char": "鄤",
     "pinyin": "wàn",
-    "example": "鄤（wàn）",
-    "extraexample": "鄤（wàn）",
+    "example": "鄤(wàn)",
+    "extraexample": "鄤(wàn)",
     "english": "UNKNOWN"
   },
   {
@@ -68281,8 +68281,8 @@
     "rank": "7837",
     "char": "镤",
     "pinyin": "pú",
-    "example": "镤 （pú）",
-    "extraexample": "镤元素 （pú yuán sù）",
+    "example": "镤 (pú)",
+    "extraexample": "镤元素 (pú yuán sù)",
     "english": "protactinium (chemical element)"
   },
   {
@@ -68577,8 +68577,8 @@
     "rank": "7874",
     "char": "螞",
     "pinyin": "mǎ",
-    "example": "蚂蚁 （mǎ yǐ）",
-    "extraexample": "蚂蟥 （mǎ huáng）",
+    "example": "蚂蚁 (mǎ yǐ)",
+    "extraexample": "蚂蟥 (mǎ huáng)",
     "english": "a type of ant; also used in '蚂蟥' (leech)"
   },
   {
@@ -68777,8 +68777,8 @@
     "rank": "7899",
     "char": "頌",
     "pinyin": "sòng",
-    "example": "歌颂 （gē sòng）",
-    "extraexample": "颂扬 （sòng yáng）",
+    "example": "歌颂 (gē sòng)",
+    "extraexample": "颂扬 (sòng yáng)",
     "english": "to praise, eulogize; a hymn, ode"
   },
   {
@@ -68945,8 +68945,8 @@
     "rank": "7920",
     "char": "镦",
     "pinyin": "dūn",
-    "example": "镦子 （dūn zi）",
-    "extraexample": "铜镦 （tóng dūn）",
+    "example": "镦子 (dūn zi)",
+    "extraexample": "铜镦 (tóng dūn)",
     "english": "UNKNOWN"
   },
   {
@@ -69201,8 +69201,8 @@
     "rank": "7951",
     "char": "脝",
     "pinyin": "hēng",
-    "example": "脝（hēng）",
-    "extraexample": "脝（hēng）",
+    "example": "脝(hēng)",
+    "extraexample": "脝(hēng)",
     "english": "UNKNOWN"
   },
   {
@@ -69273,8 +69273,8 @@
     "rank": "7960",
     "char": "齄",
     "pinyin": "zhā",
-    "example": "齄 （zhā）",
-    "extraexample": "齄鼻 （zhā bí）",
+    "example": "齄 (zhā)",
+    "extraexample": "齄鼻 (zhā bí)",
     "english": "UNKNOWN"
   },
   {
@@ -69345,8 +69345,8 @@
     "rank": "7970",
     "char": "脰",
     "pinyin": "dòu",
-    "example": "脰（dòu）",
-    "extraexample": "脰颈（dòu jǐng）",
+    "example": "脰(dòu)",
+    "extraexample": "脰颈(dòu jǐng)",
     "english": "neck"
   },
   {
@@ -69377,8 +69377,8 @@
     "rank": "7974",
     "char": "菆",
     "pinyin": "zōu",
-    "example": "菆（zōu）",
-    "extraexample": "菆（zōu）",
+    "example": "菆(zōu)",
+    "extraexample": "菆(zōu)",
     "english": "UNKNOWN"
   },
   {
@@ -69553,8 +69553,8 @@
     "rank": "7996",
     "char": "毹",
     "pinyin": "shū",
-    "example": "毹氍（shū qú）",
-    "extraexample": "毹毯（shū tǎn）",
+    "example": "毹氍(shū qú)",
+    "extraexample": "毹毯(shū tǎn)",
     "english": "a woolen blanket or rug"
   },
   {
@@ -69945,8 +69945,8 @@
     "rank": "8046",
     "char": "薋",
     "pinyin": "zī",
-    "example": "薋（zī）",
-    "extraexample": "薋草（zī cǎo）",
+    "example": "薋(zī)",
+    "extraexample": "薋草(zī cǎo)",
     "english": "UNKNOWN"
   },
   {
@@ -69977,8 +69977,8 @@
     "rank": "8050",
     "char": "衋",
     "pinyin": "xì",
-    "example": "衋（xì）",
-    "extraexample": "衋然（xì rán）",
+    "example": "衋(xì)",
+    "extraexample": "衋然(xì rán)",
     "english": "UNKNOWN"
   },
   {
@@ -70169,8 +70169,8 @@
     "rank": "8074",
     "char": "骹",
     "pinyin": "jiāo",
-    "example": "骹（jiāo）",
-    "extraexample": "骹骨（jiāo gǔ）",
+    "example": "骹(jiāo)",
+    "extraexample": "骹骨(jiāo gǔ)",
     "english": "UNKNOWN"
   },
   {
@@ -70457,8 +70457,8 @@
     "rank": "8110",
     "char": "磿",
     "pinyin": "lì",
-    "example": "磿（lì）",
-    "extraexample": "磿石（lì shí）",
+    "example": "磿(lì)",
+    "extraexample": "磿石(lì shí)",
     "english": "UNKNOWN"
   },
   {
@@ -70481,16 +70481,16 @@
     "rank": "8113",
     "char": "秲",
     "pinyin": "zhì",
-    "example": "秲（zhì）",
-    "extraexample": "秲（zhì）",
+    "example": "秲(zhì)",
+    "extraexample": "秲(zhì)",
     "english": "UNKNOWN"
   },
   {
     "rank": "8114",
     "char": "窮",
     "pinyin": "qióng",
-    "example": "贫穷 （pín qióng）",
-    "extraexample": "无穷无尽 （wú qióng wú jìn）",
+    "example": "贫穷 (pín qióng)",
+    "extraexample": "无穷无尽 (wú qióng wú jìn)",
     "english": "poor; destitute; to exhaust; thoroughly"
   },
   {
@@ -71113,8 +71113,8 @@
     "rank": "8192",
     "char": "顳",
     "pinyin": "niè",
-    "example": "顳顬 （niè rú）",
-    "extraexample": "顳骨 （niè gǔ）",
+    "example": "顳顬 (niè rú)",
+    "extraexample": "顳骨 (niè gǔ)",
     "english": "temple (side of the head)"
   },
   {
@@ -71289,8 +71289,8 @@
     "rank": "8214",
     "char": "鼇",
     "pinyin": "áo",
-    "example": "鼇足 （áo zú）",
-    "extraexample": "巨鼇 （jù áo）",
+    "example": "鼇足 (áo zú)",
+    "extraexample": "巨鼇 (jù áo)",
     "english": "a legendary huge turtle or tortoise"
   },
   {
@@ -71313,8 +71313,8 @@
     "rank": "8217",
     "char": "齺",
     "pinyin": "zōu",
-    "example": "齺（zōu）",
-    "extraexample": "齺齺（zōu zōu）",
+    "example": "齺(zōu)",
+    "extraexample": "齺齺(zōu zōu)",
     "english": "UNKNOWN"
   },
   {
@@ -71577,8 +71577,8 @@
     "rank": "8253",
     "char": "盩",
     "pinyin": "zhōu",
-    "example": "盩厔 （Zhōuzhì）",
-    "extraexample": "盩厔县 （Zhōuzhì xiàn）",
+    "example": "盩厔 (Zhōuzhì)",
+    "extraexample": "盩厔县 (Zhōuzhì xiàn)",
     "english": "place name; used in 盩厔 (Zhōuzhì), former name of Zhouzhi County"
   },
   {
@@ -71809,8 +71809,8 @@
     "rank": "8282",
     "char": "魖",
     "pinyin": "xū",
-    "example": "魖魖（xū xū）",
-    "extraexample": "魖魅（xū mèi）",
+    "example": "魖魖(xū xū)",
+    "extraexample": "魖魅(xū mèi)",
     "english": "A legendary beast; also used in ancient texts as a term for a type of demon."
   },
   {
@@ -71841,8 +71841,8 @@
     "rank": "8286",
     "char": "脎",
     "pinyin": "sà",
-    "example": "脎（sà）",
-    "extraexample": "脎（sà）",
+    "example": "脎(sà)",
+    "extraexample": "脎(sà)",
     "english": "UNKNOWN"
   },
   {
@@ -71905,8 +71905,8 @@
     "rank": "8294",
     "char": "褏",
     "pinyin": "yòu",
-    "example": "褏（yòu）",
-    "extraexample": "褏（yòu）",
+    "example": "褏(yòu)",
+    "extraexample": "褏(yòu)",
     "english": "UNKNOWN"
   },
   {
@@ -71929,8 +71929,8 @@
     "rank": "8297",
     "char": "蹽",
     "pinyin": "liāo",
-    "example": "蹽开（liāo kāi）",
-    "extraexample": "蹽腿就跑（liāo tuǐ jiù pǎo）",
+    "example": "蹽开(liāo kāi)",
+    "extraexample": "蹽腿就跑(liāo tuǐ jiù pǎo)",
     "english": "to run quickly; to dash"
   },
   {
@@ -71969,8 +71969,8 @@
     "rank": "8302",
     "char": "擗",
     "pinyin": "pǐ",
-    "example": "擗踊（pǐ yǒng）",
-    "extraexample": "擗地（pǐ dì）",
+    "example": "擗踊(pǐ yǒng)",
+    "extraexample": "擗地(pǐ dì)",
     "english": "to beat one's breast; to break; to split"
   },
   {
@@ -72193,8 +72193,8 @@
     "rank": "8330",
     "char": "胾",
     "pinyin": "zì",
-    "example": "胾（zì）",
-    "extraexample": "胾肉（zì ròu）",
+    "example": "胾(zì)",
+    "extraexample": "胾肉(zì ròu)",
     "english": "UNKNOWN"
   },
   {
@@ -72337,8 +72337,8 @@
     "rank": "8348",
     "char": "褦",
     "pinyin": "nài",
-    "example": "褦襶（nài dài）",
-    "extraexample": "褦襶子（nài dài zǐ）",
+    "example": "褦襶(nài dài)",
+    "extraexample": "褦襶子(nài dài zǐ)",
     "english": "UNKNOWN"
   },
   {
@@ -72393,8 +72393,8 @@
     "rank": "8355",
     "char": "謪",
     "pinyin": "shāng",
-    "example": "謪 （shāng）",
-    "extraexample": "謪 （shāng）",
+    "example": "謪 (shāng)",
+    "extraexample": "謪 (shāng)",
     "english": "UNKNOWN"
   },
   {
@@ -72481,8 +72481,8 @@
     "rank": "8366",
     "char": "鍑",
     "pinyin": "fù",
-    "example": "鍑（fù）",
-    "extraexample": "铜鍑（tóng fù）",
+    "example": "鍑(fù)",
+    "extraexample": "铜鍑(tóng fù)",
     "english": "an ancient cooking vessel with a round mouth and two handles"
   },
   {
@@ -72841,8 +72841,8 @@
     "rank": "8411",
     "char": "藇",
     "pinyin": "yǔ",
-    "example": "藇（yǔ）",
-    "extraexample": "藇草（yǔ cǎo）",
+    "example": "藇(yǔ)",
+    "extraexample": "藇草(yǔ cǎo)",
     "english": "UNKNOWN"
   },
   {
@@ -72993,8 +72993,8 @@
     "rank": "8430",
     "char": "阤",
     "pinyin": "yǐ",
-    "example": "阤（yǐ）",
-    "extraexample": "阤（yǐ）",
+    "example": "阤(yǐ)",
+    "extraexample": "阤(yǐ)",
     "english": "UNKNOWN"
   },
   {
@@ -73209,8 +73209,8 @@
     "rank": "8457",
     "char": "罍",
     "pinyin": "léi",
-    "example": "罍 （léi）",
-    "extraexample": "青铜罍 （qīng tóng léi）",
+    "example": "罍 (léi)",
+    "extraexample": "青铜罍 (qīng tóng léi)",
     "english": "ancient bronze wine vessel with a round or square body"
   },
   {
@@ -73361,8 +73361,8 @@
     "rank": "8476",
     "char": "褎",
     "pinyin": "yòu",
-    "example": "褎如（yòu rú）",
-    "extraexample": "褎然（yòu rán）",
+    "example": "褎如(yòu rú)",
+    "extraexample": "褎然(yòu rán)",
     "english": "UNKNOWN"
   },
   {
@@ -73401,8 +73401,8 @@
     "rank": "8481",
     "char": "訏",
     "pinyin": "xǔ",
-    "example": "訏（xǔ）",
-    "extraexample": "訏訏（xǔ xǔ）",
+    "example": "訏(xǔ)",
+    "extraexample": "訏訏(xǔ xǔ)",
     "english": "UNKNOWN"
   },
   {
@@ -73457,8 +73457,8 @@
     "rank": "8488",
     "char": "坶",
     "pinyin": "mǔ",
-    "example": "坶 （mǔ）",
-    "extraexample": "一坶地 （yī mǔ dì）",
+    "example": "坶 (mǔ)",
+    "extraexample": "一坶地 (yī mǔ dì)",
     "english": "a unit of land area equal to 0.0667 hectares"
   },
   {
@@ -73545,16 +73545,16 @@
     "rank": "8499",
     "char": "鏁",
     "pinyin": "suǒ",
-    "example": "鏁 （suǒ）",
-    "extraexample": "鏁 （suǒ）",
+    "example": "鏁 (suǒ)",
+    "extraexample": "鏁 (suǒ)",
     "english": "UNKNOWN"
   },
   {
     "rank": "8500",
     "char": "鏭",
     "pinyin": "xī",
-    "example": "鏭（xī）",
-    "extraexample": "鏭（xī）",
+    "example": "鏭(xī)",
+    "extraexample": "鏭(xī)",
     "english": "UNKNOWN"
   },
   {
@@ -73601,8 +73601,8 @@
     "rank": "8506",
     "char": "牿",
     "pinyin": "gù",
-    "example": "牿（gù）",
-    "extraexample": "牛牿（niú gù）",
+    "example": "牿(gù)",
+    "extraexample": "牛牿(niú gù)",
     "english": "a wooden frame for tying cattle"
   },
   {
@@ -73785,8 +73785,8 @@
     "rank": "8529",
     "char": "膥",
     "pinyin": "cēn",
-    "example": "膥（cēn）",
-    "extraexample": "膥（cēn）",
+    "example": "膥(cēn)",
+    "extraexample": "膥(cēn)",
     "english": "UNKNOWN"
   },
   {
@@ -73801,8 +73801,8 @@
     "rank": "8531",
     "char": "臿",
     "pinyin": "chā",
-    "example": "臿（chā）",
-    "extraexample": "臿土（chā tǔ）",
+    "example": "臿(chā)",
+    "extraexample": "臿土(chā tǔ)",
     "english": "to insert; to mix; a kind of shovel"
   },
   {
@@ -73897,8 +73897,8 @@
     "rank": "8543",
     "char": "趷",
     "pinyin": "kē",
-    "example": "趷（kē）",
-    "extraexample": "趷（kē）",
+    "example": "趷(kē)",
+    "extraexample": "趷(kē)",
     "english": "UNKNOWN"
   },
   {
@@ -73921,8 +73921,8 @@
     "rank": "8546",
     "char": "鈰",
     "pinyin": "shì",
-    "example": "鈰（shì）",
-    "extraexample": "鈰合金（shì hé jīn）",
+    "example": "鈰(shì)",
+    "extraexample": "鈰合金(shì hé jīn)",
     "english": "cerium (a metallic element)"
   },
   {
@@ -74425,8 +74425,8 @@
     "rank": "8609",
     "char": "紓",
     "pinyin": "shū",
-    "example": "紓解 （shū jiě）",
-    "extraexample": "紓困 （shū kùn）",
+    "example": "紓解 (shū jiě)",
+    "extraexample": "紓困 (shū kùn)",
     "english": "to relax; to relieve; to ease"
   },
   {
@@ -74625,8 +74625,8 @@
     "rank": "8634",
     "char": "蔘",
     "pinyin": "shēn",
-    "example": "人参 （rén shēn）",
-    "extraexample": "西洋参 （xī yáng shēn）",
+    "example": "人参 (rén shēn)",
+    "extraexample": "西洋参 (xī yáng shēn)",
     "english": "ginseng"
   },
   {
@@ -74705,8 +74705,8 @@
     "rank": "8644",
     "char": "蠄",
     "pinyin": "qín",
-    "example": "蠄（qín）",
-    "extraexample": "蠄虫（qín chóng）",
+    "example": "蠄(qín)",
+    "extraexample": "蠄虫(qín chóng)",
     "english": "UNKNOWN"
   },
   {
@@ -74793,8 +74793,8 @@
     "rank": "8655",
     "char": "諏",
     "pinyin": "zhōu",
-    "example": "諏訪（zhōu fǎng）",
-    "extraexample": "諏謀（zhōu móu）",
+    "example": "諏訪(zhōu fǎng)",
+    "extraexample": "諏謀(zhōu móu)",
     "english": "to consult; to deliberate"
   },
   {
@@ -74969,8 +74969,8 @@
     "rank": "8677",
     "char": "輝",
     "pinyin": "huī",
-    "example": "輝煌 （huī huáng）",
-    "extraexample": "光輝 （guāng huī）",
+    "example": "輝煌 (huī huáng)",
+    "extraexample": "光輝 (guāng huī)",
     "english": "brightness, splendor, shine"
   },
   {
@@ -74993,8 +74993,8 @@
     "rank": "8680",
     "char": "轂",
     "pinyin": "gū",
-    "example": "轂 （gū）",
-    "extraexample": "轂擊 （gū jī）",
+    "example": "轂 (gū)",
+    "extraexample": "轂擊 (gū jī)",
     "english": "wheel hub; a wheel"
   },
   {
@@ -75041,8 +75041,8 @@
     "rank": "8686",
     "char": "鈉",
     "pinyin": "nà",
-    "example": "鈉 （nà）",
-    "extraexample": "氯化鈉 （lǜ huà nà）",
+    "example": "鈉 (nà)",
+    "extraexample": "氯化鈉 (lǜ huà nà)",
     "english": "sodium (chemical element)"
   },
   {
@@ -75553,8 +75553,8 @@
     "rank": "8755",
     "char": "祅",
     "pinyin": "yāo",
-    "example": "祅（yāo）",
-    "extraexample": "祅怪（yāo guài）",
+    "example": "祅(yāo)",
+    "extraexample": "祅怪(yāo guài)",
     "english": "UNKNOWN"
   },
   {
@@ -75577,8 +75577,8 @@
     "rank": "8758",
     "char": "糱",
     "pinyin": "niè",
-    "example": "糱（niè）",
-    "extraexample": "酒糱（jiǔ niè）",
+    "example": "糱(niè)",
+    "extraexample": "酒糱(jiǔ niè)",
     "english": "yeast; leaven; malt"
   },
   {
@@ -75593,8 +75593,8 @@
     "rank": "8760",
     "char": "蠥",
     "pinyin": "niè",
-    "example": "蠥（niè）",
-    "extraexample": "蠥（niè）",
+    "example": "蠥(niè)",
+    "extraexample": "蠥(niè)",
     "english": "UNKNOWN"
   },
   {
@@ -75697,8 +75697,8 @@
     "rank": "8774",
     "char": "粻",
     "pinyin": "zhāng",
-    "example": "粻（zhāng）",
-    "extraexample": "粻食（zhāng shí）",
+    "example": "粻(zhāng)",
+    "extraexample": "粻食(zhāng shí)",
     "english": "UNKNOWN"
   },
   {
@@ -75961,8 +75961,8 @@
     "rank": "8807",
     "char": "鎋",
     "pinyin": "xiá",
-    "example": "鎋（xiá）",
-    "extraexample": "鎋车（xiá chē）",
+    "example": "鎋(xiá)",
+    "extraexample": "鎋车(xiá chē)",
     "english": "linchpin; wheel fastener"
   },
   {
@@ -76337,8 +76337,8 @@
     "rank": "8854",
     "char": "稸",
     "pinyin": "xù",
-    "example": "稸（xù）",
-    "extraexample": "稸积（xù jī）",
+    "example": "稸(xù)",
+    "extraexample": "稸积(xù jī)",
     "english": "UNKNOWN"
   },
   {
@@ -76385,8 +76385,8 @@
     "rank": "8860",
     "char": "籜",
     "pinyin": "tuò",
-    "example": "籜（tuò）",
-    "extraexample": "竹籜（zhú tuò）",
+    "example": "籜(tuò)",
+    "extraexample": "竹籜(zhú tuò)",
     "english": "bamboo shoots' outer sheath"
   },
   {
@@ -76673,8 +76673,8 @@
     "rank": "8896",
     "char": "蔱",
     "pinyin": "shā",
-    "example": "蔱（shā）",
-    "extraexample": "蔱杀（shā shā）",
+    "example": "蔱(shā)",
+    "extraexample": "蔱杀(shā shā)",
     "english": "a kind of plant; also used in ancient punishment of tearing apart by chariots"
   },
   {
@@ -76777,8 +76777,8 @@
     "rank": "8909",
     "char": "釔",
     "pinyin": "yǐ",
-    "example": "釔 （yǐ）",
-    "extraexample": "釔鋁石榴石 （yǐ lǚ shí liú shí）",
+    "example": "釔 (yǐ)",
+    "extraexample": "釔鋁石榴石 (yǐ lǚ shí liú shí)",
     "english": "yttrium (Y), a metallic element"
   },
   {
@@ -77273,8 +77273,8 @@
     "rank": "8973",
     "char": "蒄",
     "pinyin": "guān",
-    "example": "蒄（guān）",
-    "extraexample": "蒄（guān）",
+    "example": "蒄(guān)",
+    "extraexample": "蒄(guān)",
     "english": "UNKNOWN"
   },
   {
@@ -77289,8 +77289,8 @@
     "rank": "8975",
     "char": "薂",
     "pinyin": "xí",
-    "example": "薂（xí）",
-    "extraexample": "薂（xí）",
+    "example": "薂(xí)",
+    "extraexample": "薂(xí)",
     "english": "UNKNOWN"
   },
   {
@@ -77641,8 +77641,8 @@
     "rank": "9021",
     "char": "眮",
     "pinyin": "tóng",
-    "example": "眮（tóng）",
-    "extraexample": "眮眮（tóng tóng）",
+    "example": "眮(tóng)",
+    "extraexample": "眮眮(tóng tóng)",
     "english": "UNKNOWN"
   },
   {
@@ -77737,8 +77737,8 @@
     "rank": "9033",
     "char": "襛",
     "pinyin": "nóng",
-    "example": "襛（nóng）",
-    "extraexample": "襛华（nóng huá）",
+    "example": "襛(nóng)",
+    "extraexample": "襛华(nóng huá)",
     "english": "UNKNOWN"
   },
   {
@@ -77793,8 +77793,8 @@
     "rank": "9041",
     "char": "篛",
     "pinyin": "nà",
-    "example": "篛（nà）",
-    "extraexample": "篛竹（nà zhú）",
+    "example": "篛(nà)",
+    "extraexample": "篛竹(nà zhú)",
     "english": "UNKNOWN"
   },
   {
@@ -77977,8 +77977,8 @@
     "rank": "9065",
     "char": "眣",
     "pinyin": "dié",
-    "example": "眣（dié）",
-    "extraexample": "眣目（dié mù）",
+    "example": "眣(dié)",
+    "extraexample": "眣目(dié mù)",
     "english": "UNKNOWN"
   },
   {
@@ -78049,8 +78049,8 @@
     "rank": "9074",
     "char": "秠",
     "pinyin": "pī",
-    "example": "秠（pī）",
-    "extraexample": "秠黍（pī shǔ）",
+    "example": "秠(pī)",
+    "extraexample": "秠黍(pī shǔ)",
     "english": "UNKNOWN"
   },
   {
@@ -78137,16 +78137,16 @@
     "rank": "9085",
     "char": "糓",
     "pinyin": "gǔ",
-    "example": "糓（gǔ）",
-    "extraexample": "糓（gǔ）",
+    "example": "糓(gǔ)",
+    "extraexample": "糓(gǔ)",
     "english": "UNKNOWN"
   },
   {
     "rank": "9086",
     "char": "糺",
     "pinyin": "jīu",
-    "example": "糺（jīu）",
-    "extraexample": "糺（jīu）",
+    "example": "糺(jīu)",
+    "extraexample": "糺(jīu)",
     "english": "UNKNOWN"
   },
   {
@@ -78529,8 +78529,8 @@
     "rank": "9134",
     "char": "蟜",
     "pinyin": "jiǎo",
-    "example": "蟜 （jiǎo）",
-    "extraexample": "蟜 （jiǎo）",
+    "example": "蟜 (jiǎo)",
+    "extraexample": "蟜 (jiǎo)",
     "english": "UNKNOWN"
   },
   {
@@ -78561,8 +78561,8 @@
     "rank": "9138",
     "char": "袟",
     "pinyin": "zhì",
-    "example": "袟（zhì）",
-    "extraexample": "卷袟（juǎn zhì）",
+    "example": "袟(zhì)",
+    "extraexample": "卷袟(juǎn zhì)",
     "english": "a book cover; a bundle of books"
   },
   {
@@ -78625,8 +78625,8 @@
     "rank": "9146",
     "char": "趡",
     "pinyin": "wěi",
-    "example": "趡（wěi）",
-    "extraexample": "趡行（wěi xíng）",
+    "example": "趡(wěi)",
+    "extraexample": "趡行(wěi xíng)",
     "english": "UNKNOWN"
   },
   {
@@ -78705,8 +78705,8 @@
     "rank": "9156",
     "char": "軏",
     "pinyin": "yuè",
-    "example": "軏（yuè）",
-    "extraexample": "车軏（chē yuè）",
+    "example": "軏(yuè)",
+    "extraexample": "车軏(chē yuè)",
     "english": "crossbar at the end of a carriage pole"
   },
   {
@@ -78721,8 +78721,8 @@
     "rank": "9158",
     "char": "輵",
     "pinyin": "yà",
-    "example": "輵（yà）",
-    "extraexample": "輵（yà）",
+    "example": "輵(yà)",
+    "extraexample": "輵(yà)",
     "english": "UNKNOWN"
   },
   {
@@ -78769,8 +78769,8 @@
     "rank": "9164",
     "char": "鄟",
     "pinyin": "zhuān",
-    "example": "鄟（zhuān）",
-    "extraexample": "鄟国（zhuān guó）",
+    "example": "鄟(zhuān)",
+    "extraexample": "鄟国(zhuān guó)",
     "english": "a place name; also a surname"
   },
   {
@@ -79625,8 +79625,8 @@
     "rank": "9271",
     "char": "褣",
     "pinyin": "róng",
-    "example": "褣 （róng）",
-    "extraexample": "褣 （róng）",
+    "example": "褣 (róng)",
+    "extraexample": "褣 (róng)",
     "english": "UNKNOWN"
   },
   {
@@ -79921,8 +79921,8 @@
     "rank": "9308",
     "char": "鎘",
     "pinyin": "gé",
-    "example": "鎘 （gé）",
-    "extraexample": "鎘污染 （gé wū rǎn）",
+    "example": "鎘 (gé)",
+    "extraexample": "鎘污染 (gé wū rǎn)",
     "english": "cadmium (a metallic element)"
   },
   {
@@ -79969,8 +79969,8 @@
     "rank": "9314",
     "char": "锧",
     "pinyin": "zhì",
-    "example": "锧质（zhì zhì）",
-    "extraexample": "斧锧（fǔ zhì）",
+    "example": "锧质(zhì zhì)",
+    "extraexample": "斧锧(fǔ zhì)",
     "english": "ancient execution block; chopping block"
   },
   {
