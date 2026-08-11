@@ -205,6 +205,95 @@ def normalize_brackets_in_file(path: str) -> int:
     return changed
 
 
+# ── Audit helpers ──────────────────────────────────────────────────────────
+
+import re
+
+def _example_is_bare_char(example: str, char: str) -> bool:
+    """Check whether the example field contains only the character itself
+    plus a pinyin annotation, rather than a real word/phrase.
+
+    E.g. "脸 （liǎn）" is bare (just the char + pinyin),
+    whereas "洗脸 （xǐ liǎn）" is a real word.
+    """
+    if not example or not char:
+        return False
+    stripped = re.sub(r'[(（][^)）]*[)）]', '', example).strip()
+    return stripped == char
+
+
+def _entry_needs_audit(entry: dict) -> bool:
+    """Return True if any field contains UNKNOWN or the example is
+    just the character itself."""
+    for field in ("english", "example", "extraexample"):
+        value = (entry.get(field) or "").upper()
+        if "UNKNOWN" in value:
+            return True
+    if _example_is_bare_char(entry.get("example", ""), entry.get("char", "")):
+        return True
+    return False
+
+
+def audit_data_file(path: str, api_key: str, delay: float = 1.0) -> int:
+    """Load a data.json file, find entries with UNKNOWN values or bare-character
+    examples, and re-process them using the pro model.  The file is updated
+    in-place after each fix.
+
+    Returns the number of entries that were fixed.
+    """
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    bad = [(i, e) for i, e in enumerate(data) if _entry_needs_audit(e)]
+
+    if not bad:
+        print("No entries need auditing.", file=sys.stderr)
+        return 0
+
+    print(f"Found {len(bad)} entries to audit.", file=sys.stderr)
+    fixed = 0
+
+    for idx, (i, entry) in enumerate(bad):
+        rank, char, pinyin = entry["rank"], entry["char"], entry["pinyin"]
+        reasons = []
+        for field in ("english", "example", "extraexample"):
+            if "UNKNOWN" in (entry.get(field) or "").upper():
+                reasons.append(f"{field}=UNKNOWN")
+        if _example_is_bare_char(entry.get("example", ""), char):
+            reasons.append("example=bare-char")
+
+        print(f"[{idx+1}/{len(bad)}] rank={rank} char={char} pinyin={pinyin}  "
+              f"reasons: {'; '.join(reasons)}", file=sys.stderr)
+
+        result = call_deepseek(char, pinyin, api_key,
+                               model=DEEPSEEK_PRO_MODEL,
+                               max_tokens=DEEPSEEK_PRO_TOKENS)
+        if result is None:
+            print(f"  FAILED — skipping", file=sys.stderr)
+            continue
+
+        english = result.get("english", "").strip()
+        example = normalize_pinyin_brackets(result.get("example", "").strip())
+        extraexample = normalize_pinyin_brackets(result.get("extraexample", "").strip())
+
+        entry["english"] = english
+        entry["example"] = example
+        entry["extraexample"] = extraexample
+        fixed += 1
+        print(f"  FIXED  english={english}  example={example}", file=sys.stderr)
+
+        # Write after every fix so partial work is never lost
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+
+        if idx < len(bad) - 1:
+            time.sleep(delay)
+
+    print(f"\nAudit complete.  Fixed: {fixed}  Total in file: {len(data)}",
+          file=sys.stderr)
+    return fixed
+
+
 # ── Helpers ─────────────────────────────────────────────────────────────────
 
 def build_result(entry: dict, english: str, example: str, example_pinyin: str, extraexample: str) -> dict:
@@ -294,6 +383,11 @@ def main():
         help="Normalize Chinese brackets （） → () in example/extraexample fields "
              "of an existing data.json file, then exit"
     )
+    parser.add_argument(
+        "--audit", metavar="FILE",
+        help="Audit an existing data.json: find UNKNOWN values and bare-character "
+             "examples, then re-process them with the pro model"
+    )
     
     args = parser.parse_args()
 
@@ -306,6 +400,27 @@ def main():
         print(f"Normalizing brackets in {path} ...", file=sys.stderr)
         changed = normalize_brackets_in_file(path)
         print(f"Done.  {changed} entries modified.", file=sys.stderr)
+        return
+
+    # ── Audit mode ────────────────────────────────────────────────────
+    if args.audit:
+        path = args.audit
+        if not os.path.exists(path):
+            print(f"ERROR: file not found: {path}", file=sys.stderr)
+            sys.exit(1)
+        # Resolve API key (same as enrichment mode)
+        api_key = args.api_key
+        if not api_key:
+            if os.path.isfile(API_KEY_FILE):
+                with open(API_KEY_FILE, "r") as f:
+                    api_key = f.read().strip()
+                print(f"Read API key from {API_KEY_FILE}", file=sys.stderr)
+        if not api_key:
+            api_key = os.environ.get("DEEPSEEK_API_KEY", "")
+        if not api_key:
+            print("ERROR: No API key provided.", file=sys.stderr)
+            sys.exit(1)
+        audit_data_file(path, api_key, delay=args.delay)
         return
 
     # ── Resolve API key ─────────────────────────────────────────────────
