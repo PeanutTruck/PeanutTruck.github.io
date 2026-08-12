@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Chinese Character Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="header-row">
+            <div>
+                <h1>中文单词练习 - Chinese Character Study (Beta)</h1>
+                <p class="header-sub">Frequency-ranked characters with readings and examples</p>
+            </div>
+            <div class="toggle-group">
+                <button id="toggle-dark" class="toggle-btn" title="Toggle dark mode">🌙</button>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <a href="about.html" class="active">About</a>
+            <a href="index.html">Character List</a>
+            <a href="worksheets.html">Worksheets</a>
+        </nav>
+
+        <h2>About This Tool</h2>
+        <p>
+            This site provides a frequency-ranked study reference for Chinese characters.
+            Each entry includes the character, pinyin reading, example sentences, and English
+            definitions. Characters are ordered by frequency of use, making it an effective
+            tool for progressive vocabulary acquisition.
+        </p>
+        <p>
+            Features include:
+        </p>
+        <ul>
+            <li>Search by character, pinyin, or English definition</li>
+            <li>Text-to-speech for individual entries and full-page playback</li>
+            <li>Study mode — hide pinyin and English to test recall</li>
+            <li>Dark mode support</li>
+            <li>Load custom datasets from local JSON files</li>
+        </ul>
+
+    </div>
+
+    <!-- Shared dark-mode restoration -->
+    <script>
+(function () {
+    var saved = localStorage.getItem('ccs-dark-mode') || '0';
+    document.documentElement.setAttribute('data-theme', saved === '1' ? 'dark' : 'light');
+    var btn = document.getElementById('toggle-dark');
+    if (btn) btn.textContent = saved === '1' ? '☀' : '🌙';
+    if (btn) btn.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme');
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        btn.textContent = next === 'dark' ? '☀' : '🌙';
+        localStorage.setItem('ccs-dark-mode', next === 'dark' ? '1' : '0');
+    });
+})();
+    </script>
+</body>
+</html>

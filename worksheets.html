@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worksheets — Chinese Character Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="header-row">
+            <div>
+                <h1>中文单词练习 - Chinese Character Study (Beta)</h1>
+                <p class="header-sub">Worksheets — create, save, and load custom character sets</p>
+            </div>
+            <div class="toggle-group">
+                <button id="toggle-dark" class="toggle-btn" title="Toggle dark mode">🌙</button>
+                <button id="toggle-edit" class="toggle-btn" data-active="false" title="Toggle edit mode">✏️ Edit</button>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <a href="about.html">About</a>
+            <a href="index.html">Character List</a>
+            <a href="worksheets.html" class="active">Worksheets</a>
+        </nav>
+
+        <!-- Worksheet title (editable) -->
+        <div class="ws-title-row">
+            <label class="ws-title-label" for="ws-title">Worksheet name</label>
+            <input type="text" id="ws-title" class="ws-title-input" placeholder="Untitled Worksheet" maxlength="80">
+        </div>
+
+        <!-- Character grid (view/edit) -->
+        <div class="char-grid-section">
+            <div class="char-grid-label" id="grid-label">Characters on this page</div>
+            <div id="cbare" class="char-grid"></div>
+            <div class="grid-actions">
+                <button id="btn-speak-grid" class="grid-action-btn" title="Read all characters aloud" onclick="speakGrid()">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"/>
+                    </svg>
+                </button>
+                <button id="btn-pause-grid" class="grid-action-btn" title="Pause" onclick="toggleGridPause()">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="6" y="4" width="4" height="16"/>
+                        <rect x="14" y="4" width="4" height="16"/>
+                    </svg>
+                </button>
+                <button id="btn-stop-grid" class="grid-action-btn" title="Stop playback" onclick="stopGrid()">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="4" y="4" width="16" height="16" rx="2"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Save button (edit mode only) -->
+            <div id="save-row" class="save-row" style="display:none">
+                <button id="btn-save" class="ws-save-btn" onclick="saveWorksheet()">💾 Save Worksheet</button>
+                <span class="save-status" id="save-status"></span>
+            </div>
+        </div>
+
+        <!-- Page info -->
+        <div class="controls">
+            <span class="page-info" id="infospan"></span>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination-row">
+            <button onclick="jumpToPage(1)" title="First page">&#x27E8;&#x27E8;</button>
+            <button class="prev" onclick="changePage(-1)">&#x2190; Prev</button>
+            <span class="page-indicator" id="page-indicator"></span>
+            <button class="next" onclick="changePage(1)">Next &#x2192;</button>
+            <button onclick="jumpToPage(-1)" title="Last page">&#x27E9;&#x27E9;</button>
+
+            <span class="pagination-spacer"></span>
+
+            <!-- Page management (edit mode only) -->
+            <span id="page-mgmt" class="page-mgmt" style="display:none">
+                <button class="page-mgmt-btn" onclick="addPage()" title="Add a new page after current">+ Page</button>
+                <button class="page-mgmt-btn page-mgmt-remove" onclick="removePage()" title="Remove current page">− Page</button>
+            </span>
+        </div>
+
+        <!-- Sub info -->
+        <div class="controls">
+            <span class="page-info" id="infospan2"></span>
+        </div>
+
+        <!-- Detail table -->
+        <div class="detail-section">
+            <table id="characters-table">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <!-- Data source status -->
+        <div class="file-section">
+            <span class="file-label">Data source</span>
+            <div class="file-row">
+                <span class="file-status" id="datasource">Loading…</span>
+            </div>
+        </div>
+
+        <!-- Import / Export -->
+        <div class="file-section">
+            <span class="file-label">Worksheet file</span>
+            <div class="file-row">
+                <button class="download-btn" onclick="exportWorksheet()" title="Download worksheet as JSON">⬇ Export</button>
+                <label class="import-btn" title="Load worksheet from a JSON file">
+                    ⬆ Import
+                    <input type="file" id="ws-import-file" accept=".json" onchange="importWorksheet(event)" style="display:none">
+                </label>
+                <span class="file-status" id="import-status"></span>
+            </div>
+        </div>
+
+    </div>
+    <script src="worksheet.js"></script>
+</body>
+</html>
