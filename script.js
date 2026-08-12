@@ -358,7 +358,7 @@ function renderTable(page) {
         tbody.innerHTML = rowsHTML;
         charGrid.innerHTML = gridHTML;
         document.getElementById('infospan').textContent = infoText;
-        if (subText) document.getElementById('header-sub').textContent = subText;
+        if (subText) document.getElementById('infospan2').textContent = subText;
 
         document.querySelector('.prev').disabled = (page === 1);
         document.querySelector('.next').disabled = (page === lastPage);
