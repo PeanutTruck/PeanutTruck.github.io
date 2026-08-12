@@ -12,28 +12,17 @@ const gridCharsPerPage = 8;
 const COOKIE_NAME = 'ccs-worksheet';
 const REMOTE_DATA_URL = 'https://peanuttruck.github.io/data.json';
 
-// ── Cookie helpers ─────────────────────────────────────────────────────────
+// ── Local storage helpers ──────────────────────────────────────────────────
 
-function setCookie(name, value, days) {
-    var expires = '';
-    if (days) {
-        var d = new Date();
-        d.setTime(d.getTime() + days * 86400000);
-        expires = '; expires=' + d.toUTCString();
-    }
-    document.cookie = name + '=' + encodeURIComponent(value) + expires + '; path=/; SameSite=Lax';
+function storeState(key, value) {
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch(e) {}
 }
 
-function getCookie(name) {
-    var prefix = name + '=';
-    var cookies = document.cookie.split(';');
-    for (var i = 0; i < cookies.length; i++) {
-        var c = cookies[i].trim();
-        if (c.indexOf(prefix) === 0) {
-            return decodeURIComponent(c.substring(prefix.length));
-        }
-    }
-    return null;
+function loadState(key) {
+    try {
+        var raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : null;
+    } catch(e) { return null; }
 }
 
 // ── Data loading ───────────────────────────────────────────────────────────
@@ -69,19 +58,14 @@ function fetchRemote() {
 // ── Load / Save worksheet ──────────────────────────────────────────────────
 
 function loadWorksheet() {
-    var raw = getCookie(COOKIE_NAME);
-    if (raw) {
-        try {
-            var state = JSON.parse(raw);
-            if (state.pages && Array.isArray(state.pages) && state.pages.length > 0) {
-                worksheet = state.pages;
-            }
-            if (typeof state.title === 'string') {
-                wsTitle = state.title;
-                document.getElementById('ws-title').value = wsTitle;
-            }
-        } catch (e) {
-            console.warn('Failed to parse worksheet cookie, using default.');
+    var state = loadState(COOKIE_NAME);
+    if (state) {
+        if (state.pages && Array.isArray(state.pages) && state.pages.length > 0) {
+            worksheet = state.pages;
+        }
+        if (typeof state.title === 'string') {
+            wsTitle = state.title;
+            document.getElementById('ws-title').value = wsTitle;
         }
     }
     lastPage = Math.max(1, worksheet.length);
@@ -89,6 +73,7 @@ function loadWorksheet() {
 }
 
 function saveWorksheet() {
+	
     // Collect from DOM if in edit mode
     if (editMode) {
         collectPageEdits();
@@ -104,7 +89,7 @@ function persistWorksheet() {
         title: wsTitle,
         pages: worksheet
     };
-    setCookie(COOKIE_NAME, JSON.stringify(state), 365);
+    storeState(COOKIE_NAME, state);
 }
 
 function collectPageEdits() {
