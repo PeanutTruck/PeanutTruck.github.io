@@ -79,6 +79,7 @@ function saveWorksheet() {
         collectPageEdits();
     }
     persistWorksheet();
+    renderTable();
     var status = document.getElementById('save-status');
     status.textContent = '✓ Saved';
     setTimeout(function() { status.textContent = ''; }, 2000);
